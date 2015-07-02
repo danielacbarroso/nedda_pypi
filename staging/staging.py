@@ -5,7 +5,7 @@ from colon_rectum import *
 from prostate import *
 from lung import *
 
-def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleasson=None):
+def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleason=None):
     icd = icd.strip()
 
     if icd in BREAST_CANCER_ICDS:
@@ -15,7 +15,7 @@ def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleasson=None):
     elif icd in COLON_CANCER_ICDS:
         stager = ColonRectumStager(icd, t, n, m, dukes)
     elif icd in PROSTATE_CANCER_ICDS:
-        stager = ProstageCancerStager(icd, t, n, m, psa, gleasson)
+        stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
     elif icd in LUNG_CANCER_ICDS:
         stager = LungCancerStager(icd, t, n, m)
     return stager.stage

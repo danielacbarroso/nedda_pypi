@@ -3,9 +3,9 @@ import re
 
 PROSTATE_CANCER_ICDS = ['C61', 'C61.9']
 
-class ProstageCancerStager(object):
+class ProstateCancerStager(object):
 
-    PROSTATE_CANCER_TS = ['T1a-c', 'T2a', 'T1-2a', 'T2b', 'T2c', 'T1-2', 'T3a-b', 'T4']
+    PROSTATE_CANCER_TS = ['T1a', 'T1b', 'T1c', 'T2a', 'T2b', 'T2c', 'T1-2', 'T3a-b', 'T4']
     PROSTATE_CANCER_NS = ['N0', 'N1']
     PROSTATE_CANCER_MS = ['M0', 'M1']
     PROSTATE_CANCER_PSA = ['P1', 'P2', 'P3', 'PX']
@@ -19,25 +19,25 @@ class ProstageCancerStager(object):
         self.t = t
         self. n = n
         self.m = m
-        self.validate_tnm_psa_gleason()
         self.psa = self.psa_calc(psa)
         self.gleason = self.gleason_calc(gleason)
+        self.validate_tnm_psa_gleason()
         self.staging()
 
     def staging(self):
 
         TNMPG = self.t + self.n + self.m + self.psa + self.gleason
 
-        if re.match('(T1a-cN0M0P1G1|T2aN0M0P1G1|T1-2aN0M0PXGX)', TNMPG, re.IGNORECASE):
-            return 'I'
+        if re.match('(T1aN0M0P1G1|T1bN0M0P1G1|T1cN0M0P1G1|T2aN0M0P1G1|T1aN0M0PXGX|T1bN0M0PXGX|T1cN0M0PXGX|T2aN0M0PXGX)', TNMPG, re.IGNORECASE):
+            self.stage = 'I'
         elif re.match('(T1a-cN0M0P1G2|T1a-cN0M0P2G2|T1a-cN0M0P2G1|T2aN0M0P1G1|T2aN0M0P1G2|T2aN0M0P2G1|T2aN0M0P2G2|T2bN0M0P1G1|T2bN0M0P1G2|T2bN0M0P2G1|T2bN0M0P2G2|T2bN0M0PXGX)', TNMPG, re.IGNORECASE):
-            return 'IIA'
+            self.stage = 'IIA'
         elif re.match('(T2cN0M0.+|T1-2N0M0P3.+|T1-2N0M0.+G3)', TNMPG, re.IGNORECASE):
-            return 'IIB'
+            self.stage = 'IIB'
         elif re.match('T3a-bN0M0.+', TNMPG, re.IGNORECASE):
-            return 'III'
+            self.stage = 'III'
         elif re.match('(T4N0M0.+|.+N1M0.+|.+M1.+)', TNMPG, re.IGNORECASE):
-            return 'IV'
+            self.stage = 'IV'
         else:
             self.valid = False
             self.validation_message = 'Impossible to calculate stage for ' + self.t + ' ' + self.n + ' ' + self.m
@@ -77,7 +77,7 @@ class ProstageCancerStager(object):
         elif psa >= 20:
             return 'P3'
 
-    def gleason_calc(gleason):
+    def gleason_calc(self, gleason):
         if gleason == 'x' or gleason == 'X':
             return 'GX'
         if gleason <= 6:
