@@ -73,9 +73,10 @@ have been developing for GNU Health [4], an open source and free (as in freedom 
 
 Nedda has still has a very simple interface. The idea is to pass to the library the ICD, T, N and M values
 and get a stager object, that validates the input and computes the correct stage for different types of cancer:
-
->> from nedda.staging.staging import tnm_stager_factory
->> stager = tnm_stager_factory('C50.0', 'T0', 'N1', 'M0')
+```python
+from nedda.staging.staging import tnm_stager_factory
+stager = tnm_stager_factory('C50.0', 'T0', 'N1', 'M0')
+```
 
 As you can see, we have passed to a factory method the aforementioned inputs and we receive back a BreastCancerStager
 object. It contains the following members:
@@ -88,10 +89,14 @@ stager.m                   stager.validate_tnm
 stager.n                   stager.validation_message
 
 If you call then:
->> stager.stage
+```python
+stager.stage
+```
 
 You will get the response:
->> 'IIA'
+```python
+'IIA'
+```
 
 For the time being, that is pretty much that. Nedda works for breast, cervix uteri, colon and rectum 
 and lung cancer. We are still working on prostate and stomach. We have published the repository here in 
@@ -125,8 +130,12 @@ She was the inspiration to create this project and to work on such an arid and h
 She also happens to be my mother!
 
 
-[1] http://www.cancer.gov/about-cancer/what-is-cancer
+[1] (http://www.cancer.gov/about-cancer/what-is-cancer)
 [2] American Cancer Society: Cancer Facts and Figures 2015. Atlanta, Ga: American Cancer Society, 2015. 
 [3] Cancer Staging Handbook. From the AJCC Cancer Staging Manual. p. vii
-[4] 
+[4] (http://health.gnu.org/)
+
+Copyright 2015 [Sílex Sistemas Ltda.] (http://www.silexsistemas.com.br)
+Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+
 
