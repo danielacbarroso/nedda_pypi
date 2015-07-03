@@ -45,7 +45,7 @@ Different types of cancer have completely different treatment options and progno
 according to their staging. For instance, a very small and localized breast cancer
 determines a certain treatment path and has a very good (more than 95%) chance of
 total cure (or remission). Unfortunately, if the same type of cancer is not detected
-early, it can grow and spread to the lynphatic system (local and distant) and to
+early, it can grow and spread to the lymphatic system (local and distant) and to
 other organs (metastatic disease). In this case, the treatment options are distinct,
 and the chance of cure much more remote.
 
