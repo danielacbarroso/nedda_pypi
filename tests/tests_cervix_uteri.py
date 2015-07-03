@@ -2,6 +2,7 @@
 import unittest as ut
 from staging.staging import tnm_stage
 
+
 class Testtnm_stage(ut.TestCase):
 
     def test_cervix_uteri_cancer_0(self):

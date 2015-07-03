@@ -3,6 +3,7 @@ __author__ = 'sandra'
 import unittest as ut
 from staging.staging import tnm_stage
 
+
 class Testtnm_stage(ut.TestCase):
 
     def test_colon_cancer_0(self):
@@ -182,6 +183,3 @@ class Testtnm_stage(ut.TestCase):
         self.assertEquals('IVB', tnm_stage('C18.0', 'T3-T4a', 'N2a', 'M1b', None))
         self.assertEquals('IVB', tnm_stage('C18.0', 'T4a', 'N2a', 'M1b', None))
         self.assertEquals('IVB', tnm_stage('C18.0', 'T4b', 'N2a', 'M1b', None))
-
-    def test_tnmdukes_validator(self):
-        self.assertTrue(validate_tnmdukes('C18.9', 'Tis', 'N0', 'M0', None))

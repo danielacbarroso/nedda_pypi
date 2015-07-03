@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import unittest as ut
-from staging.staging import tnm_stage
+
+from staging import tnm_stage
+
 
 class Testtnm_stage(ut.TestCase):
 
