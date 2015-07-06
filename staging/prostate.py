@@ -5,7 +5,7 @@ PROSTATE_CANCER_ICDS = ['C61', 'C61.9']
 
 class ProstateCancerStager(object):
 
-    PROSTATE_CANCER_TS = ['T1a', 'T1b', 'T1c', 'T2a', 'T2b', 'T2c', 'T1-2', 'T3a-b', 'T4']
+    PROSTATE_CANCER_TS = ['T1', 'T1a', 'T1b', 'T1c', 'T2', 'T2a', 'T2b', 'T2c', 'T3', 'T3a', 'T3b', 'T4']
     PROSTATE_CANCER_NS = ['N0', 'N1']
     PROSTATE_CANCER_MS = ['M0', 'M1']
     PROSTATE_CANCER_PSA = ['P1', 'P2', 'P3', 'PX']
@@ -28,13 +28,13 @@ class ProstateCancerStager(object):
 
         TNMPG = self.t + self.n + self.m + self.psa + self.gleason
 
-        if re.match('(T1aN0M0P1G1|T1bN0M0P1G1|T1cN0M0P1G1|T2aN0M0P1G1|T1aN0M0PXGX|T1bN0M0PXGX|T1cN0M0PXGX|T2aN0M0PXGX)', TNMPG, re.IGNORECASE):
+        if re.match('(T1aN0M0P1G1|T1bN0M0P1G1|T1cN0M0P1G1|T2aN0M0P1G1|T1N0M0PXGX|T1aN0M0PXGX|T1bN0M0PXGX|T1cN0M0PXGX|T2N0M0PXGX|T2aN0M0PXGX)', TNMPG, re.IGNORECASE):
             self.stage = 'I'
-        elif re.match('(T1a-cN0M0P1G2|T1a-cN0M0P2G2|T1a-cN0M0P2G1|T2aN0M0P1G1|T2aN0M0P1G2|T2aN0M0P2G1|T2aN0M0P2G2|T2bN0M0P1G1|T2bN0M0P1G2|T2bN0M0P2G1|T2bN0M0P2G2|T2bN0M0PXGX)', TNMPG, re.IGNORECASE):
+        elif re.match('(T1aN0M0P1G2|T1bN0M0P1G2|T1cN0M0P1G2|T1aN0M0P2G2|T1bN0M0P2G2|T1cN0M0P2G2|T1aN0M0P2G1|T1bN0M0P2G1|T1cN0M0P2G1|T2aN0M0P1G1|T2aN0M0P1G2|T2aN0M0P2G1|T2aN0M0P2G2|T2bN0M0P1G1|T2bN0M0P1G2|T2bN0M0P2G1|T2bN0M0P2G2|T2bN0M0PXGX)', TNMPG, re.IGNORECASE):
             self.stage = 'IIA'
-        elif re.match('(T2cN0M0.+|T1-2N0M0P3.+|T1-2N0M0.+G3)', TNMPG, re.IGNORECASE):
+        elif re.match('(T2cN0M0.+|T1N0M0P3.+|T1.+N0M0P3.+|T2N0M0P3.+|T1N0M0.+G3|T1.+N0M0.+G3|T2N0M0.+G3)', TNMPG, re.IGNORECASE):
             self.stage = 'IIB'
-        elif re.match('T3a-bN0M0.+', TNMPG, re.IGNORECASE):
+        elif re.match('(T3aN0M0.+|T3bN0M0.+)', TNMPG, re.IGNORECASE):
             self.stage = 'III'
         elif re.match('(T4N0M0.+|.+N1M0.+|.+M1.+)', TNMPG, re.IGNORECASE):
             self.stage = 'IV'
@@ -46,7 +46,7 @@ class ProstateCancerStager(object):
     def validate_tnm_psa_gleason(self):
         if self.t not in self.PROSTATE_CANCER_TS:
             self.valid = False
-            self.validation_message =  'Invalid T: ' + self.t + ' for ICD: ' + self.icd + '. Valid Ts are ' + str(self.PROSTATE_CANCER_TS)
+            self.validation_message = 'Invalid T: ' + self.t + ' for ICD: ' + self.icd + '. Valid Ts are ' + str(self.PROSTATE_CANCER_TS)
 
         if self.n not in self.PROSTATE_CANCER_NS:
             self.valid = False
@@ -54,7 +54,7 @@ class ProstateCancerStager(object):
 
         if self.m not in self.PROSTATE_CANCER_MS:
             self.valid = False
-            self.validation_message = 'Invalid M: ' + self.t + ' for ICD: ' + self.icd + '. Valid Ms are ' + str(self.PROSTATE_CANCER_MS)
+            self.validation_message = 'Invalid M: ' + self.m + ' for ICD: ' + self.icd + '. Valid Ms are ' + str(self.PROSTATE_CANCER_MS)
 
         if self.psa not in self.PROSTATE_CANCER_PSA:
             self.valid = False
