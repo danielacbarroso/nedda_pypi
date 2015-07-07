@@ -4,6 +4,8 @@ from .cervix_uteri import *
 from .colon_rectum import *
 from .prostate import *
 from .lung import *
+from .corpus_uteri_sarcomas import *
+from .corpus_uteri_carcinomas import *
 
 def tnm_stager_factory(icd, t, n, m, dukes=None, psa=None, gleason=None):
     icd = icd.strip()
@@ -15,6 +17,8 @@ def tnm_stager_factory(icd, t, n, m, dukes=None, psa=None, gleason=None):
         stager = CervixUteriStager(icd, t, n, m)
     elif icd in COLON_CANCER_ICDS:
         stager = ColonRectumStager(icd, t, n, m, dukes)
+    elif icd in CORPUS_UTERI_CANCER_ICDS:
+        stager = CorpusUteriCarcinomaStager(icd, t, n, m)
     elif icd in PROSTATE_CANCER_ICDS:
         stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
     elif icd in LUNG_CANCER_ICDS:
@@ -32,6 +36,8 @@ def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleason=None):
         stager = CervixUteriStager(icd, t, n, m)
     elif icd in COLON_CANCER_ICDS:
         stager = ColonRectumStager(icd, t, n, m, dukes)
+    elif icd in CORPUS_UTERI_CANCER_ICDS:
+        stager = CorpusUteriCarcinomaStager(icd, t, n, m)
     elif icd in PROSTATE_CANCER_ICDS:
         stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
     elif icd in LUNG_CANCER_ICDS:
