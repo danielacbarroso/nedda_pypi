@@ -66,12 +66,12 @@ classify the cancer. Those tables are provided on medical manuals, and are updat
 
 Nedda is a Python library that computes, given an ICD code and the T, N and M values, the resulting
 staging. It is still a prototype. We intend to use Nedda in conjunction with a Oncology module we
-have been developing for GNU Health [4], an open source and free (as in freedom and as in free beer
+have been developing for GNU Health [4], an open source and free (as in freedom and as in free beer.
 GPL 3 rocks!) health administration system.
 
 **How to use Nedda**
 
-Nedda has still has a very simple interface. The idea is to pass to the library the ICD, T, N and M values
+Nedda still has a very simple interface. The idea is to pass to the library the ICD, T, N and M values
 and get a stager object, that validates the input and computes the correct stage for different types of cancer:
 ```python
 from nedda.staging.staging import tnm_stager_factory
