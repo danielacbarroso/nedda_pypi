@@ -8,7 +8,7 @@ class ColonRectumStager(object):
     COLON_CANCER_TS = ['Tis', 'T1', 'T2', 'T3', 'T4a', 'T4b', 'T1-T2', 'T2-T3', 'T3-T4a']
     COLON_CANCER_NS = ['N0', 'N1', 'N1c', 'N2a', 'N2b', 'Ni-N2']
     COLON_CANCER_MS = ['M0', 'M1a', 'M1b']
-    COLON_CANCER_DUKES = ['A', 'B', 'C', None]
+    COLON_CANCER_DUKES = ['A', 'B', 'C']
     
     def __init__(self, icd, t, n, m, dukes):
         self.valid = False

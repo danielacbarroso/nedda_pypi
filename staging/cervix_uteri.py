@@ -44,6 +44,8 @@ class CervixUteriStager(object):
             self.stage = 'II'
         elif re.match('T2aN0M0', TNM, re.IGNORECASE):
             self.stage = 'IIA'
+        elif re.match('T2a1N0M0', TNM, re.IGNORECASE):
+            self.stage = 'IIA1'
         elif re.match('T2a2N0M0', TNM, re.IGNORECASE):
             self.stage = 'IIA2'
         elif re.match('T2bN0M0', TNM, re.IGNORECASE):
@@ -52,7 +54,7 @@ class CervixUteriStager(object):
             self.stage = 'III'
         elif re.match('T3aN0M0', TNM, re.IGNORECASE):
             self.stage = 'IIIA'
-        elif re.match('(T3b.+M0|T1-3N1M0)', TNM, re.IGNORECASE):
+        elif re.match('(T3b.+M0|T1N1M0|T2N1M0|T3N1M0)', TNM, re.IGNORECASE):
             self.stage = 'IIIB'
         elif re.match('T4.+M0', TNM, re.IGNORECASE):
             self.stage = 'IVA'

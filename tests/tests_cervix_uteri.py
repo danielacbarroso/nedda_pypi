@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest as ut
-from staging.staging import tnm_stage
+from nedda.staging.staging import tnm_stage
 
 
 class Testtnm_stage(ut.TestCase):
@@ -53,7 +53,9 @@ class Testtnm_stage(ut.TestCase):
     def test_cervix_uteri_cancer_IIIB(self):
         self.assertEquals('IIIB', tnm_stage('C53.0', 'T3b', 'N0', 'M0'))
         self.assertEquals('IIIB', tnm_stage('C53.0', 'T3b', 'N1', 'M0'))
-        self.assertEquals('IIIB', tnm_stage('C53.0', 'T1-3', 'N1', 'M0'))
+        self.assertEquals('IIIB', tnm_stage('C53.0', 'T1', 'N1', 'M0'))
+        self.assertEquals('IIIB', tnm_stage('C53.0', 'T2', 'N1', 'M0'))
+        self.assertEquals('IIIB', tnm_stage('C53.0', 'T3', 'N1', 'M0'))
 
     def test_cervix_uteri_cancer_IVA(self):
         self.assertEquals('IVA', tnm_stage('C53.0', 'T4', 'N0', 'M0'))
@@ -76,5 +78,4 @@ class Testtnm_stage(ut.TestCase):
         self.assertEquals('IVB', tnm_stage('C53.0', 'T3', 'N0', 'M1'))
         self.assertEquals('IVB', tnm_stage('C53.0', 'T3a', 'N0', 'M1'))
         self.assertEquals('IVB', tnm_stage('C53.0', 'T3b', 'N0', 'M1'))
-        self.assertEquals('IVB', tnm_stage('C53.0', 'T1-3', 'N0', 'M1'))
         self.assertEquals('IVB', tnm_stage('C53.0', 'T4', 'N0', 'M1'))

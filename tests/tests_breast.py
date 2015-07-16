@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest as ut
-from staging.staging import tnm_stage
+from nedda.staging.staging import tnm_stage
 
 
 class Testtnm_stage(ut.TestCase):
@@ -8,7 +8,7 @@ class Testtnm_stage(ut.TestCase):
     def test_breast_cancer_0(self):
         self.assertEquals('0', tnm_stage('C50.0', 'Tis', 'N0', 'M0'))
     
-    def test_breat_cancer_IA(self):
+    def test_breast_cancer_IA(self):
         self.assertEquals('IA', tnm_stage('C50.0', 'T1', 'N0', 'M0'))
         
     def test_breast_cancer_IB(self):
