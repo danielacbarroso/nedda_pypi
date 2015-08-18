@@ -26,28 +26,8 @@ class ColonRectumStager(object):
     
         TNMD = self.t + self.n + self.m + self.dukes
         
-        if re.match('TisN0M0', TNMD, re.IGNORECASE):
-            self.stage = '0'    
-        elif re.match('(T1N0M0A|T2N0M0A)', TNMD, re.IGNORECASE):
-            self.stage = 'I'
-        elif re.match('T3N0M0B', TNMD, re.IGNORECASE):
-            self.stage = 'IIA'
-        elif re.match('T4aN0M0B', TNMD, re.IGNORECASE):
-            self.stage = 'IIB'
-        elif re.match('T4bN0M0B', TNMD, re.IGNORECASE):
-            self.stage = 'IIC'
-        elif re.match('(T1-T2N1M0C|T1-T2N1cM0C|T1N2aM0C)', TNMD, re.IGNORECASE):
-            self.stage = 'IIIA'
-        elif re.match('(T3-T4aN1M0C|T3-T4aN1cM0C|T2-T3N2aM0C|T1-T2N2bM0C)', TNMD, re.IGNORECASE):
-            self.stage = 'IIIB'
-        elif re.match('T4aN2aM0C|T3-T4aN2bM0C|T4bN1-N2M0C', TNMD, re.IGNORECASE):
-            self.stage = 'IIIC'
-        elif re.match('.+M1a', TNMD, re.IGNORECASE):
-            self.stage = 'IVA'
-        elif re.match('.+M1B', TNMD, re.IGNORECASE):
-            self.stage = 'IVB'
-        else:
-            self.stage = None
+
+
 
     def validate_tnm_dukes(self):
 
