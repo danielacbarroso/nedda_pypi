@@ -1,50 +1,77 @@
 # -*- coding: utf-8 -*-
-from .breast import *
-from .cervix_uteri import *
-from .colon_rectum import *
-from .prostate import *
-from .lung import *
-from .corpus_uteri_sarcomas import *
-from .corpus_uteri_carcinomas import *
-from .stomach import *
+import os
+import csv
 
-def tnm_stager_factory(icd, t, n, m, dukes=None, psa=None, gleason=None):
-    icd = icd.strip()
-    stager = None
+STAGES = list()
 
-    if icd in BREAST_CANCER_ICDS:
-        stager = BreastCancerStager(icd, t, n, m)
-    elif icd in CERVIX_UTERI_CANCER_ICDS:
-        stager = CervixUteriStager(icd, t, n, m)
-    elif icd in COLON_CANCER_ICDS:
-        stager = ColonRectumStager(icd, t, n, m, dukes)
-    elif icd in CORPUS_UTERI_CANCER_ICDS:
-        stager = CorpusUteriCarcinomaStager(icd, t, n, m)
-    elif icd in PROSTATE_CANCER_ICDS:
-        stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
-    elif icd in LUNG_CANCER_ICDS:
-        stager = LungCancerStager(icd, t, n, m)
-    elif icd in STOMACH_CANCER_ICDS:
-        stager = StomachCancerStager(icd, t, n, m)
-    return stager
+with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv', 'rt') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter=',')
+    for row in csvreader:
+        icds_set = row[0].split('-')
+        STAGES.append({
+            'icd': icds_set,
+            't': row[1],
+            'n': row[2],
+            'm': row[3],
+            'dukes': row[4],
+            'stage': row[5]
+            })
 
+class GenericStager(object):
+    
+    t_set = set()
+    n_set = set()
+    m_set = set()
+    stages_dict = dict()
+    icd_set = set()
+
+    def __init__(self, icd, t, n, m):
+        self.valid = True
+        self.validation_message = 'No message set'
+        self.stage = None
+        for i in icd:
+            i = icd.split('.')[0].upper() # considers only the first part o ICD
+            self.icd_set.add(i)
+        self.t = t
+        self. n = n
+        self.m = m
+
+        for item in STAGES:
+            for icd in item['icd']:
+                if icd in self.icd_set:
+                    self.t_set.add(item['t'])
+                    self.n_set.add(item['n'])
+                    self.m_set.add(item['m'])
+                    self.stages_dict[item['t'] + item['n'] + item['m']] = item['stage']
+
+        self.validate_tnm()
+        self.staging()
+
+    def staging(self):
+        TNM = self.t + self.n + self.m
+        try:
+            self.stage = self.stages_dict[TNM]
+        except KeyError:
+            self.stage = None
+
+    def validate_tnm(self):
+        if self.t not in self.t_set:
+            self.valid = False
+            self.validation_message = 'Invalid T: ' + self.t + ' for ICD: ' + self.icd + '. Valid Ts are ' + str(self.t_set)
+        if self.n not in self.n_set:
+            self.valid = False
+            self.validation_message = self.validation_message + '\nInvalid N: ' + self.n + ' for ICD: ' + self.icd + '. Valid Ns are ' + str(self.n_set)
+        if self.m not in self.m_set:
+            self.valid = False
+            self.validation_message = self.validation_message + '\nInvalid M: ' + self.m + ' for ICD: ' + self.icd + '. Valid Ms are ' + str(self.m_set)
+        if self.valid:
+            self.validation_message = 'Valid TNM'
+
+class ColonRectumStager(GenericStager):
+
+    dukes_set = set()
 
 def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleason=None):
     icd = icd.strip()
-    stager = None
-
-    if icd in BREAST_CANCER_ICDS:
-        stager = BreastCancerStager(icd, t, n, m)
-    elif icd in CERVIX_UTERI_CANCER_ICDS:
-        stager = CervixUteriStager(icd, t, n, m)
-    elif icd in COLON_CANCER_ICDS:
-        stager = ColonRectumStager(icd, t, n, m, dukes)
-    elif icd in CORPUS_UTERI_CANCER_ICDS:
-        stager = CorpusUteriCarcinomaStager(icd, t, n, m)
-    elif icd in PROSTATE_CANCER_ICDS:
-        stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
-    elif icd in LUNG_CANCER_ICDS:
-        stager = LungCancerStager(icd, t, n, m)
-    elif icd in STOMACH_CANCER_ICDS:
-        stager = StomachCancerStager(icd, t, n, m)
+    stager = GenericStager(icd, t, n, m)
     return stager.stage
