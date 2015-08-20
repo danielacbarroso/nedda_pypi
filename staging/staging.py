@@ -14,7 +14,9 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
             'n': row[2],
             'm': row[3],
             'dukes': row[4],
-            'stage': row[5]
+            'stage': row[5],
+            'psa': row[6],
+            'gleason': row[7]
             })
 
 class GenericStager(object):
@@ -45,13 +47,19 @@ class GenericStager(object):
                 self.n_set.add(item['n'])
                 self.m_set.add(item['m'])
                 self.dukes_set.add(item['dukes'])
+                self.psa_set.add(item['psa'])
+                self.gleason_set.add(item['gleason'])
                 self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes']] = item['stage']
 
         self.validate_tnm()
         self.staging()
 
     def staging(self):
-        TNM = self.t + self.n + self.m + self.dukes
+        if self.dukes is None:
+            TNM = self.t + self.n + self.m + ""
+        else:
+            TNM = self.t + self.n + self.m + self.dukes
+
         try:
             self.stage = self.stages_dict[TNM]
         except KeyError:
@@ -69,10 +77,6 @@ class GenericStager(object):
             self.validation_message = self.validation_message + '\nInvalid M: ' + str(self.m) + ' for ICD: ' + str(self.icd) + '. Valid Ms are ' + str(self.m_set)
         if self.valid:
             self.validation_message = 'Valid TNM'
-
-
-
-
 
 def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleason=None):
     icd = icd.strip()
