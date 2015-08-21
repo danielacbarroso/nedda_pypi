@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+<!--pagina onde ocorre o estadiamento-->
+{% block corpo %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">CALCULAR</button>
+</form>
+
+{% endblock %}
