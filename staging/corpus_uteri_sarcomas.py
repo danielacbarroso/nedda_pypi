@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-from nedda.staging.prostate import validate_tnm_psa_gleason
-
-__author__ = 'sandra'
-
 import re
 
 CORPUS_UTERI_CANCER_ICDS = ['C54.0', 'C54.1', 'C54.2', 'C54.3', 'C54.8', 'C54.9', 'C55.9']
