@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from nedda.staging.prostate import validate_tnm_psa_gleason
+
 __author__ = 'sandra'
 
 import re

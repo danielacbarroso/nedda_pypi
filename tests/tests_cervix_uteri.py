@@ -7,7 +7,7 @@ class Testtnm_stage(ut.TestCase):
 
     def test_cervix_uteri_cancer_0(self):
         self.assertEquals('0', tnm_stage('C53.0', 'Tis', 'N0', 'M0'))
-        
+
     def test_cervix_uteri_cancer_I(self):
         self.assertEquals('I', tnm_stage('C53.0', 'T1', 'N0', 'M0'))
 
@@ -79,3 +79,4 @@ class Testtnm_stage(ut.TestCase):
         self.assertEquals('IVB', tnm_stage('C53.0', 'T3a', 'N0', 'M1'))
         self.assertEquals('IVB', tnm_stage('C53.0', 'T3b', 'N0', 'M1'))
         self.assertEquals('IVB', tnm_stage('C53.0', 'T4', 'N0', 'M1'))
+
