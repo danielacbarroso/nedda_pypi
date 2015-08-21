@@ -19,8 +19,9 @@ from django.conf.urls import *
 # fiz import de tudo porque preciso do urls.defaults
 
 urlpatterns = [
-    url(r'^$', 'tnm.views.index'),
-    url(r'^calcula/$', 'tnm.views.calcula'),
+    url(r'^$', 'tnm.views.calcula'),
+    url(r'get_icds$', 'tnm.views.get_icds'),
+    url(r'get_tnms/(.+)', 'tnm.views.get_tnms'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'home'),
     url(r'^filtrar_tnm/$', 'filtrar_tnm'),
