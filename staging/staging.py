@@ -49,7 +49,7 @@ class GenericStager(object):
                 self.dukes_set.add(item['dukes'])
                 self.psa_set.add(item['psa'])
                 self.gleason_set.add(item['gleason'])
-                self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes']] = item['stage']
+                self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason']] = item['stage']
 
         self.validate_tnm()
         self.staging()
