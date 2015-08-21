@@ -20,10 +20,10 @@ def tnm_stager_factory(icd, t, n, m, dukes=None, psa=None, gleason=None):
         stager = ColonRectumStager(icd, t, n, m, dukes)
     elif icd in CORPUS_UTERI_CANCER_ICDS:
         stager = CorpusUteriCarcinomaStager(icd, t, n, m)
-    elif icd in PROSTATE_CANCER_ICDS:
-        stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
     elif icd in LUNG_CANCER_ICDS:
         stager = LungCancerStager(icd, t, n, m)
+    elif icd in PROSTATE_CANCER_ICDS:
+        stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
     elif icd in STOMACH_CANCER_ICDS:
         stager = StomachCancerStager(icd, t, n, m)
     return stager
@@ -41,10 +41,10 @@ def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleason=None):
         stager = ColonRectumStager(icd, t, n, m, dukes)
     elif icd in CORPUS_UTERI_CANCER_ICDS:
         stager = CorpusUteriCarcinomaStager(icd, t, n, m)
-    elif icd in PROSTATE_CANCER_ICDS:
-        stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
     elif icd in LUNG_CANCER_ICDS:
         stager = LungCancerStager(icd, t, n, m)
+    elif icd in PROSTATE_CANCER_ICDS:
+        stager = ProstateCancerStager(icd, t, n, m, psa, gleason)
     elif icd in STOMACH_CANCER_ICDS:
         stager = StomachCancerStager(icd, t, n, m)
     return stager.stage

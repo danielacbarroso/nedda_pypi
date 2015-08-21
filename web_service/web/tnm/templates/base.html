@@ -1,0 +1,23 @@
+<html>
+<!--Base das paginas-->
+<head>
+    <meta charset="utf-8">
+    {% block cabecalho %}
+    <title>Estadiamento cancer</title>
+    <!--<script src="meu_javascript.js"></script>-->
+    <script src = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Realizando o estadiamento cancer</h1>
+    </header>
+    <main>
+        {% block main %}
+        {% endblock main %}
+    </main>
+    {% block corpo %}
+        <!-- body -->
+    {% endblock %}
+</body>
+</html>
