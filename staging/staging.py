@@ -16,7 +16,8 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
             'dukes': row[4],
             'stage': row[5],
             'psa': row[6],
-            'gleason': row[7]
+            'gleason': row[7],
+            'carcinosarcoma': row[8]
             })
 
 class GenericStager(object):
@@ -27,9 +28,10 @@ class GenericStager(object):
     dukes_set = set()
     psa_set = set()
     gleason_set = set()
+    carcinosarcoma_set = set()
     stages_dict = dict()
 
-    def __init__(self, icd, t, n, m, dukes, psa, gleason):
+    def __init__(self, icd, t, n, m, dukes, psa, gleason, carcinosarcoma):
         self.valid = True
         self.validation_message = 'No message set'
         self.stage = None
@@ -40,6 +42,7 @@ class GenericStager(object):
         self.dukes = dukes
         self.psa = psa
         self.gleason = gleason
+        self.carcinosarcoma = carcinosarcoma
 
         for item in STAGES:
             if self.icd == item['icd']:
@@ -49,7 +52,8 @@ class GenericStager(object):
                 self.dukes_set.add(item['dukes'])
                 self.psa_set.add(item['psa'])
                 self.gleason_set.add(item['gleason'])
-                self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason']] = item['stage']
+                self.carcinosarcoma_set.add(item['carcinosarcoma'])
+                self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason'] + item['carcinosarcoma']] = item['stage']
 
         self.validate_tnm()
         self.staging()
@@ -59,6 +63,21 @@ class GenericStager(object):
             TNM = self.t + self.n + self.m + ""
         else:
             TNM = self.t + self.n + self.m + self.dukes
+
+        if self.psa is None:
+            TNM = TNM + ""
+        else:
+            TNM = TNM + self.psa
+
+        if self.gleason is None:
+            TNM = TNM + ""
+        else:
+            TNM = TNM + self.gleason
+
+        if self.carcinosarcoma is None:
+            TNM = TNM + ""
+        else:
+            TNM = TNM + self.carcinosarcoma
 
         try:
             self.stage = self.stages_dict[TNM]
@@ -78,7 +97,7 @@ class GenericStager(object):
         if self.valid:
             self.validation_message = 'Valid TNM'
 
-def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleason=None):
+def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleason=None, carcinosarcoma=None):
     icd = icd.strip()
-    stager = GenericStager(icd, t, n, m, dukes, psa, gleason)
+    stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma)
     return stager.stage
