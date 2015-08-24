@@ -4,6 +4,9 @@ import csv
 import re
 
 STAGES = list()
+TUMOR_t = list()
+NODES_n = list()
+METASTASES_m = list()
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv', 'rt') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
@@ -20,6 +23,21 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
             'carcinosarcoma': row[8]
             })
 
+        TUMOR_t.append({
+            'icd': row[0],
+            't': row[1]
+            })
+
+        NODES_n.append({
+            'icd': row[0],
+            'n': row[2]
+            })
+
+        METASTASES_m.append({
+            'icd': row[0],
+            'm': row[3]
+            })
+
 class GenericStager(object):
     
     t_set = set()
@@ -31,7 +49,7 @@ class GenericStager(object):
     carcinosarcoma_set = set()
     stages_dict = dict()
 
-    def __init__(self, icd, t, n, m, dukes, psa, gleason, carcinosarcoma):
+    def __init__(self, icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None):
         self.valid = True
         self.validation_message = 'No message set'
         self.stage = None
@@ -46,7 +64,11 @@ class GenericStager(object):
 
         for item in STAGES:
             if self.icd == item['icd']:
+                # if item['t'] is None:
+                #     self.t_set.add(STAGES[item['icd']])
+                # else:
                 self.t_set.add(item['t'])
+
                 self.n_set.add(item['n'])
                 self.m_set.add(item['m'])
                 self.dukes_set.add(item['dukes'])
@@ -55,14 +77,31 @@ class GenericStager(object):
                 self.carcinosarcoma_set.add(item['carcinosarcoma'])
                 self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason'] + item['carcinosarcoma']] = item['stage']
 
-        self.validate_tnm()
-        self.staging()
+        if self.t is not None:
+            self.validate_tnm()
+            self.staging()
+
 
     def staging(self):
-        if self.dukes is None:
-            TNM = self.t + self.n + self.m + ""
+        if self.t is None:
+            TNM = ""
         else:
-            TNM = self.t + self.n + self.m + self.dukes
+            TNM = self.t
+
+        if self.n is None:
+            TNM = TNM + ""
+        else:
+            TNM = TNM + self.n
+
+        if self.m is None:
+            TNM = TNM + ""
+        else:
+            TNM = TNM + self.m
+
+        if self.dukes is None:
+            TNM = TNM + ""
+        else:
+            TNM = TNM + self.dukes
 
         if self.psa is None:
             TNM = TNM + ""
@@ -97,7 +136,16 @@ class GenericStager(object):
         if self.valid:
             self.validation_message = 'Valid TNM'
 
-def tnm_stage(icd, t, n, m, dukes=None, psa=None, gleason=None, carcinosarcoma=None):
+def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None):
     icd = icd.strip()
     stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma)
-    return stager.stage
+    return stager.t
+
+def tnm_t(icd, t):
+        print TUMOR_t
+
+def tnm_n(icd, t):
+        print NODES_n
+
+def tnm_m(icd, t):
+        print METASTASES_m[icd]

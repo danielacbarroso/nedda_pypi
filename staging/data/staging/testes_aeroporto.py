@@ -16,6 +16,7 @@ with open('stages.csv', 'rt') as csvfile:
                     'm': row[3],
                     'stage': row[5],
                     'psa': row[6],
-                    'gleason': row[7]
+                    'gleason': row[7],
+                    'carcinosarcoma': row[8]
                 })
-print stages_dict_list
+print stages_dict_list[1]
