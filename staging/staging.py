@@ -2,11 +2,14 @@
 import os
 import csv
 import re
+import numpy
 
 STAGES = list()
 TUMOR_t = list()
 NODES_n = list()
 METASTASES_m = list()
+vetor = []
+
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv', 'rt') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
@@ -64,18 +67,18 @@ class GenericStager(object):
 
         for item in STAGES:
             if self.icd == item['icd']:
-                # if item['t'] is None:
-                #     self.t_set.add(STAGES[item['icd']])
-                # else:
-                self.t_set.add(item['t'])
+                 if item['t'] is None:
+                     self.t_set.add(STAGES[item['icd']])
+                 else:
+                     self.t_set.add(item['t'])
 
-                self.n_set.add(item['n'])
-                self.m_set.add(item['m'])
-                self.dukes_set.add(item['dukes'])
-                self.psa_set.add(item['psa'])
-                self.gleason_set.add(item['gleason'])
-                self.carcinosarcoma_set.add(item['carcinosarcoma'])
-                self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason'] + item['carcinosarcoma']] = item['stage']
+                 self.n_set.add(item['n'])
+                 self.m_set.add(item['m'])
+                 self.dukes_set.add(item['dukes'])
+                 self.psa_set.add(item['psa'])
+                 self.gleason_set.add(item['gleason'])
+                 self.carcinosarcoma_set.add(item['carcinosarcoma'])
+                 self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason'] + item['carcinosarcoma']] = item['stage']
 
         if self.t is not None:
             self.validate_tnm()
@@ -141,11 +144,72 @@ def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, c
     stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma)
     return stager.t
 
-def tnm_t(icd, t):
-        print TUMOR_t
+def remove_duplicates(l):
+    return list(set(l))
 
-def tnm_n(icd, t):
-        print NODES_n
+def tnm_t(icd):
+    retornar = []
+    codigo = icd.split('.')[0].upper()
+    for i in range(1, len(TUMOR_t)):
+        num = TUMOR_t[i]
+        i = i + 1
+        vetor.append(num)
+        dic = vetor
 
-def tnm_m(icd, t):
-        print METASTASES_m[icd]
+    retorno = dic
+
+    for i in range(1, len(retorno)):
+        valor = retorno[i]
+
+        if valor['icd'] == codigo:
+            retornar.append(valor['t'])
+
+        i = i + 1
+
+    retornar = remove_duplicates(retornar)
+    return retornar
+
+def tnm_n(icd):
+    retornar = []
+    codigo = icd.split('.')[0].upper()
+    for i in range(1, len(NODES_n)):
+        num = NODES_n[i]
+        i = i + 1
+        vetor.append(num)
+        dic = vetor
+
+    retorno = dic
+
+    for i in range(1, len(retorno)):
+        valor = retorno[i]
+
+        if valor['icd'] == codigo:
+            retornar.append(valor['n'])
+
+        i = i + 1
+
+    retornar = remove_duplicates(retornar)
+    return retornar
+
+
+def tnm_m(icd):
+    retornar = []
+    codigo = icd.split('.')[0].upper()
+    for i in range(1, len(METASTASES_m)):
+        num = METASTASES_m[i]
+        i = i + 1
+        vetor.append(num)
+        dic = vetor
+
+    retorno = dic
+
+    for i in range(1, len(retorno)):
+        valor = retorno[i]
+
+        if valor['icd'] == codigo:
+            retornar.append(valor['m'])
+
+        i = i + 1
+
+    retornar = remove_duplicates(retornar)
+    return retornar

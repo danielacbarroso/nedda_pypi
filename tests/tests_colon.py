@@ -3,11 +3,14 @@ __author__ = 'sandra'
 import unittest as ut
 from nedda.staging.staging import tnm_stage
 from nedda.staging.staging import tnm_t
+from nedda.staging.staging import tnm_n
+from nedda.staging.staging import tnm_m
 
 class Testtnm_stage(ut.TestCase):
     def test_colon_cancer_search(self):
-        print tnm_stage('C18.0', 'Tis', 'N0', 'M0', '')
-        print tnm_stage('C18.0')
+        print tnm_t('C16.0')
+        print tnm_n('C16.0')
+        print tnm_m('C16.0')
 
     def test_colon_cancer_0(self):
         self.assertEquals('0', tnm_stage('C18.0', 'Tis', 'N0', 'M0', ''))
