@@ -1,17 +1,28 @@
 import json
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
-from .models import Cid, Tnm
+from nedda.staging.staging import GenericStager
+#from .models import Cid, Tnm
 from django.core import serializers
 from nedda.staging.staging import STAGES
+from nedda.staging import staging
+import csv, os
 
+icd_list_set = set()
 
 def calcula(request):
     return render(request, "calcula.html")
 
 def get_icds(request):
 
-    icd_list = ['Breast', 'Lung', 'Prostate']
+    icd_list = []
+    if len(icd_list_set) == 0:
+
+        for item in STAGES:
+            icd_list_set.add(item['icd'])
+
+        icd_list = list(icd_list_set)
+        icd_list.sort()
 
     request_data = {
         'request_status': 'success',
