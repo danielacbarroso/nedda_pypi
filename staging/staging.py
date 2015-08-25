@@ -2,7 +2,7 @@
 import os
 import csv
 import re
-import numpy
+#import numpy
 
 STAGES = list()
 TUMOR_t = list()
