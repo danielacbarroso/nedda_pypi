@@ -9,6 +9,7 @@ $(function() {
         current_t:  ko.observable(''),
         current_n:  ko.observable(''),
         current_m:  ko.observable(''),
+        current_stage: ko.observable(''),
 
         loadInitialState: function () {
             $.getJSON('get_icds', function (json) {
@@ -23,7 +24,14 @@ $(function() {
                 StagingViewModel.available_ms(json.ms_list);
 
             });
-            }
+            },
+
+        stageChanged:function(){
+            $.getJSON('get_stage/' + StagingViewModel.current_icd() + StagingViewModel.current_t() +
+                StagingViewModel.current_n() + StagingViewModel.current_m(), function(json){
+                    StagingViewModel.current_stage(json.stage);
+            })
+        }
         };
 
     ko.applyBindings(StagingViewModel);
