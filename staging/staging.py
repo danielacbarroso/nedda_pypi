@@ -2,7 +2,7 @@
 import os
 import csv
 import re
-import numpy
+#import numpy
 
 STAGES = list()
 TUMOR_t = list()
@@ -13,6 +13,7 @@ vetor = []
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv', 'rt') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
+    csvreader.next()
     for row in csvreader:
         STAGES.append({
             'icd': row[0],
