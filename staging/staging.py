@@ -84,7 +84,6 @@ class GenericStager(object):
             self.validate_tnm()
             self.staging()
 
-
     def staging(self):
         if self.t is None:
             TNM = ""
@@ -142,74 +141,52 @@ class GenericStager(object):
 def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None):
     icd = icd.strip()
     stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma)
-    return stager.t
-
-def remove_duplicates(l):
-    return list(set(l))
+    return stager.stage
 
 def tnm_t(icd):
     retornar = []
+    vetor = []
     codigo = icd.split('.')[0].upper()
     for i in range(1, len(TUMOR_t)):
         num = TUMOR_t[i]
-        i = i + 1
         vetor.append(num)
-        dic = vetor
 
-    retorno = dic
-
-    for i in range(1, len(retorno)):
-        valor = retorno[i]
-
+    for i in range(1, len(vetor)):
+        valor = vetor[i]
         if valor['icd'] == codigo:
             retornar.append(valor['t'])
 
-        i = i + 1
-
-    retornar = remove_duplicates(retornar)
-    return retornar
+    retornar = list(set(retornar))
+    return sorted(retornar)
 
 def tnm_n(icd):
     retornar = []
+    vetor = []
     codigo = icd.split('.')[0].upper()
     for i in range(1, len(NODES_n)):
         num = NODES_n[i]
-        i = i + 1
         vetor.append(num)
-        dic = vetor
 
-    retorno = dic
-
-    for i in range(1, len(retorno)):
-        valor = retorno[i]
-
+    for i in range(1, len(vetor)):
+        valor = vetor[i]
         if valor['icd'] == codigo:
             retornar.append(valor['n'])
 
-        i = i + 1
-
-    retornar = remove_duplicates(retornar)
-    return retornar
-
+    retornar = list(set(retornar))
+    return sorted(retornar)
 
 def tnm_m(icd):
     retornar = []
+    vetor = []
     codigo = icd.split('.')[0].upper()
     for i in range(1, len(METASTASES_m)):
         num = METASTASES_m[i]
-        i = i + 1
         vetor.append(num)
-        dic = vetor
 
-    retorno = dic
-
-    for i in range(1, len(retorno)):
-        valor = retorno[i]
-
+    for i in range(1, len(vetor)):
+        valor = vetor[i]
         if valor['icd'] == codigo:
             retornar.append(valor['m'])
 
-        i = i + 1
-
-    retornar = remove_duplicates(retornar)
-    return retornar
+    retornar = list(set(retornar))
+    return sorted(retornar)
