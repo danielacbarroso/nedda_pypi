@@ -37,18 +37,22 @@ def get_tnms(request, icd):
     ns_list = staging.tnm_n(icd)
     ms_list = staging.tnm_m(icd)
 
+    dukes_list = staging.tnm_dukes(icd)
+
+
     request_data = {
         'request_status': 'success',
         'ts_list': ts_list,
         'ns_list': ns_list,
-        'ms_list': ms_list
+        'ms_list': ms_list,
+        'dukes_list': dukes_list,
     }
 
     return HttpResponse(json.dumps(request_data), content_type='application/json')
 
-def get_stage(request, icd, t, n, m):
+def get_stage(request, icd, t, n, m, dukes=None):
 
-    stage = staging.tnm_stage(icd, t, n, m)
+    stage = staging.tnm_stage(icd, t, n, m, dukes)
 
     print stage
     request_data = {
