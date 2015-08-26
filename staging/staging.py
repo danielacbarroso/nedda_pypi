@@ -29,8 +29,8 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
             })
 
         NEOPLASMS_c.append({
-            'neoplasms': row[0],
-            'icd': row[1]
+            'neoplasms': row[9],
+            'icd': row[0]
             })
 
         TUMOR_t.append({
@@ -56,11 +56,12 @@ class GenericStager(object):
     dukes_set = set()
     psa_set = set()
     gleason_set = set()
-    carcinosarcoma_set = set()
     neoplasms_set = set()
+    carcinosarcoma_set = set()
     stages_dict = dict()
 
-    def __init__(self, icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None, neoplasms=None):
+    def __init__(self, icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None,
+                 neoplasms=None):
         self.valid = True
         self.validation_message = 'No message set'
         self.stage = None
@@ -89,7 +90,7 @@ class GenericStager(object):
                  self.carcinosarcoma_set.add(item['carcinosarcoma'])
                  self.neoplasms_set.add(item['neoplasms'])
                  self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason']
-                                  + item['carcinosarcoma'] + item['neoplasms']] = item['stage']
+                                  + item['carcinosarcoma']] = item['stage']
 
         if self.t is not None:
             self.validate_tnm()
@@ -159,18 +160,18 @@ def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, c
     stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma, neoplasms)
     return stager.stage
 
-def tnm_neoplasms(nepl):
+def tnm_neoplasms(neoplasms):
     retornar = []
     vetor = []
-    codigo = nepl
+    codigo = neoplasms
     for i in range(1, len(NEOPLASMS_c)):
         num = NEOPLASMS_c[i]
         vetor.append(num)
 
     for i in range(1, len(vetor)):
         valor = vetor[i]
-        if valor['nepl'] == codigo:
-            retornar.append(valor['t'])
+        if valor['neoplasms'] == codigo:
+            retornar.append(valor['icd'])
 
     retornar = list(set(retornar))
     return sorted(retornar)
