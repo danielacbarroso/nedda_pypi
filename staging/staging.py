@@ -2,12 +2,12 @@
 import os
 import csv
 import re
-#import numpy
 
 STAGES = list()
 TUMOR_t = list()
 NODES_n = list()
 METASTASES_m = list()
+NEOPLASMS_c = list()
 vetor = []
 
 
@@ -24,7 +24,13 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
             'stage': row[5],
             'psa': row[6],
             'gleason': row[7],
-            'carcinosarcoma': row[8]
+            'carcinosarcoma': row[8],
+            'neoplasms': row[9]
+            })
+
+        NEOPLASMS_c.append({
+            'neoplasms': row[9],
+            'icd': row[0]
             })
 
         TUMOR_t.append({
@@ -50,10 +56,12 @@ class GenericStager(object):
     dukes_set = set()
     psa_set = set()
     gleason_set = set()
+    neoplasms_set = set()
     carcinosarcoma_set = set()
     stages_dict = dict()
 
-    def __init__(self, icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None):
+    def __init__(self, icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None,
+                 neoplasms=None):
         self.valid = True
         self.validation_message = 'No message set'
         self.stage = None
@@ -65,6 +73,7 @@ class GenericStager(object):
         self.psa = psa
         self.gleason = gleason
         self.carcinosarcoma = carcinosarcoma
+        self.neoplasms = neoplasms
 
         for item in STAGES:
             if self.icd == item['icd']:
@@ -79,7 +88,9 @@ class GenericStager(object):
                  self.psa_set.add(item['psa'])
                  self.gleason_set.add(item['gleason'])
                  self.carcinosarcoma_set.add(item['carcinosarcoma'])
-                 self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason'] + item['carcinosarcoma']] = item['stage']
+                 self.neoplasms_set.add(item['neoplasms'])
+                 self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason']
+                                  + item['carcinosarcoma']] = item['stage']
 
         if self.t is not None:
             self.validate_tnm()
@@ -121,6 +132,11 @@ class GenericStager(object):
         else:
             TNM = TNM + self.carcinosarcoma
 
+        if self.neoplasms is None:
+            TNM = TNM + ""
+        else:
+            TNM = TNM + self.neoplasms
+
         try:
             self.stage = self.stages_dict[TNM]
         except KeyError:
@@ -139,10 +155,26 @@ class GenericStager(object):
         if self.valid:
             self.validation_message = 'Valid TNM'
 
-def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None):
+def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None, neoplasms=None):
     icd = icd.strip()
-    stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma)
+    stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma, neoplasms)
     return stager.stage
+
+def tnm_neoplasms(neoplasms):
+    retornar = []
+    vetor = []
+    codigo = neoplasms
+    for i in range(1, len(NEOPLASMS_c)):
+        num = NEOPLASMS_c[i]
+        vetor.append(num)
+
+    for i in range(1, len(vetor)):
+        valor = vetor[i]
+        if valor['neoplasms'] == codigo:
+            retornar.append(valor['icd'])
+
+    retornar = list(set(retornar))
+    return sorted(retornar)
 
 def tnm_t(icd):
     retornar = []
