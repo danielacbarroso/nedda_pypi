@@ -54,8 +54,19 @@
         </div>
     </div>
 
-    <button type="submit">ESTADIAMENTO</button>
+    <div>
+{#    <button type="button" value="available_stage" onclick="">ESTADIAMENTO</button>#}
+    <input id='stage' type="text"
+            data-bind="textInput: available_stage, event:{ change: stageChanged } " />
 
+    </div>
+{#    <button id="staging"#}
+{#            data-bind="value: available_stage,#}
+{#                       type: button">ESTADIAMENTO</button>#}
+{#    <input id='stage' type="text"#}
+{#            data-bind="textInput: available_stage" />#}
 </form>
+
+
 
 {% endblock %}

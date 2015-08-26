@@ -9,7 +9,10 @@ $(function() {
         current_t:  ko.observable(''),
         current_n:  ko.observable(''),
         current_m:  ko.observable(''),
-        current_stage: ko.observable(''),
+        available_stage: ko.observable(''),
+        //available_stage: ko.computed(function(){
+        //    return this.stageChanged()
+        //}, this),
 
         loadInitialState: function () {
             $.getJSON('get_icds', function (json) {
@@ -26,11 +29,11 @@ $(function() {
             });
             },
 
-        stageChanged:function(){
+        stageChanged:function() {
             $.getJSON('get_stage/' + StagingViewModel.current_icd() + StagingViewModel.current_t() +
-                StagingViewModel.current_n() + StagingViewModel.current_m(), function(json){
-                    StagingViewModel.current_stage(json.stage);
-            })
+                StagingViewModel.current_n() + StagingViewModel.current_m(), function (json) {
+                    StagingViewModel.available_stage(json.stage);
+            });
         }
         };
 

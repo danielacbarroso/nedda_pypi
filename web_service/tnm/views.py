@@ -33,11 +33,9 @@ def get_icds(request):
 
 def get_tnms(request, icd):
 
-    print icd
     ts_list = staging.tnm_t(icd)
-    #ns_list = ['1','2','3']
     ns_list = staging.tnm_n(icd)
-    ms_list = ['M0', 'M1']#staging.tnm_m(icd)
+    ms_list = staging.tnm_m(icd)
 
     request_data = {
         'request_status': 'success',
@@ -50,7 +48,9 @@ def get_tnms(request, icd):
 
 def get_stage(request, icd, t, n, m):
 
-    stage = staging.tnm_stage(icd,t,n,m)
+    stage = staging.tnm_stage(icd, t, n, m)
+
+    print stage
     request_data = {
         'request_status': 'success',
         'stage': stage,
