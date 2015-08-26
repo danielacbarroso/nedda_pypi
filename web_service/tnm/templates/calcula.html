@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+<!--pagina onde ocorre o estadiamento-->
+{% block corpo %}
+
+
+
+<form action="" method="post">
+    <div class="row">
+        <div class="col-xs-8">
+            <select id='icd_selector'
+                    rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"
+                    data-bind="options: available_icds,
+                               optionsCaption: 'Select...',
+                               value: current_icd,
+                               event: { change: icdChanged }"
+                    class="form-control">
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8">
+            <select id='t_selector'
+                    rel="tooltip" data-placement="right" title="Choose the T to the tumor type to be staged"
+                    data-bind="options: available_ts,
+                               optionsCaption: 'Select...',
+                               value: current_t"
+                    class="form-control">
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8">
+            <select id='n_selector'
+                    rel="tooltip" data-placement="right" title="Choose the N to the tumor type to be staged"
+                    data-bind="options: available_ns,
+                               optionsCaption: 'Select...',
+                               value: current_n"
+                    class="form-control">
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8">
+            <select id='m_selector'
+                    rel="tooltip" data-placement="right" title="Choose the M to the tumor type to be staged"
+                    data-bind="options: available_ms,
+                               optionsCaption: 'Select...',
+                               value: current_m"
+                    class="form-control">
+            </select>
+        </div>
+    </div>
+
+    <div>
+{#    <button type="button" value="available_stage" onclick="">ESTADIAMENTO</button>#}
+    <input id='stage' type="text"
+            data-bind="textInput: available_stage, event:{ change: stageChanged } " />
+
+    </div>
+{#    <button id="staging"#}
+{#            data-bind="value: available_stage,#}
+{#                       type: button">ESTADIAMENTO</button>#}
+{#    <input id='stage' type="text"#}
+{#            data-bind="textInput: available_stage" />#}
+</form>
+
+
+
+{% endblock %}
