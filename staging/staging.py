@@ -169,20 +169,41 @@ def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, c
     stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma, neoplasms)
     return stager.stage
 
-def tnm_neoplasms(neoplasms):
+def tnm_neoplasms(neoplasms=None, Campo = None):
     retornar = []
     vetor = []
     codigo = neoplasms
-    for i in range(1, len(NEOPLASMS_c)):
-        num = NEOPLASMS_c[i]
-        vetor.append(num)
 
-    for i in range(1, len(vetor)):
+    vetor = NEOPLASMS_c
+
+    for i in range(0, len(vetor)):
         valor = vetor[i]
-        if valor['neoplasms'] == codigo:
-            retornar.append(valor['icd'])
 
-    retornar = list(set(retornar))
+        if neoplasms is not None:
+            if valor['ICD'] == codigo.split(' - ')[0].upper():
+                if Campo is not None:
+                    if Campo.upper() == 'ICD':
+                        retornar.append(valor['ICD'])
+                    elif Campo.upper() == 'NEOPLASMS':
+                        retornar.append(valor['neoplasms'])
+                    else:
+                        retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+                else:
+                    retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+
+            retornar = list(set(retornar))
+
+        else:
+            if Campo is not None:
+                if Campo.upper() == 'ICD':
+                    retornar.append(valor['ICD'])
+                elif Campo.upper() == 'NEOPLASMS':
+                    retornar.append(valor['neoplasms'])
+                else:
+                    retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+            else:
+                retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+
     return sorted(retornar)
 
 def tnm_t(icd):
