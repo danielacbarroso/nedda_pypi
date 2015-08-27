@@ -9,6 +9,8 @@ NODES_n = list()
 METASTASES_m = list()
 NEOPLASMS_c = list()
 DUKES_dukes = list()
+PSA_psa = list()
+GLEASON_gleason = list()
 vetor = []
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/icdname.csv', 'rt') as csvfile:
@@ -55,6 +57,16 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
         DUKES_dukes.append({
             'icd': row[0],
             'dukes': row[4],
+        })
+
+        PSA_psa.append({
+            'icd': row[0],
+            'psa': row[6],
+        })
+
+        GLEASON_gleason.append({
+            'icd': row[0],
+            'psa': row[7],
         })
 
 class GenericStager(object):
@@ -266,6 +278,38 @@ def tnm_dukes(icd):
         valor = vetor[i]
         if valor['icd'] == codigo:
             retornar.append(valor['dukes'])
+
+    retornar = list(set(retornar))
+    return sorted(retornar)
+
+def tnm_psa(icd):
+    retornar = []
+    vetor = []
+    codigo = icd.split('.')[0].upper()
+    for i in range(1, len(PSA_psa)):
+        num = PSA_psa[i]
+        vetor.append(num)
+
+    for i in range(1, len(vetor)):
+        valor = vetor[i]
+        if valor['icd'] == codigo:
+            retornar.append(valor['psa'])
+
+    retornar = list(set(retornar))
+    return sorted(retornar)
+
+def tnm_gleason(icd):
+    retornar = []
+    vetor = []
+    codigo = icd.split('.')[0].upper()
+    for i in range(1, len(GLEASON_gleason)):
+        num = GLEASON_gleason[i]
+        vetor.append(num)
+
+    for i in range(1, len(vetor)):
+        valor = vetor[i]
+        if valor['icd'] == codigo:
+            retornar.append(valor['gleason'])
 
     retornar = list(set(retornar))
     return sorted(retornar)
