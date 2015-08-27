@@ -60,7 +60,7 @@ $(function() {
                 StagingViewModel.available_ms(json.ms_list);
                 StagingViewModel.available_dukes(json.dukes_list);
                 StagingViewModel.available_psa(json.psa_list);
-                //StagingViewModel.available_gleason(json.gleason_list);
+                StagingViewModel.available_gleason(json.gleason_list);
 
             });
             },
