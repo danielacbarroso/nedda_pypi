@@ -13,6 +13,14 @@ PSA_psa = list()
 GLEASON_gleason = list()
 vetor = []
 
+with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/icdname.csv', 'rt') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter=',')
+    csvreader.next()
+    for row in csvreader:
+        NEOPLASMS_c.append({
+            'neoplasms': row[0],
+            'ICD': row[1]
+            })
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv', 'rt') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
@@ -29,11 +37,6 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
             'gleason': row[7],
             'carcinosarcoma': row[8],
             'neoplasms': row[9]
-            })
-
-        NEOPLASMS_c.append({
-            'neoplasms': row[9],
-            'icd': row[0]
             })
 
         TUMOR_t.append({
@@ -178,20 +181,41 @@ def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, c
     stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma, neoplasms)
     return stager.stage
 
-def tnm_neoplasms(neoplasms):
+def tnm_neoplasms(neoplasms=None, Campo = None):
     retornar = []
     vetor = []
     codigo = neoplasms
-    for i in range(1, len(NEOPLASMS_c)):
-        num = NEOPLASMS_c[i]
-        vetor.append(num)
 
-    for i in range(1, len(vetor)):
+    vetor = NEOPLASMS_c
+
+    for i in range(0, len(vetor)):
         valor = vetor[i]
-        if valor['neoplasms'] == codigo:
-            retornar.append(valor['icd'])
 
-    retornar = list(set(retornar))
+        if neoplasms is not None:
+            if valor['ICD'] == codigo.split(' - ')[0].upper():
+                if Campo is not None:
+                    if Campo.upper() == 'ICD':
+                        retornar.append(valor['ICD'])
+                    elif Campo.upper() == 'NEOPLASMS':
+                        retornar.append(valor['neoplasms'])
+                    else:
+                        retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+                else:
+                    retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+
+            retornar = list(set(retornar))
+
+        else:
+            if Campo is not None:
+                if Campo.upper() == 'ICD':
+                    retornar.append(valor['ICD'])
+                elif Campo.upper() == 'NEOPLASMS':
+                    retornar.append(valor['neoplasms'])
+                else:
+                    retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+            else:
+                retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+
     return sorted(retornar)
 
 def tnm_t(icd):
