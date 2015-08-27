@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+<html>
+<!--Base das paginas-->
+<head>
+    <meta charset="utf-8">
+    {% block cabecalho %}
+    <title>Estadiamento cancer</title>
+    <!--<script src="meu_javascript.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js"></script>
+    <script src="{% static "stagingviemmodel.js" %}"></script>
+
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Realizando o estadiamento cancer</h1>
+    </header>
+    <main>
+        {% block main %}
+        {% endblock main %}
+    </main>
+    {% block corpo %}
+        <!-- body -->
+    {% endblock %}
+</body>
+</html>
