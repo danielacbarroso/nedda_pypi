@@ -178,6 +178,7 @@ class GenericStager(object):
 
 def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None, neoplasms=None):
     icd = icd.strip()
+    icd = icd.split(' - ')[0].upper()
     stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma, neoplasms)
     return stager.stage
 
