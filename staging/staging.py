@@ -228,7 +228,7 @@ def tnm_t(icd):
 
     for i in range(1, len(vetor)):
         valor = vetor[i]
-        if valor['icd'] == codigo:
+        if valor['icd'] == codigo.split(' - ')[0].upper():
             retornar.append(valor['t'])
 
     retornar = list(set(retornar))
@@ -244,7 +244,7 @@ def tnm_n(icd):
 
     for i in range(1, len(vetor)):
         valor = vetor[i]
-        if valor['icd'] == codigo:
+        if valor['icd'] == codigo.split(' - ')[0].upper():
             retornar.append(valor['n'])
 
     retornar = list(set(retornar))
@@ -260,7 +260,7 @@ def tnm_m(icd):
 
     for i in range(1, len(vetor)):
         valor = vetor[i]
-        if valor['icd'] == codigo:
+        if valor['icd'] == codigo.split(' - ')[0].upper():
             retornar.append(valor['m'])
 
     retornar = list(set(retornar))
@@ -276,7 +276,7 @@ def tnm_dukes(icd):
 
     for i in range(1, len(vetor)):
         valor = vetor[i]
-        if valor['icd'] == codigo:
+        if valor['icd'] == codigo.split(' - ')[0].upper():
             retornar.append(valor['dukes'])
 
     retornar = list(set(retornar))
