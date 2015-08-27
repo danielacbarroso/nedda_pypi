@@ -8,6 +8,7 @@ TUMOR_t = list()
 NODES_n = list()
 METASTASES_m = list()
 NEOPLASMS_c = list()
+DUKES_dukes = list()
 vetor = []
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/icdname.csv', 'rt') as csvfile:
@@ -50,6 +51,11 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
             'icd': row[0],
             'm': row[3]
             })
+
+        DUKES_dukes.append({
+            'icd': row[0],
+            'dukes': row[4],
+        })
 
 class GenericStager(object):
     
@@ -223,6 +229,22 @@ def tnm_m(icd):
         valor = vetor[i]
         if valor['icd'] == codigo:
             retornar.append(valor['m'])
+
+    retornar = list(set(retornar))
+    return sorted(retornar)
+
+def tnm_dukes(icd):
+    retornar = []
+    vetor = []
+    codigo = icd.split('.')[0].upper()
+    for i in range(1, len(DUKES_dukes)):
+        num = DUKES_dukes[i]
+        vetor.append(num)
+
+    for i in range(1, len(vetor)):
+        valor = vetor[i]
+        if valor['icd'] == codigo:
+            retornar.append(valor['dukes'])
 
     retornar = list(set(retornar))
     return sorted(retornar)
