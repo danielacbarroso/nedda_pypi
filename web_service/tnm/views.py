@@ -31,6 +31,18 @@ def get_icds(request):
 
     return HttpResponse(json.dumps(request_data), content_type='application/json')
 
+def get_icds_neoplasm(request):
+
+    icd_list_neoplasm = staging.tnm_neoplasms()
+
+
+    request_data = {
+        'request_status': 'success',
+        'icd_list_neoplasm': icd_list_neoplasm,
+    }
+
+    return HttpResponse(json.dumps(request_data), content_type='application/json')
+
 def get_tnms(request, icd):
 
     ts_list = staging.tnm_t(icd)
