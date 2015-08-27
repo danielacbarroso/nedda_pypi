@@ -184,26 +184,34 @@ def tnm_neoplasms(neoplasms=None, Campo = None):
             if valor['ICD'] == codigo.split(' - ')[0].upper():
                 if Campo is not None:
                     if Campo.upper() == 'ICD':
-                        retornar.append(valor['ICD'])
+                        if tnm_t(valor['ICD']):
+                            retornar.append(valor['ICD'])
                     elif Campo.upper() == 'NEOPLASMS':
-                        retornar.append(valor['neoplasms'])
+                        if tnm_t(valor['ICD']):
+                            retornar.append(valor['neoplasms'])
                     else:
-                        retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+                        if tnm_t(valor['ICD']):
+                            retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
                 else:
-                    retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+                    if tnm_t(valor['ICD']):
+                        retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
 
             retornar = list(set(retornar))
 
         else:
             if Campo is not None:
                 if Campo.upper() == 'ICD':
-                    retornar.append(valor['ICD'])
+                    if tnm_t(valor['ICD']):
+                        retornar.append(valor['ICD'])
                 elif Campo.upper() == 'NEOPLASMS':
-                    retornar.append(valor['neoplasms'])
+                    if tnm_t(valor['ICD']):
+                        retornar.append(valor['neoplasms'])
                 else:
-                    retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+                    if tnm_t(valor['ICD']):
+                        retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
             else:
-                retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
+                if tnm_t(valor['ICD']):
+                    retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
 
     return sorted(retornar)
 

@@ -12,7 +12,7 @@ class Testtnm_stage(ut.TestCase):
         print tnm_t('C16 - Qualquer Texto')
         print tnm_n('C16.0')
         print tnm_m('C16.0')
-        print tnm_neoplasms('C00', '')
+        print tnm_neoplasms('C16 - Qualquer Texto')
 
     def test_colon_cancer_0(self):
         self.assertEquals('0', tnm_stage('C18.0', 'Tis', 'N0', 'M0', ''))
