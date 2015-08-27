@@ -1,7 +1,7 @@
 $(function() {
     StagingViewModel = {
 
-        //available_neoplasms: ko.observableArray([]),
+        available_icd_neoplasms: ko.observableArray([]),
         available_icds: ko.observableArray([]),
         available_ts:  ko.observableArray([]),
         available_ns:  ko.observableArray([]),
@@ -10,7 +10,7 @@ $(function() {
         available_psa: ko.observableArray([]),
         available_gleason: ko.observableArray([]),
 
-        //current_neoplasm: ko.observable(''),
+        current_icd_neoplasm: ko.observable(''),
         current_icd: ko.observable(''),
         current_t:  ko.observable(''),
         current_n:  ko.observable(''),
@@ -25,8 +25,9 @@ $(function() {
             $('#dukes_selector').hide();
             $('#psa_selector').hide();
             $('#gleason_selector').hide();
-            $.getJSON('get_icds', function (json) {
-                StagingViewModel.available_icds(json.icd_list);
+            $.getJSON('get_icds_neoplasm', function (json) {
+                //StagingViewModel.available_icds(json.icd_list);
+                StagingViewModel.available_icd_neoplasms(json.icd_list_neoplasm);
             });
         },
 
@@ -36,31 +37,31 @@ $(function() {
             StagingViewModel.available_ms([]);
             StagingViewModel.calculated_stage('');
 
-            if(StagingViewModel.current_icd() === 'C18' ||
-                StagingViewModel.current_icd() === 'C19' ||
-                StagingViewModel.current_icd() === 'C20'){
-                $('#dukes_selector').show();
-            }
-            else{
-                $('#dukes_selector').hide();
-            }
+            //if(StagingViewModel.current_icd() === 'C18' ||
+            //    StagingViewModel.current_icd() === 'C19' ||
+            //    StagingViewModel.current_icd() === 'C20'){
+            //    $('#dukes_selector').show();
+            //}
+            //else{
+            //    $('#dukes_selector').hide();
+            //}
+            //
+            //if(StagingViewModel.current_icd() === 'C61'){
+            //    $('#psa_selector').show();
+            //    $('#gleason_selector').show();
+            //}
+            //else{
+            //    $('#psa_selector').hide();
+            //    $('#gleason_selector').hide();
+            //}
 
-            if(StagingViewModel.current_icd() === 'C61'){
-                $('#psa_selector').show();
-                $('#gleason_selector').show();
-            }
-            else{
-                $('#psa_selector').hide();
-                $('#gleason_selector').hide();
-            }
-
-            $.getJSON('get_tnms/' + StagingViewModel.current_icd(), function (json) {
+            $.getJSON('get_tnms/' + StagingViewModel.current_icd_neoplasm(), function (json) {
                 StagingViewModel.available_ts(json.ts_list);
                 StagingViewModel.available_ns(json.ns_list);
                 StagingViewModel.available_ms(json.ms_list);
-                StagingViewModel.available_dukes(json.dukes_list);
-                StagingViewModel.available_psa(json.psa_list);
-                StagingViewModel.available_gleason(json.gleason_list);
+                //StagingViewModel.available_dukes(json.dukes_list);
+                //StagingViewModel.available_psa(json.psa_list);
+                //StagingViewModel.available_gleason(json.gleason_list);
 
             });
             },
