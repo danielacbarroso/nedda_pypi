@@ -21,11 +21,6 @@ $(function() {
 
         calculated_stage: ko.observable(''),
 
-
-        //available_stage: ko.computed(function(){
-        //    return this.stageChanged()
-        //}, this),
-
         loadInitialState: function () {
             $('#dukes_selector').hide();
             $('#psa_selector').hide();
@@ -64,6 +59,8 @@ $(function() {
                 StagingViewModel.available_ns(json.ns_list);
                 StagingViewModel.available_ms(json.ms_list);
                 StagingViewModel.available_dukes(json.dukes_list);
+                StagingViewModel.available_psa(json.psa_list);
+                //StagingViewModel.available_gleason(json.gleason_list);
 
             });
             },
@@ -73,7 +70,8 @@ $(function() {
                 StagingViewModel.current_n() !== undefined &&
                 StagingViewModel.current_m()!== undefined){
                  $.getJSON('get_stage/' + StagingViewModel.current_icd() + '/' + StagingViewModel.current_t() + '/'+
-                StagingViewModel.current_n() +'/'+ StagingViewModel.current_m()+ '/'+ StagingViewModel.current_dukes(), function (json) {
+                StagingViewModel.current_n() +'/'+ StagingViewModel.current_m()+ '/'+
+                     StagingViewModel.current_dukes() + '/' + StagingViewModel.current_psa(), function (json) {
                     StagingViewModel.calculated_stage(json.stage);
             })
             }

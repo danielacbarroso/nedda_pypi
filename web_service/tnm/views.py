@@ -38,7 +38,8 @@ def get_tnms(request, icd):
     ms_list = staging.tnm_m(icd)
 
     dukes_list = staging.tnm_dukes(icd)
-
+    psa_list = staging.tnm_psa(icd)
+    #gleason_list = staging.tnm_gleason(icd)
 
     request_data = {
         'request_status': 'success',
@@ -46,15 +47,23 @@ def get_tnms(request, icd):
         'ns_list': ns_list,
         'ms_list': ms_list,
         'dukes_list': dukes_list,
+        'psa_list': psa_list,
+        #'gleason_list': gleason_list,
     }
 
     return HttpResponse(json.dumps(request_data), content_type='application/json')
 
-def get_stage(request, icd, t, n, m, dukes=None):
+def get_stage(request, icd, t, n, m, dukes=None, psa=None, gleason=None):
 
-    stage = staging.tnm_stage(icd, t, n, m, dukes)
+    if dukes!=None:
+        stage = staging.tnm_stage(icd, t, n, m, dukes)
 
-    print stage
+    stage = staging.tnm_stage(icd, t, n, m)
+    stage1 = stage
+
+    if stage1 == None:
+        stage = 'Staging undefined'
+
     request_data = {
         'request_status': 'success',
         'stage': stage,
