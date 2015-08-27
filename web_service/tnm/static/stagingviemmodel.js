@@ -70,7 +70,7 @@ $(function() {
             if (StagingViewModel.current_t() !== undefined &&
                 StagingViewModel.current_n() !== undefined &&
                 StagingViewModel.current_m()!== undefined){
-                 $.getJSON('get_stage/' + StagingViewModel.current_icd() + '/' + StagingViewModel.current_t() + '/'+
+                 $.getJSON('get_stage/' + StagingViewModel.current_icd_neoplasm() + '/' + StagingViewModel.current_t() + '/'+
                 StagingViewModel.current_n() +'/'+ StagingViewModel.current_m()+ '/'+
                      StagingViewModel.current_dukes() + '/' + StagingViewModel.current_psa(), function (json) {
                     StagingViewModel.calculated_stage(json.stage);

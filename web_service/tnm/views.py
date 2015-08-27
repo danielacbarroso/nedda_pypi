@@ -66,7 +66,7 @@ def get_tnms(request, icd):
     return HttpResponse(json.dumps(request_data), content_type='application/json')
 
 def get_stage(request, icd, t, n, m, dukes=None, psa=None, gleason=None):
-
+    
     if dukes!=None:
         stage = staging.tnm_stage(icd, t, n, m, dukes)
 
