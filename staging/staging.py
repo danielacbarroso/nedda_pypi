@@ -10,6 +10,14 @@ METASTASES_m = list()
 NEOPLASMS_c = list()
 vetor = []
 
+with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/icdname.csv', 'rt') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter=',')
+    csvreader.next()
+    for row in csvreader:
+        NEOPLASMS_c.append({
+            'neoplasms': row[0],
+            'ICD': row[1]
+            })
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv', 'rt') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
@@ -26,11 +34,6 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/data/staging/stages.csv
             'gleason': row[7],
             'carcinosarcoma': row[8],
             'neoplasms': row[9]
-            })
-
-        NEOPLASMS_c.append({
-            'neoplasms': row[9],
-            'icd': row[0]
             })
 
         TUMOR_t.append({
