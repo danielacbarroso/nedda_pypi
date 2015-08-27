@@ -9,9 +9,9 @@ from nedda.staging.staging import tnm_neoplasms
 
 class Testtnm_stage(ut.TestCase):
     def test_colon_cancer_search(self):
-        print tnm_t('C16 - LIP')
-        # print tnm_n('C16.0')
-        # print tnm_m('C16.0')
+        print tnm_t('C16 - Qualquer Texto')
+        print tnm_n('C16.0')
+        print tnm_m('C16.0')
         print tnm_neoplasms('C00', '')
 
     def test_colon_cancer_0(self):
