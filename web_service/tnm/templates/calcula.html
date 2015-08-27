@@ -24,7 +24,8 @@
                     rel="tooltip" data-placement="right" title="Choose the T to the tumor type to be staged"
                     data-bind="options: available_ts,
                                optionsCaption: 'Select...',
-                               value: current_t"
+                               value: current_t,
+                               event: { change: tnmChanged }"
                     class="form-control">
             </select>
         </div>
@@ -36,7 +37,8 @@
                     rel="tooltip" data-placement="right" title="Choose the N to the tumor type to be staged"
                     data-bind="options: available_ns,
                                optionsCaption: 'Select...',
-                               value: current_n"
+                               value: current_n,
+                               event: { change: tnmChanged }"
                     class="form-control">
             </select>
         </div>
@@ -48,16 +50,55 @@
                     rel="tooltip" data-placement="right" title="Choose the M to the tumor type to be staged"
                     data-bind="options: available_ms,
                                optionsCaption: 'Select...',
-                               value: current_m"
+                               value: current_m,
+                               event: { change: tnmChanged }"
                     class="form-control">
             </select>
         </div>
     </div>
 
+     <div class="row">
+        <div class="col-xs-8">
+            <select id='dukes_selector'
+                    rel="tooltip" data-placement="right" title="Choose the Dukes to the tumor type to be staged"
+                    data-bind="options: available_dukes,
+                               optionsCaption: 'Select...',
+                               value: current_dukes,
+                               event: { change: tnmChanged }"
+                    class="form-control">
+            </select>
+        </div>
+     </div>
+
+     <div class="row">
+        <div class="col-xs-8">
+            <select id='psa_selector'
+                    rel="tooltip" data-placement="right" title="Choose the PSA to the tumor type to be staged"
+                    data-bind="options: available_psa,
+                               optionsCaption: 'Select...',
+                               value: current_psa,
+                               event: { change: tnmChanged }"
+                    class="form-control">
+            </select>
+        </div>
+     </div>
+
+     <div class="row">
+        <div class="col-xs-8">
+            <select id='gleason_selector'
+                    rel="tooltip" data-placement="right" title="Choose the Gleason to the tumor type to be staged"
+                    data-bind="options: available_gleason,
+                               optionsCaption: 'Select...',
+                               value: current_gleason,
+                               event: { change: tnmChanged }"
+                    class="form-control">
+            </select>
+        </div>
+     </div>
+
     <div>
-{#    <button type="button" value="available_stage" onclick="">ESTADIAMENTO</button>#}
-    <input id='stage' type="text"
-            data-bind="textInput: available_stage, event:{ change: stageChanged } " />
+{#    <strong data-bind= "text: tnmChanged" >ESTADIAMENTO</strong>#}
+    <span data-bind="text: calculated_stage" />
 
     </div>
 {#    <button id="staging"#}
