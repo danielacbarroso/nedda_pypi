@@ -31,6 +31,18 @@ def get_icds(request):
 
     return HttpResponse(json.dumps(request_data), content_type='application/json')
 
+def get_icds_neoplasm(request):
+
+    icd_list_neoplasm = staging.tnm_neoplasms()
+
+
+    request_data = {
+        'request_status': 'success',
+        'icd_list_neoplasm': icd_list_neoplasm,
+    }
+
+    return HttpResponse(json.dumps(request_data), content_type='application/json')
+
 def get_tnms(request, icd):
 
     ts_list = staging.tnm_t(icd)
@@ -38,7 +50,8 @@ def get_tnms(request, icd):
     ms_list = staging.tnm_m(icd)
 
     dukes_list = staging.tnm_dukes(icd)
-
+    psa_list = staging.tnm_psa(icd)
+    gleason_list = staging.tnm_gleason(icd)
 
     request_data = {
         'request_status': 'success',
@@ -46,15 +59,30 @@ def get_tnms(request, icd):
         'ns_list': ns_list,
         'ms_list': ms_list,
         'dukes_list': dukes_list,
+        'psa_list': psa_list,
+        'gleason_list': gleason_list,
     }
 
     return HttpResponse(json.dumps(request_data), content_type='application/json')
 
-def get_stage(request, icd, t, n, m, dukes=None):
+def get_stage(request, icd, t, n, m, dukes=None, psa=None, gleason=None):
+    if icd == 'C18' or icd == 'C19' or icd == 'C20':
+        if dukes!=None:
+            stage = staging.tnm_stage(icd, t, n, m, dukes)
+    elif icd == 'C61':
+        if psa != None and gleason!=None:
+            stage = staging.tnm_stage(icd,t, n, m, None, psa, gleason)
+        elif psa!=None and gleason==None:
+            stage = staging.tnm_stage(icd, t, n, m, None, psa)
+        elif  psa==None and gleason!=None:
+            stage = staging.tnm_stage(icd, t, n, m, None, None,gleason)
 
-    stage = staging.tnm_stage(icd, t, n, m, dukes)
+    stage = staging.tnm_stage(icd, t, n, m)
+    stage1 = stage
 
-    print stage
+    if stage1 == None:
+        stage = 'Staging undefined'
+
     request_data = {
         'request_status': 'success',
         'stage': stage,

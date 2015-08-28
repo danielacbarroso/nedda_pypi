@@ -9,9 +9,9 @@
         <div class="col-xs-8">
             <select id='icd_selector'
                     rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"
-                    data-bind="options: available_icds,
+                    data-bind="options: available_icd_neoplasms,
                                optionsCaption: 'Select...',
-                               value: current_icd,
+                               value: current_icd_neoplasm,
                                event: { change: icdChanged }"
                     class="form-control">
             </select>
@@ -59,7 +59,7 @@
 
      <div class="row">
         <div class="col-xs-8">
-            <select id='dukes_selector'
+            <select id='dukes_selector' name="TEste"
                     rel="tooltip" data-placement="right" title="Choose the Dukes to the tumor type to be staged"
                     data-bind="options: available_dukes,
                                optionsCaption: 'Select...',
