@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^$', 'tnm.views.calcula'),
     url(r'get_icds_neoplasm$', 'tnm.views.get_icds_neoplasm'),
     url(r'get_tnms/(.+)', 'tnm.views.get_tnms'),
-    url(r'get_stage/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)', 'tnm.views.get_stage'),
+    url(r'get_stage/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)', 'tnm.views.get_stage'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'home'),
     url(r'^filtrar_tnm/$', 'filtrar_tnm'),

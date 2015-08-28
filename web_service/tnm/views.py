@@ -66,9 +66,16 @@ def get_tnms(request, icd):
     return HttpResponse(json.dumps(request_data), content_type='application/json')
 
 def get_stage(request, icd, t, n, m, dukes=None, psa=None, gleason=None):
-    
-    if dukes!=None:
-        stage = staging.tnm_stage(icd, t, n, m, dukes)
+    if icd == 'C18' or icd == 'C19' or icd == 'C20':
+        if dukes!=None:
+            stage = staging.tnm_stage(icd, t, n, m, dukes)
+    elif icd == 'C61':
+        if psa != None and gleason!=None:
+            stage = staging.tnm_stage(icd,t, n, m, None, psa, gleason)
+        elif psa!=None and gleason==None:
+            stage = staging.tnm_stage(icd, t, n, m, None, psa)
+        elif  psa==None and gleason!=None:
+            stage = staging.tnm_stage(icd, t, n, m, None, None,gleason)
 
     stage = staging.tnm_stage(icd, t, n, m)
     stage1 = stage
