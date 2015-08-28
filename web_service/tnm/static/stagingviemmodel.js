@@ -32,36 +32,38 @@ $(function() {
         },
 
         icdChanged: function () {
+            //var cid = StagingViewModel.current_icd_neoplasm();
+            //print(cid);
             StagingViewModel.available_ts([]);
             StagingViewModel.available_ns([]);
             StagingViewModel.available_ms([]);
             StagingViewModel.calculated_stage('');
 
-            //if(StagingViewModel.current_icd() === 'C18' ||
-            //    StagingViewModel.current_icd() === 'C19' ||
-            //    StagingViewModel.current_icd() === 'C20'){
-            //    $('#dukes_selector').show();
-            //}
-            //else{
-            //    $('#dukes_selector').hide();
-            //}
-            //
-            //if(StagingViewModel.current_icd() === 'C61'){
-            //    $('#psa_selector').show();
-            //    $('#gleason_selector').show();
-            //}
-            //else{
-            //    $('#psa_selector').hide();
-            //    $('#gleason_selector').hide();
-            //}
+            if(StagingViewModel.current_icd_neoplasm() === 'C18 - COLORECTAL - COLON' ||
+                StagingViewModel.current_icd_neoplasm() === 'C19 - COLORECTAL - RECTOSIGMOID JUNCTION' ||
+                StagingViewModel.current_icd_neoplasm() === 'C20 - COLORECTAL - RECTUM'){
+                $('#dukes_selector').show();
+            }
+            else{
+                $('#dukes_selector').hide();
+            }
+
+            if(StagingViewModel.current_icd_neoplasm().startsWith('C61 - PROSTATE')){
+                $('#psa_selector').show();
+                $('#gleason_selector').show();
+            }
+            else{
+                $('#psa_selector').hide();
+                $('#gleason_selector').hide();
+            }
 
             $.getJSON('get_tnms/' + StagingViewModel.current_icd_neoplasm(), function (json) {
                 StagingViewModel.available_ts(json.ts_list);
                 StagingViewModel.available_ns(json.ns_list);
                 StagingViewModel.available_ms(json.ms_list);
-                //StagingViewModel.available_dukes(json.dukes_list);
-                //StagingViewModel.available_psa(json.psa_list);
-                //StagingViewModel.available_gleason(json.gleason_list);
+                StagingViewModel.available_dukes(json.dukes_list);
+                StagingViewModel.available_psa(json.psa_list);
+                StagingViewModel.available_gleason(json.gleason_list);
 
             });
             },
@@ -70,9 +72,11 @@ $(function() {
             if (StagingViewModel.current_t() !== undefined &&
                 StagingViewModel.current_n() !== undefined &&
                 StagingViewModel.current_m()!== undefined){
-                 $.getJSON('get_stage/' + StagingViewModel.current_icd_neoplasm() + '/' + StagingViewModel.current_t() + '/'+
+
+                $.getJSON('get_stage/' + StagingViewModel.current_icd_neoplasm() + '/' + StagingViewModel.current_t() + '/'+
                 StagingViewModel.current_n() +'/'+ StagingViewModel.current_m()+ '/'+
-                     StagingViewModel.current_dukes() + '/' + StagingViewModel.current_psa(), function (json) {
+                     StagingViewModel.current_dukes() + '/' + StagingViewModel.current_psa() +
+                     '/' + StagingViewModel.current_gleason(), function (json) {
                     StagingViewModel.calculated_stage(json.stage);
             })
             }
