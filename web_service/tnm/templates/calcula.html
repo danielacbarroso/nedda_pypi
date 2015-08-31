@@ -3,23 +3,38 @@
 {% block corpo %}
 
 
-
-<form action="" method="post">
+    <form action="" method="post" xmlns="http://www.w3.org/1999/html">
     <div class="row">
         <div class="col-xs-8">
+            <label > Choose the ICD to the tumor type to be staged</label></br>
             <select id='icd_selector'
                     rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"
-                    data-bind="options: available_icd_neoplasms,
+                    data-bind="options: available_icds,
                                optionsCaption: 'Select...',
-                               value: current_icd_neoplasm,
+                               value: current_icd,
                                event: { change: icdChanged }"
                     class="form-control">
             </select>
         </div>
     </div>
 
+{#    <div class="row">#}
+{#        <div class="col-xs-8">#}
+{#            <label > Choose the ICD to the tumor type to be staged</label></br>#}
+{#            <select id='icd_selector'#}
+{#                    rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"#}
+{#                    data-bind="options: available_icds_neoplasms,#}
+{#                               optionsCaption: 'Select...',#}
+{#                               value: current_icds_neoplasm,#}
+{#                               event: { change: tnmChanged }"#}
+{#                    class="form-control">#}
+{#            </select>#}
+{#        </div>#}
+{#    </div>#}
+
     <div class="row">
         <div class="col-xs-8">
+{#            <label > Choose the T to the tumor type to be staged</label>#}
             <select id='t_selector'
                     rel="tooltip" data-placement="right" title="Choose the T to the tumor type to be staged"
                     data-bind="options: available_ts,
@@ -33,6 +48,7 @@
 
     <div class="row">
         <div class="col-xs-8">
+{#            <label > Choose the N to the tumor type to be staged</label>#}
             <select id='n_selector'
                     rel="tooltip" data-placement="right" title="Choose the N to the tumor type to be staged"
                     data-bind="options: available_ns,
@@ -46,6 +62,7 @@
 
     <div class="row">
         <div class="col-xs-8">
+{#            <label > Choose the M to the tumor type to be staged</label>#}
             <select id='m_selector'
                     rel="tooltip" data-placement="right" title="Choose the M to the tumor type to be staged"
                     data-bind="options: available_ms,
@@ -59,7 +76,7 @@
 
      <div class="row">
         <div class="col-xs-8">
-            <select id='dukes_selector' name="TEste"
+            <select id='dukes_selector'
                     rel="tooltip" data-placement="right" title="Choose the Dukes to the tumor type to be staged"
                     data-bind="options: available_dukes,
                                optionsCaption: 'Select...',
@@ -98,7 +115,8 @@
 
     <div>
 {#    <strong data-bind= "text: tnmChanged" >ESTADIAMENTO</strong>#}
-    <span data-bind="text: calculated_stage" />
+    <strong data-bind="text: calculated_stage"></strong>
+{#        <span data-bind="text: calculated_stage" />#}
 
     </div>
 {#    <button id="staging"#}
