@@ -22,8 +22,11 @@ $(function() {
         calculated_stage: ko.observable(''),
 
         loadInitialState: function () {
+            $('#l_dukes').hide()
             $('#dukes_selector').hide();
+            $('#l_psa').hide()
             $('#psa_selector').hide();
+            $('#l_gleason').hide()
             $('#gleason_selector').hide();
             $.getJSON('get_icds', function (json) {
                 StagingViewModel.available_icds(json.icd_list);
@@ -32,31 +35,40 @@ $(function() {
         },
 
         icdChanged: function () {
-
-            //StagingViewModel.available_icds_neoplasms([]);
+            console.log(StagingViewModel.current_icd())
             StagingViewModel.available_ts([]);
             StagingViewModel.available_ns([]);
             StagingViewModel.available_ms([]);
+            StagingViewModel.available_dukes([]);
+            StagingViewModel.available_psa([]);
+            StagingViewModel.available_gleason([]);
             StagingViewModel.calculated_stage('');
 
-            if(StagingViewModel.current_icd() === 'C18'){
+            if(StagingViewModel.current_icd() === 'C18 - Colorectal - Colon'){
+                $('#l_dukes').show()
                 $('#dukes_selector').show();
             }
             else{
+                $('#l_dukes').hide()
                 $('#dukes_selector').hide();
             }
 
-            if(StagingViewModel.current_icd() === 'C61'){
+            if(StagingViewModel.current_icd() === 'C61 - Prostate'){
+
+                $('#l_psa').show();
                 $('#psa_selector').show();
+                $('#l_gleason').show();
                 $('#gleason_selector').show();
             }
             else{
+                $('#l_psa').hide();
                 $('#psa_selector').hide();
+                $('#l_gleason').hide();
                 $('#gleason_selector').hide();
             }
 
             $.getJSON('get_tnms/' + StagingViewModel.current_icd(), function (json) {
-                //StagingViewModel.available_icds_neoplasms(json.icd_list_neoplasm);
+
                 StagingViewModel.available_ts(json.ts_list);
                 StagingViewModel.available_ns(json.ns_list);
                 StagingViewModel.available_ms(json.ms_list);
@@ -68,9 +80,8 @@ $(function() {
             },
 
         tnmChanged:function() {
-            if (StagingViewModel.current_icd() === 'C18') {
-                if (StagingViewModel.current_icd() === 'C18' &&
-                StagingViewModel.current_t() !== undefined &&
+            if (StagingViewModel.current_icd() === 'C18 - Colorectal - Colon') {
+                if (StagingViewModel.current_t() !== undefined &&
                 StagingViewModel.current_n() !== undefined &&
                 StagingViewModel.current_m() !== undefined &&
                 StagingViewModel.current_dukes() !== undefined) {
@@ -80,14 +91,13 @@ $(function() {
                     '/' + StagingViewModel.current_dukes() + '/'+
                     StagingViewModel.current_psa() + '/' + StagingViewModel.current_gleason(), function (json) {
                     StagingViewModel.calculated_stage(json.stage);
-                    })
+                    });
                 }//fim if interno
 
 
             }//fim if C18
-            else if (StagingViewModel.current_icd() === 'C61') {
-                if (StagingViewModel.current_icd() === 'C61' &&
-                StagingViewModel.current_t() !== undefined &&
+            else if (StagingViewModel.current_icd() === 'C61 - Prostate') {
+                if (StagingViewModel.current_t() !== undefined &&
                 StagingViewModel.current_n() !== undefined &&
                 StagingViewModel.current_m() !== undefined &&
                 StagingViewModel.current_psa() !== undefined &&
@@ -98,7 +108,7 @@ $(function() {
                     '/' + StagingViewModel.current_dukes() + '/'+
                     StagingViewModel.current_psa() + '/' + StagingViewModel.current_gleason(), function (json) {
                     StagingViewModel.calculated_stage(json.stage);
-                    })
+                    });
                 }//fim if interno
 
             }//fim if C61
@@ -115,7 +125,7 @@ $(function() {
                     '/' + StagingViewModel.current_dukes() + '/' +
                     StagingViewModel.current_psa() + '/' + StagingViewModel.current_gleason(), function (json) {
                     StagingViewModel.calculated_stage(json.stage);
-                })
+                });
             }//fim if interno
             }// fim if resto CID
 
