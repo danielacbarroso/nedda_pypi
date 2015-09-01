@@ -6,7 +6,7 @@
     <form action="" method="post" xmlns="http://www.w3.org/1999/html">
     <div class="row">
         <div class="col-xs-8">
-            <label > Choose the ICD to the tumor type to be staged</label></br>
+            <label for = 'icd_selector'>Choose the ICD to the tumor type to be staged</label>
             <select id='icd_selector'
                     rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"
                     data-bind="options: available_icds,
@@ -18,23 +18,9 @@
         </div>
     </div>
 
-{#    <div class="row">#}
-{#        <div class="col-xs-8">#}
-{#            <label > Choose the ICD to the tumor type to be staged</label></br>#}
-{#            <select id='icd_selector'#}
-{#                    rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"#}
-{#                    data-bind="options: available_icds_neoplasms,#}
-{#                               optionsCaption: 'Select...',#}
-{#                               value: current_icds_neoplasm,#}
-{#                               event: { change: tnmChanged }"#}
-{#                    class="form-control">#}
-{#            </select>#}
-{#        </div>#}
-{#    </div>#}
-
     <div class="row">
         <div class="col-xs-8">
-{#            <label > Choose the T to the tumor type to be staged</label>#}
+            <label for="t_selector" > Choose the T to the tumor type to be staged</label>
             <select id='t_selector'
                     rel="tooltip" data-placement="right" title="Choose the T to the tumor type to be staged"
                     data-bind="options: available_ts,
@@ -48,7 +34,7 @@
 
     <div class="row">
         <div class="col-xs-8">
-{#            <label > Choose the N to the tumor type to be staged</label>#}
+            <label for="n_selector"> Choose the N to the tumor type to be staged</label>
             <select id='n_selector'
                     rel="tooltip" data-placement="right" title="Choose the N to the tumor type to be staged"
                     data-bind="options: available_ns,
@@ -62,7 +48,7 @@
 
     <div class="row">
         <div class="col-xs-8">
-{#            <label > Choose the M to the tumor type to be staged</label>#}
+            <label for="m_selector"> Choose the M to the tumor type to be staged</label>
             <select id='m_selector'
                     rel="tooltip" data-placement="right" title="Choose the M to the tumor type to be staged"
                     data-bind="options: available_ms,
@@ -76,6 +62,7 @@
 
      <div class="row">
         <div class="col-xs-8">
+            <label id='l_dukes' for="dukes_selector">Choose the Dukes to the tumor type to be staged</label>
             <select id='dukes_selector'
                     rel="tooltip" data-placement="right" title="Choose the Dukes to the tumor type to be staged"
                     data-bind="options: available_dukes,
@@ -89,6 +76,7 @@
 
      <div class="row">
         <div class="col-xs-8">
+            <label id="l_psa" for="psa_selector">Choose the PSA to the tumor type to be staged</label>
             <select id='psa_selector'
                     rel="tooltip" data-placement="right" title="Choose the PSA to the tumor type to be staged"
                     data-bind="options: available_psa,
@@ -102,6 +90,7 @@
 
      <div class="row">
         <div class="col-xs-8">
+            <label id="l_gleason" for="gleason_selector">Choose the Gleason to the tumor type to be staged</label>
             <select id='gleason_selector'
                     rel="tooltip" data-placement="right" title="Choose the Gleason to the tumor type to be staged"
                     data-bind="options: available_gleason,
@@ -114,16 +103,11 @@
      </div>
 
     <div>
-{#    <strong data-bind= "text: tnmChanged" >ESTADIAMENTO</strong>#}
-    <strong data-bind="text: calculated_stage"></strong>
-{#        <span data-bind="text: calculated_stage" />#}
+<strong data-bind="text: calculated_stage"></strong>
+
 
     </div>
-{#    <button id="staging"#}
-{#            data-bind="value: available_stage,#}
-{#                       type: button">ESTADIAMENTO</button>#}
-{#    <input id='stage' type="text"#}
-{#            data-bind="textInput: available_stage" />#}
+
 </form>
 
 

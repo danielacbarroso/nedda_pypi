@@ -57,7 +57,7 @@ class GenericStager(object):
         self.valid = True
         self.validation_message = 'No message set'
         self.stage = None
-        self.icd = icd.split('.')[0].upper() # considers only the first part o ICD
+        self.icd = icd#icd.split('.')[0].upper() # considers only the first part o ICD
         self.t = t
         self.n = n
         self.m = m
@@ -67,12 +67,21 @@ class GenericStager(object):
         self.carcinosarcoma = carcinosarcoma
         self.neoplasms = neoplasms
 
+        if self._t_set.__len__() > 0:
+            self._t_set = set()
+        if self._n_set.__len__() > 0:
+            self._n_set = set()
+        if self._m_set.__len__() > 0:
+            self._m_set = set()
+
         for item in STAGES:
+
             if self.icd == item['icd']:
+
                  if item['t'] is None:
-                     self._t_set.add(STAGES[item['icd']])
+                    self._t_set.add(STAGES[item['icd']])
                  else:
-                     self._t_set.add(item['t'])
+                    self._t_set.add(item['t'])
 
                  self._n_set.add(item['n'])
                  self._m_set.add(item['m'])
@@ -91,25 +100,31 @@ class GenericStager(object):
                      self.gleason_set.add('-')
                  else:
                      self.gleason_set.add(item['gleason'])
+
                  self.carcinosarcoma_set.add(item['carcinosarcoma'])
                  self.neoplasms_set.add(item['neoplasms'])
                  self.stages_dict[item['t'] + item['n'] + item['m'] + item['dukes'] + item['psa'] + item['gleason']
                                   + item['carcinosarcoma']] = item['stage']
 
+
         if self.t is not None:
             self.validate_tnm()
             self.staging()
+
+    def __del__(self):
+        self._t_set=None
 
     def get_t_set(self):
         return self._t_set
 
     def get_t_list(self):
         ordered_t_list = sorted(self.get_t_set())
-        tis = 'Tis'
+
         #opcao usada para colocar o Tis como primeiro, caso exista
         try:
-            del ordered_t_list[ordered_t_list.index(tis)]
-            ordered_t_list = [tis] + ordered_t_list
+            ordered_t_list.remove('Tis')
+            #del ordered_t_list[ordered_t_list.index(tis)]
+            ordered_t_list = ['Tis'] + ordered_t_list
             return ordered_t_list
         except ValueError:
             return ordered_t_list
@@ -186,55 +201,8 @@ class GenericStager(object):
             self.validation_message = 'Valid TNM'
 
 def tnm_stage(icd, t=None, n=None, m=None, dukes=None, psa=None, gleason=None, carcinosarcoma=None, neoplasms=None):
-    icd = icd.strip()
-    #icd = icd.split(' - ')[0].upper()
+
+    icd = icd.split('-')[0].strip()
+
     stager = GenericStager(icd, t, n, m, dukes, psa, gleason, carcinosarcoma, neoplasms)
     return stager.stage
-
-def tnm_neoplasms(icd_neoplasm=None, Campo = None):
-
-    retornar = []
-    vetor = []
-    codigo = icd_neoplasm
-
-    vetor = NEOPLASMS_c
-
-    for i in range(0, len(vetor)):
-        valor = vetor[i]
-
-        if icd_neoplasm is not None:
-            if valor['ICD'] == codigo.split(' - ')[0].upper():
-                if Campo is not None:
-                    if Campo.upper() == 'ICD':
-                        if gs.get_t_list(valor['ICD']):
-                            retornar.append(valor['ICD'])
-                    elif Campo.upper() == 'NEOPLASMS':
-                        if gs.get_t_list(valor['ICD']):
-                            retornar.append(valor['neoplasms'])
-                    else:
-                        if gs.get_t_list(valor['ICD']):
-                            retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
-                else:
-                    if gs.get_t_list(valor['ICD']):
-                        retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
-
-            retornar = list(set(retornar))
-
-        else:
-
-            if Campo is not None:
-                gs = GenericStager()
-                if Campo.upper() == 'ICD':
-                    if gs.get_t_list(valor['ICD']):
-                        retornar.append(valor['ICD'])
-                elif Campo.upper() == 'NEOPLASMS':
-                    if gs.get_t_list(valor['ICD']):
-                        retornar.append(valor['neoplasms'])
-                else:
-                    if gs.get_t_list(valor['ICD']):
-                        retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
-            else:
-                if gs.get_t_list(valor['ICD']):
-                    retornar.append(valor['ICD'] + ' - ' + valor['neoplasms'])
-
-    return sorted(retornar)
