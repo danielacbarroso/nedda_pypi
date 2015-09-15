@@ -1,5 +1,32 @@
-# Nedda
+# Nedda 0.2
 ## Automatic TNM cancer staging library
+
+What is new on version 0.2:
+
+We have completely changed the way we receive the parameters for TNM and return the correct stage. On the prior version,
+we had the naive implementation of different staging classes, that would be chosen by a factory method according to the
+given ICD. Inside each class, we had a set of regular expressions and if that would choose the correct stage.
+
+This was a super simple way to do things and it was bad code. It was only a point of departure. It had the major incovenience
+of mixing data and code and, although simple to implement to a few cancer types, it would be impossible to mantain in
+the long run.
+
+Thanks to the help of Professors [Maria Laura Magalhães Gomes] (http://lattes.cnpq.br/5671580360415081) and 
+ [Paulo Antônio Fonseca Machado] (http://www.mat.ufmg.br/~pafm/), from the [Mathematics Department of the Federal University
+of Minas Gerais] (http://www.mat.ufmg.br), we were able to do a much more intelligent implementation.
+
+The problem of TNM staging consists fundamentally into mapping a set of values to different buckets. That could be solved
+using a hash function, that the Python programming language has built in on its dictionary data structure.
+
+After this insight, we have changed the implemetation and created a csv file, consisting of the different TNM possibilities
+for numerous cancer types and its corresponding stages.
+
+This csv file is loaded into memory as a dictionary, and the TNM combination is the key that corresponds to a value. As
+far as we know, dictionary lookups in Python are very fast and very simple to write: if a given key is found, the correspondig
+stage is returned. Otherwise, no stage is to be found.
+
+We have also created a small django app that allows the user to input the ICD code, the T, the N, the M from select boxes
+and get the correct stage in return. The app allows to input dukes, psa and gleason values where fit. 
 
 **What is cancer?**
 
@@ -72,22 +99,33 @@ GPL 3 rocks!) health administration system.
 **How to use Nedda**
 
 Nedda still has a very simple interface. The idea is to pass to the library the ICD, T, N and M values
-and get a stager object, that validates the input and computes the correct stage for different types of cancer:
+and get a stager object, that validates the input and computes the correct stage for different types of cancer.
+
+The GenericStager object can be used in two ways. First, it can be created with passing only the ICD to the constructor:
 ```python
-from nedda.staging.staging import tnm_stager_factory
-stager = tnm_stager_factory('C50.0', 'T0', 'N1', 'M0')
+from nedda.staging.staging import GenericStager
+gs = GenericStager('C50')
 ```
 
-As you can see, we have passed to a factory method the aforementioned inputs and we receive back a BreastCancerStager
-object. It contains the following members:
+In this case, the gs object will be used to supply the available Ts, Ns and Ms:
+```python
+gs.get_m_list()
+['M0', 'M1']
+gs.get_t_list()
+['Tis', 'T0', 'T1', 'T2', 'T3', 'T4']
+gs.get_m_list()
+['M0', 'M1']
+```
+
+This is useful if you want to know only the available TNM options for that kind of cancer, and does not want to stage a 
+specific case yet. This functionality is used by our web application to return the options to be selected on the user
+interface after an user has chosen an ICD code.
+
+The other way to use the GenericStager is to pass in all the values needed for an specific staging evaluation, and then 
+call its stage field:
 
 ```python
-stager.BREAST_CANCER_MS    stager.stage
-stager.BREAST_CANCER_NS    stager.staging
-stager.BREAST_CANCER_TS    stager.t
-stager.icd                 stager.valid
-stager.m                   stager.validate_tnm
-stager.n                   stager.validation_message
+gs = GenericStager('C50', 'T1', 'N1', 'M0')
 ```
 
 If you call then:
@@ -99,6 +137,17 @@ You will get the response:
 ```python
 'IIA'
 ```
+
+A simple web service
+
+We have now also a Django app that can be used as a web service or as a stand alone app. In order to run it, the
+Django library should be installed (version 1.8 or higher). The app can be run from inside the web_services 
+directory as a regular Django app:
+```bash
+$ nedda/web_service/python manage.py runserver
+```
+
+We are still working on tests and trying to make the web interface a little less ugly.
 
 For the time being, that is pretty much that. Nedda works for breast, cervix uteri, colon and rectum 
 and lung cancer. We are still working on prostate and stomach. We have published the repository here in 
