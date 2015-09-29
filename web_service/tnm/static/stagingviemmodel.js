@@ -28,6 +28,7 @@ $(function() {
             $('#psa_selector').hide();
             $('#l_gleason').hide()
             $('#gleason_selector').hide();
+            $('#b_stage').hide();
             $.getJSON('get_icds', function (json) {
                 StagingViewModel.available_icds(json.icd_list);
                 //StagingViewModel.available_icds_neoplasms(json.icd_list_neoplasm);
@@ -35,7 +36,8 @@ $(function() {
         },
 
         icdChanged: function () {
-            console.log(StagingViewModel.current_icd())
+            console.log(StagingViewModel.current_icd());
+            $('#b_stage').hide();
             StagingViewModel.available_ts([]);
             StagingViewModel.available_ns([]);
             StagingViewModel.available_ms([]);
@@ -43,6 +45,7 @@ $(function() {
             StagingViewModel.available_psa([]);
             StagingViewModel.available_gleason([]);
             StagingViewModel.calculated_stage('');
+
 
             if(StagingViewModel.current_icd() === 'C18 - Colorectal - Colon'){
                 $('#l_dukes').show()
@@ -90,6 +93,7 @@ $(function() {
                     StagingViewModel.current_n() + '/' + StagingViewModel.current_m() +
                     '/' + StagingViewModel.current_dukes() + '/'+
                     StagingViewModel.current_psa() + '/' + StagingViewModel.current_gleason(), function (json) {
+                    $('#b_stage').show();
                     StagingViewModel.calculated_stage(json.stage);
                     });
                 }//fim if interno
@@ -107,6 +111,7 @@ $(function() {
                     StagingViewModel.current_n() + '/' + StagingViewModel.current_m() +
                     '/' + StagingViewModel.current_dukes() + '/'+
                     StagingViewModel.current_psa() + '/' + StagingViewModel.current_gleason(), function (json) {
+                    $('#b_stage').show();
                     StagingViewModel.calculated_stage(json.stage);
                     });
                 }//fim if interno
@@ -124,6 +129,7 @@ $(function() {
                     StagingViewModel.current_n() + '/' + StagingViewModel.current_m() +
                     '/' + StagingViewModel.current_dukes() + '/' +
                     StagingViewModel.current_psa() + '/' + StagingViewModel.current_gleason(), function (json) {
+                    $('#b_stage').show();
                     StagingViewModel.calculated_stage(json.stage);
                 });
             }//fim if interno
