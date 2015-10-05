@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+<!--pagina onde ocorre o estadiamento-->
+{% block corpo %}
+
+<form action="" method="post" xmlns="http://www.w3.org/1999/html">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-8">
+            <button type="button" class="btn btn-primary"
+                    id="b_icd"
+                    data-toggle="button">ICD</button>
+{#            <label for = 'icd_selector'>Choose the ICD to the tumor type to be staged</label>#}
+            <select id='icd_selector'
+                    class="btn btn-primary"
+                    rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"
+                    data-bind="options: available_icds,
+                               optionsCaption: 'Select...',
+                               value: current_icd,
+                               event: { change: icdChanged }"
+                    class="form-control">
+            </select>
+        </div>
+    </div>
+
+    <div class="" id="tnm_div">
+{#        <div class="col-xs-8">#}
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary"
+                        id="b_t"> T </button>
+{#            <label for="t_selector" > Choose the T to the tumor type to be staged</label>#}
+                <select id='t_selector'
+                        class="btn btn-primary"
+                        rel="tooltip" data-placement="right" title="Choose the T to the tumor type to be staged"
+                        data-bind="options: available_ts,
+                                optionsCaption: 'Select...',
+                                value: current_t,
+                                event: { change: tnmChanged }"
+                        class="form-control">
+                </select>
+            </div>
+{#        </div>#}
+
+
+{#    <div class="row">#}
+{#        <div class="col-xs-8">#}
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary"
+                        id="b_n"> N </button>
+{#            <label for="n_selector"> Choose the N to the tumor type to be staged</label>#}
+                <select id='n_selector'
+                        class="btn btn-primary"
+                        rel="tooltip" data-placement="right" title="Choose the N to the tumor type to be staged"
+                        data-bind="options: available_ns,
+                               optionsCaption: 'Select...',
+                               value: current_n,
+                               event: { change: tnmChanged }"
+                        class="form-control">
+                </select>
+            </div>
+{#        </div>#}
+
+{#    <div class="row">#}
+{#        <div class="col-xs-8">#}
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary"
+                        id="b_n"> M </button>
+{#            <label for="m_selector"> Choose the M to the tumor type to be staged</label>#}
+                <select id='m_selector'
+                        class="btn btn-primary"
+                        rel="tooltip" data-placement="right" title="Choose the M to the tumor type to be staged"
+                        data-bind="options: available_ms,
+                                optionsCaption: 'Select...',
+                                value: current_m,
+                                event: { change: tnmChanged }"
+                        class="form-control">
+                </select>
+            </div>
+    </div>
+{#    </div>#}
+
+{#    <div class="container-fluid" id="psa_div">#}
+     <div class="">
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"
+                    id="l_dukes"> Dukes </button>
+            <select id='dukes_selector'
+                    class="btn btn-primary"
+                    rel="tooltip" data-placement="right" title="Choose the Dukes to the tumor type to be staged"
+                    data-bind="options: available_dukes,
+                               optionsCaption: 'Select...',
+                               value: current_dukes,
+                               event: { change: tnmChanged }"
+                    class="form-control">
+            </select>
+        </div>
+        <div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"
+                        id="l_psa"> PSA </button>
+            <select id='psa_selector'
+                    class="btn btn-primary"
+                    rel="tooltip" data-placement="right" title="Choose the PSA to the tumor type to be staged"
+                    data-bind="options: available_psa,
+                               optionsCaption: 'Select...',
+                               value: current_psa,
+                               event: { change: tnmChanged }"
+                    class="form-control">
+            </select>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"
+                        id="l_gleason"> Gleason </button>
+{#            <label id="l_gleason" for="gleason_selector">Choose the Gleason to the tumor type to be staged</label>#}
+            <select id='gleason_selector'
+                    class="btn btn-primary"
+                    rel="tooltip" data-placement="right" title="Choose the Gleason to the tumor type to be staged"
+                    data-bind="options: available_gleason,
+                               optionsCaption: 'Select...',
+                               value: current_gleason,
+                               event: { change: tnmChanged }"
+                    class="form-control">
+            </select>
+        </div>
+            </div>
+
+     </div>
+
+    <button id="b_stage" type="button"
+            class="button btn-success"
+            data-bind="text: calculated_stage">
+    </button>
+
+
+</div>
+</form>
+{% endblock %}

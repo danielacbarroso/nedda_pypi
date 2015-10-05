@@ -1,0 +1,39 @@
+upstream tnm {
+    server unix:///opt/nedda/web_service/web_service.sock; # for a file socket
+}
+
+server  {
+    listen 80;
+    access_log /var/log/nginx/access.log;
+    server_name tnm.silexsistemas.com.br;
+
+    client_max_body_size 10M;
+
+    # Niveis (do mais detalhado para o menos: debug, info, notice, warn, error, crit
+    error_log /var/log/nginx/error.log info;
+
+    # https://docs.djangoproject.com/en/dev/howto/static-files/#serving-static-files-in-production
+    location /static/ { # STATIC_URL
+	alias /opt/nedda/web_service/tnm/static/;
+#        alias /opt/nedda/web_service/assets/; # STATIC_ROOT
+        expires 30d;
+    }
+
+    location / {
+        uwsgi_pass tnm; #unix:/opt/nedda/web_service/webservice.sock;
+        include /opt/nedda/web_service/web_service/uwsgi_params;
+    }
+
+    location /favicon.ico {
+        alias /opt/nedda/web_service/static/favicon.ico;
+    }
+
+    location /nginx_status {
+       stub_status on;
+       access_log  off;
+       allow 127.0.0.1;
+       allow all;
+#      deny all;
+    }
+}
+
