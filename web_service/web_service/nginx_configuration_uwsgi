@@ -4,9 +4,8 @@ upstream tnm {
 
 server  {
     listen 80;
-    server_name tnm.silexsistemas.com.br;
-    
     access_log /var/log/nginx/access.log;
+    server_name tnm.silexsistemas.com.br;
 
     client_max_body_size 10M;
 
@@ -15,17 +14,18 @@ server  {
 
     # https://docs.djangoproject.com/en/dev/howto/static-files/#serving-static-files-in-production
     location /static/ { # STATIC_URL
-        alias /opt/nedda/web_service/assets/; # STATIC_ROOT
+	alias /opt/nedda/web_service/tnm/static/;
+#        alias /opt/nedda/web_service/assets/; # STATIC_ROOT
         expires 30d;
     }
 
     location / {
-        uwsgi_pass tnm;
+        uwsgi_pass tnm; #unix:/opt/nedda/web_service/webservice.sock;
         include /opt/nedda/web_service/web_service/uwsgi_params;
     }
 
     location /favicon.ico {
-        alias /opt/nedda/web_service/assets/favicon.ico;
+        alias /opt/nedda/web_service/static/favicon.ico;
     }
 
     location /nginx_status {
@@ -36,3 +36,4 @@ server  {
 #      deny all;
     }
 }
+
