@@ -10,8 +10,18 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin: 20px 20px 20px 20px;
 }
+
+#geral {
+  width:98%;
+  margin: 0 auto;
+  text-align:left;
+  border:2px solid #000;
+  background-color: #F1F2F2;
+/*borda provisória para facilitar a visualização */
+}
+
 article,
 aside,
 details,
