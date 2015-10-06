@@ -93,8 +93,8 @@ $(function() {
                     StagingViewModel.current_n() + '/' + StagingViewModel.current_m() +
                     '/' + StagingViewModel.current_dukes() + '/'+
                     StagingViewModel.current_psa() + '/' + StagingViewModel.current_gleason(), function (json) {
-                    $('#b_stage').show();
                     StagingViewModel.calculated_stage(json.stage);
+                    $('#b_stage').show();
                     });
                 }//fim if interno
 
