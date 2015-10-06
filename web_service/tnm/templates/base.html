@@ -17,15 +17,105 @@
     {% endblock %}
 </head>
 <body>
+    <div id="geral">
     <header>
-        <h1>TNM Cancer Staging</h1>
+{#        <h1 style="margin-left: 10px">TNM Cancer Staging</h1>#}
+        <h1 style="text-align: center; color: #67AE3E">TNM - Estadiamento do Câncer</h1>
     </header>
+
+    <p style="text-align: justify">
+        A Sílex Sistemas criou um pequeno aplicativo Django que permite ao usuário realizar o estadimanento de câncer
+        através da seleção do código CID, dos valores de T, N e M. O aplicativo permite também a seleção dos
+        valores de dukes, psa e gleason para os casos onde forem necessários.
+        </p>
+
+    <div style="float: left; width: 41%;margin-right: 4%">
+    <h4 style="color:#1978BA">O que é câncer?</h4>
+    <p style="text-align: justify">
+        Em termos leigos, a verdade é que a palavra câncer atualmente refere-se a um grande número de diferentes doenças.
+        Elas têm em comum o fato de se tratar de uma reprodução anormal de células com a capacidade de se espalhar para
+        outros órgãos e partes do corpo. O Instituto Nacional do Câncer dos Estados Unidos usa a expressão interessante
+        “uma coleção de doenças relacionadas” para descrever  câncer[1].
+    </p>
+    </div>
+
+    <div style="float: left; width: 50%;margin-left: 3%">
+    <h4 style="color: #1978BA;">Tipos de câncer</h4>
+    <p style="text-align: justify">
+        Apesar de existirem vários tipos de câncer, o aplicativo inicialmente realiza o
+        estadiamento  apenas de dez tipos, são eles:
+        <div style="float: left">
+        <ul>
+            <li>C16 - Estômago</li>
+            <li>C18 - Cólon</li>
+            <li>C19 - Junção retossigmóide</li>
+            <li>C20 - Reto</li>
+            <li>C34 - Pulmão</li>
+            </ul>
+        </div><div style="float: left">
+        <ul>
+            <li>C50 - Mama</li>
+            <li>C53 - Colo do útero</li>
+            <li>C54 - Corpo do útero(sarcomas)</li>
+            <li>C54 - Corpo do útero(carcinomas)</li>
+            <li>C61 - Próstata</li>
+        </ul>
+    </div>
+
+    </p>
+    </div>
+
+    <div style="clear: both">
+    <h4 style="color: #1978BA;">O que é estadiamento de câncer?</h4>
+    <p style="text-align: justify">
+        De acordo com a introdução do AJCC Estadiamento Manual de Câncer:
+        “Estadiamento do câncer desmpenha um papel crucial na batalha sobre o câncer. Forma a
+        base para compreender as alterações na incidência de câncer da população, extensão da
+        apresentação da doença, e o impacto global das melhorias no tratamento do câncer.
+        A plataforma constitui a base para definir grupos para inclusão em ensaios clínicos.
+        Mais importante, o estadiamento fornece àqueles com câncer e seus médicos a referência
+        fundamental para definir o prognóstico e a probabilidade de superar o câncer e
+        determinar a melhor abordagem de tratamento para seus casos.”[3]
+        <br>
+        Diferentes tipos de câncer tem opções para tipos de tratamento completamente diferentes
+        e prognósticos de acordo com seu estadiamento. Por exemplo, um câncer de mama bem
+        pequeno e localizado determina o caminho para um certo tratamento e tem muito boa
+        (mais que 95%) chance de cura total(ou remissão). Infelizmente, se o mesmo tipo de
+        câncer não é detectado cedo, ele pode crescer e espalhar para o sistema linfático
+        (local e distante) e também para outros órgãos(doença mestástica). Nesse caso, as
+        opções são distintas, e a chance de cura bem mais remota.
+    </p>
+    </div>
+
+    <h4 style="color: #1978BA;">Como o câncer é estadiado?</h4>
+    <p style="text-align: justify">
+        Há um sistema chamado TNM para classificar cada tipo de câncer. Ele é mantido pela
+        comunidade médica internacional, através de uma organização chamada UICC. Para cada
+        tipo de câncer há uma tabela que mapeia alguns valores para um estádio específico.
+        Aqueles valores são conhecidos como T – o tamanho do tumor, N – nós regionais afetados,
+        e M – a presença de doença metástica. Alguns tipos de câncer podem considerar ainda
+        outros valores na computação. Por exemplo, para computar o estádio para câncer de
+        próstata, é também necessário usar os valores de PSA e Gleason. Para Cólon, um valor
+        conhecido como dukes.
+        <br>
+        O médico deve conhecer esses valores e verificar manualmente na tabela específica para
+        classificar corretamente o câncer. Tais tabelas são providas com manuais médicos, e
+        são atualizadas periodicamente.
+    </p>
+
     <main>
+    <h1>TNM Cancer Staging</h1>
         {% block main %}
         {% endblock main %}
     </main>
+    <div style="background-color: #c1e2b3">
     {% block corpo %}
-        <!-- body -->
+        <!-- body  aplicativo aqui-->
     {% endblock %}
+    </div>
+
+ <p style="color: green">hoje jojehj jhjhsdhksdkgd hsdghgsd</p>
+
+</div>
 </body>
 </html>
