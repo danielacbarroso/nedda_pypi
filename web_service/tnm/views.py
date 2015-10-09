@@ -51,11 +51,11 @@ def get_tnms(request, icd):
 
 def get_stage(request, icd, t, n, m, dukes=None, psa=None, gleason=None):
 
-    if dukes == u'undefined' or dukes=='-':
+    if dukes == u'undefined' or dukes =='-':
         dukes = None
-    if psa == u'undefined' or psa=='-':
+    if psa == u'undefined' or psa =='-':
         psa = None
-    if gleason == u'undefined' or gleason=='-':
+    if gleason == u'undefined' or gleason =='-':
         gleason = None
 
     if icd == 'C54 - Corpus Uteri Carcinomas':
