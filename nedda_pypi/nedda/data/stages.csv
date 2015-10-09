@@ -1,0 +1,1980 @@
+ICD,T,N,M,dukes,stage,psa,gleason,carcinosarcoma,neoplasms
+C16,Tis,N0,M0,,0,,,,Stomach
+C16,T1,N0,M0,,IA,,,,Stomach
+C16,T2,N0,M0,,IB,,,,Stomach
+C16,T1,N1,M0,,IB,,,,Stomach
+C16,T3,N0,M0,,IIA,,,,Stomach
+C16,T2,N1,M0,,IIA,,,,Stomach
+C16,T1,N2,M0,,IIA,,,,Stomach
+C16,T4a,N0,M0,,IIB,,,,Stomach
+C16,T3,N1,M0,,IIB,,,,Stomach
+C16,T2,N2,M0,,IIB,,,,Stomach
+C16,T1,N3,M0,,IIB,,,,Stomach
+C16,T4a,N1,M0,,IIIA,,,,Stomach
+C16,T3,N2,M0,,IIIA,,,,Stomach
+C16,T2,N3,M0,,IIIA,,,,Stomach
+C16,T4b,N0,M0,,IIIB,,,,Stomach
+C16,T4b,N1,M0,,IIIB,,,,Stomach
+C16,T4a,N2,M0,,IIIB,,,,Stomach
+C16,T3,N3,M0,,IIIB,,,,Stomach
+C16,T4b,N2,M0,,IIIC,,,,Stomach
+C16,T4b,N3,M0,,IIIC,,,,Stomach
+C16,T4a,N3,M0,,IIIC,,,,Stomach
+C16,Tis,N0,M1,,IV,,,,Stomach
+C16,Tis,N1,M1,,IV,,,,Stomach
+C16,Tis,N2,M1,,IV,,,,Stomach
+C16,Tis,N3,M1,,IV,,,,Stomach
+C16,T0,N0,M1,,IV,,,,Stomach
+C16,T0,N1,M1,,IV,,,,Stomach
+C16,T0,N2,M1,,IV,,,,Stomach
+C16,T0,N3,M1,,IV,,,,Stomach
+C16,T1,N0,M1,,IV,,,,Stomach
+C16,T1,N1,M1,,IV,,,,Stomach
+C16,T1,N2,M1,,IV,,,,Stomach
+C16,T1,N3,M1,,IV,,,,Stomach
+C16,T2,N0,M1,,IV,,,,Stomach
+C16,T2,N1,M1,,IV,,,,Stomach
+C16,T2,N2,M1,,IV,,,,Stomach
+C16,T2,N3,M1,,IV,,,,Stomach
+C16,T3,N0,M1,,IV,,,,Stomach
+C16,T3,N1,M1,,IV,,,,Stomach
+C16,T3,N2,M1,,IV,,,,Stomach
+C16,T3,N3,M1,,IV,,,,Stomach
+C16,T4,N0,M1,,IV,,,,Stomach
+C16,T4,N1,M1,,IV,,,,Stomach
+C16,T4,N2,M1,,IV,,,,Stomach
+C16,T4,N3,M1,,IV,,,,Stomach
+C16,T4a,N0,M1,,IV,,,,Stomach
+C16,T4a,N1,M1,,IV,,,,Stomach
+C16,T4a,N2,M1,,IV,,,,Stomach
+C16,T4a,N3,M1,,IV,,,,Stomach
+C16,T4b,N0,M1,,IV,,,,Stomach
+C16,T4b,N1,M1,,IV,,,,Stomach
+C16,T4b,N2,M1,,IV,,,,Stomach
+C16,T4b,N3,M1,,IV,,,,Stomach
+C18,Tis,N0,M0,,0,,,,Colorectal - Colon
+C18,T1,N0,M0,A,I,,,,Colorectal - Colon
+C18,T2,N0,M0,A,I,,,,Colorectal - Colon
+C18,T3,N0,M0,B,IIA,,,,Colorectal - Colon
+C18,T4a,N0,M0,B,IIB,,,,Colorectal - Colon
+C18,T4b,N0,M0,B,IIC,,,,Colorectal - Colon
+C18,T1,N1,M0,C,IIIA,,,,Colorectal - Colon
+C18,T2,N1,M0,C,IIIA,,,,Colorectal - Colon
+C18,T1,N1a,M0,C,IIIA,,,,Colorectal - Colon
+C18,T2,N1a,M0,C,IIIA,,,,Colorectal - Colon
+C18,T1,N1b,M0,C,IIIA,,,,Colorectal - Colon
+C18,T2,N1b,M0,C,IIIA,,,,Colorectal - Colon
+C18,T1,N1c,M0,C,IIIA,,,,Colorectal - Colon
+C18,T2,N1c,M0,C,IIIA,,,,Colorectal - Colon
+C18,T1,N2a,M0,C,IIIA,,,,Colorectal - Colon
+C18,T3,N1,M0,C,IIIB,,,,Colorectal - Colon
+C18,T4a,N1,M0,C,IIIB,,,,Colorectal - Colon
+C18,T3,N1c,M0,C,IIIB,,,,Colorectal - Colon
+C18,T4a,N1c,M0,C,IIIB,,,,Colorectal - Colon
+C18,T2,N2a,M0,C,IIIB,,,,Colorectal - Colon
+C18,T3,N2a,M0,C,IIIB,,,,Colorectal - Colon
+C18,T1,N2b,M0,C,IIIB,,,,Colorectal - Colon
+C18,T2,N2b,M0,C,IIIB,,,,Colorectal - Colon
+C18,T4a,N2a,M0,C,IIIC,,,,Colorectal - Colon
+C18,T3,N2b,M0,C,IIIC,,,,Colorectal - Colon
+C18,T4a,N2b,M0,C,IIIC,,,,Colorectal - Colon
+C18,T4b,N1,M0,C,IIIC,,,,Colorectal - Colon
+C18,T4b,N2,M0,C,IIIC,,,,Colorectal - Colon
+C18,Tis,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N0,M1a,,IVA,,,,Colorectal - Colon
+C18,Tis,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,Tis,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,Tis,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N1,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N2,M1a,,IVA,,,,Colorectal - Colon
+C18,Tis,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N1c,M1a,,IVA,,,,Colorectal - Colon
+C18,Tis,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N2b,M1a,,IVA,,,,Colorectal - Colon
+C18,Tis,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T1,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T2,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T3,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T4a,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,T4b,N2a,M1a,,IVA,,,,Colorectal - Colon
+C18,Tis,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N0,M1b,,IVB,,,,Colorectal - Colon
+C18,Tis,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,Tis,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,Tis,N2,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N2,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N2,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N2,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N2,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N1,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N2,M1b,,IVB,,,,Colorectal - Colon
+C18,Tis,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N1c,M1b,,IVB,,,,Colorectal - Colon
+C18,Tis,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N2b,M1b,,IVB,,,,Colorectal - Colon
+C18,Tis,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T1,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T2,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T3,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T4a,N2a,M1b,,IVB,,,,Colorectal - Colon
+C18,T4b,N2a,M1b,,IVB,,,,Colorectal - Colon
+C19,Tis,N0,M0,,0,,,,Colorectal - Rectosigmoid 
+C19,T1,N0,M0,,I,,,,Colorectal - Rectosigmoid 
+C19,T2,N0,M0,,I,,,,Colorectal - Rectosigmoid 
+C19,T3,N0,M0,,IIA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N0,M0,,IIB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N0,M0,,IIC,,,,Colorectal - Rectosigmoid 
+C19,T1,N1,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T2,N1,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T1,N1a,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T2,N1a,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T1,N1b,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T2,N1b,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T1,N1c,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T2,N1c,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T1,N2a,M0,,IIIA,,,,Colorectal - Rectosigmoid 
+C19,T3,N1,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T3,N1a,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1a,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T3,N1b,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1b,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T3,N1c,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1c,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T2,N2a,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T3,N2a,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T1,N2b,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T2,N2b,M0,,IIIB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N2a,M0,,IIIC,,,,Colorectal - Rectosigmoid 
+C19,T3,N2b,M0,,IIIC,,,,Colorectal - Rectosigmoid 
+C19,T4a,N2b,M0,,IIIC,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1,M0,,IIIC,,,,Colorectal - Rectosigmoid 
+C19,T4b,N2,M0,,IIIC,,,,Colorectal - Rectosigmoid 
+C19,Tis,N0,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,Tis,N1,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,Tis,N1a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,Tis,N1b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,Tis,N1c,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,Tis,N2,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,Tis,N2a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,Tis,N2b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T1,N0,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T1,N1,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T1,N1a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T1,N1b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T1,N1c,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T1,N2,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T1,N2a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T1,N2b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T2,N0,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T2,N1,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T2,N1a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T2,N1b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T2,N1c,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T2,N2,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T2,N2a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T2,N2b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T3,N0,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T3,N1,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T3,N1a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T3,N1b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T3,N1c,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T3,N2,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T3,N2a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T3,N2b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4,N0,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4,N1,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4,N1a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4,N1b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4,N1c,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4,N2,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4,N2a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4,N2b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N0,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1c,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N2,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N2a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4a,N2b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4b,N0,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1c,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4b,N2,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4b,N2a,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,T4b,N2b,M1a,,IVA,,,,Colorectal - Rectosigmoid 
+C19,Tis,N0,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,Tis,N1,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,Tis,N1a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,Tis,N1b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,Tis,N1c,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,Tis,N2,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,Tis,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,Tis,N2b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T1,N0,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T1,N1,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T1,N1a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T1,N1b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T1,N1c,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T1,N2,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T1,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T1,N2b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T2,N0,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T2,N1,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T2,N1a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T2,N1b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T2,N1c,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T2,N2,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T2,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T2,N2b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T3,N0,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T3,N1,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T3,N1a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T3,N1b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T3,N1c,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T3,N2,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T3,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T3,N2b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4,N0,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4,N1,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4,N1a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4,N1b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4,N1c,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4,N2,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4,N2b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N0,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N1c,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N2,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4a,N2b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N0,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N1c,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N2,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C19,T4b,N2b,M1b,,IVB,,,,Colorectal - Rectosigmoid 
+C20,Tis,N0,M0,,0,,,,Colorectal - Rectum
+C20,T1,N0,M0,,I,,,,Colorectal - Rectum
+C20,T2,N0,M0,,I,,,,Colorectal - Rectum
+C20,T3,N0,M0,,IIA,,,,Colorectal - Rectum
+C20,T4a,N0,M0,,IIB,,,,Colorectal - Rectum
+C20,T4b,N0,M0,,IIC,,,,Colorectal - Rectum
+C20,T1,N1,M0,,IIIA,,,,Colorectal - Rectum
+C20,T2,N1,M0,,IIIA,,,,Colorectal - Rectum
+C20,T1,N1a,M0,,IIIA,,,,Colorectal - Rectum
+C20,T2,N1a,M0,,IIIA,,,,Colorectal - Rectum
+C20,T1,N1b,M0,,IIIA,,,,Colorectal - Rectum
+C20,T2,N1b,M0,,IIIA,,,,Colorectal - Rectum
+C20,T1,N1c,M0,,IIIA,,,,Colorectal - Rectum
+C20,T2,N1c,M0,,IIIA,,,,Colorectal - Rectum
+C20,T1,N2a,M0,,IIIA,,,,Colorectal - Rectum
+C20,T3,N1,M0,,IIIB,,,,Colorectal - Rectum
+C20,T4a,N1,M0,,IIIB,,,,Colorectal - Rectum
+C20,T3,N1a,M0,,IIIB,,,,Colorectal - Rectum
+C20,T4a,N1a,M0,,IIIB,,,,Colorectal - Rectum
+C20,T3,N1b,M0,,IIIB,,,,Colorectal - Rectum
+C20,T4a,N1b,M0,,IIIB,,,,Colorectal - Rectum
+C20,T3,N1c,M0,,IIIB,,,,Colorectal - Rectum
+C20,T4a,N1c,M0,,IIIB,,,,Colorectal - Rectum
+C20,T2,N2a,M0,,IIIB,,,,Colorectal - Rectum
+C20,T3,N2a,M0,,IIIB,,,,Colorectal - Rectum
+C20,T1,N2b,M0,,IIIB,,,,Colorectal - Rectum
+C20,T2,N2b,M0,,IIIB,,,,Colorectal - Rectum
+C20,T4a,N2a,M0,,IIIC,,,,Colorectal - Rectum
+C20,T3,N2b,M0,,IIIC,,,,Colorectal - Rectum
+C20,T4a,N2b,M0,,IIIC,,,,Colorectal - Rectum
+C20,T4b,N1,M0,,IIIC,,,,Colorectal - Rectum
+C20,T4b,N2,M0,,IIIC,,,,Colorectal - Rectum
+C20,Tis,N0,M1a,,IVA,,,,Colorectal - Rectum
+C20,Tis,N1,M1a,,IVA,,,,Colorectal - Rectum
+C20,Tis,N1a,M1a,,IVA,,,,Colorectal - Rectum
+C20,Tis,N1b,M1a,,IVA,,,,Colorectal - Rectum
+C20,Tis,N1c,M1a,,IVA,,,,Colorectal - Rectum
+C20,Tis,N2,M1a,,IVA,,,,Colorectal - Rectum
+C20,Tis,N2a,M1a,,IVA,,,,Colorectal - Rectum
+C20,Tis,N2b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T1,N0,M1a,,IVA,,,,Colorectal - Rectum
+C20,T1,N1,M1a,,IVA,,,,Colorectal - Rectum
+C20,T1,N1a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T1,N1b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T1,N1c,M1a,,IVA,,,,Colorectal - Rectum
+C20,T1,N2,M1a,,IVA,,,,Colorectal - Rectum
+C20,T1,N2a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T1,N2b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T2,N0,M1a,,IVA,,,,Colorectal - Rectum
+C20,T2,N1,M1a,,IVA,,,,Colorectal - Rectum
+C20,T2,N1a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T2,N1b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T2,N1c,M1a,,IVA,,,,Colorectal - Rectum
+C20,T2,N2,M1a,,IVA,,,,Colorectal - Rectum
+C20,T2,N2a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T2,N2b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T3,N0,M1a,,IVA,,,,Colorectal - Rectum
+C20,T3,N1,M1a,,IVA,,,,Colorectal - Rectum
+C20,T3,N1a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T3,N1b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T3,N1c,M1a,,IVA,,,,Colorectal - Rectum
+C20,T3,N2,M1a,,IVA,,,,Colorectal - Rectum
+C20,T3,N2a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T3,N2b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4,N0,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4,N1,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4,N1a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4,N1b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4,N1c,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4,N2,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4,N2a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4,N2b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4a,N0,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4a,N1,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4a,N1a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4a,N1b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4a,N1c,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4a,N2,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4a,N2a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4a,N2b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4b,N0,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4b,N1,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4b,N1a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4b,N1b,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4b,N1c,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4b,N2,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4b,N2a,M1a,,IVA,,,,Colorectal - Rectum
+C20,T4b,N2b,M1a,,IVA,,,,Colorectal - Rectum
+C20,Tis,N0,M1b,,IVB,,,,Colorectal - Rectum
+C20,Tis,N1,M1b,,IVB,,,,Colorectal - Rectum
+C20,Tis,N1a,M1b,,IVB,,,,Colorectal - Rectum
+C20,Tis,N1b,M1b,,IVB,,,,Colorectal - Rectum
+C20,Tis,N1c,M1b,,IVB,,,,Colorectal - Rectum
+C20,Tis,N2,M1b,,IVB,,,,Colorectal - Rectum
+C20,Tis,N2a,M1b,,IVB,,,,Colorectal - Rectum
+C20,Tis,N2b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T1,N0,M1b,,IVB,,,,Colorectal - Rectum
+C20,T1,N1,M1b,,IVB,,,,Colorectal - Rectum
+C20,T1,N1a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T1,N1b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T1,N1c,M1b,,IVB,,,,Colorectal - Rectum
+C20,T1,N2,M1b,,IVB,,,,Colorectal - Rectum
+C20,T1,N2a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T1,N2b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T2,N0,M1b,,IVB,,,,Colorectal - Rectum
+C20,T2,N1,M1b,,IVB,,,,Colorectal - Rectum
+C20,T2,N1a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T2,N1b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T2,N1c,M1b,,IVB,,,,Colorectal - Rectum
+C20,T2,N2,M1b,,IVB,,,,Colorectal - Rectum
+C20,T2,N2a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T2,N2b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T3,N0,M1b,,IVB,,,,Colorectal - Rectum
+C20,T3,N1,M1b,,IVB,,,,Colorectal - Rectum
+C20,T3,N1a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T3,N1b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T3,N1c,M1b,,IVB,,,,Colorectal - Rectum
+C20,T3,N2,M1b,,IVB,,,,Colorectal - Rectum
+C20,T3,N2a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T3,N2b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4,N0,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4,N1,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4,N1a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4,N1b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4,N1c,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4,N2,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4,N2a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4,N2b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4a,N0,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4a,N1,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4a,N1a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4a,N1b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4a,N1c,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4a,N2,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4a,N2a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4a,N2b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4b,N0,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4b,N1,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4b,N1a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4b,N1b,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4b,N1c,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4b,N2,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4b,N2a,M1b,,IVB,,,,Colorectal - Rectum
+C20,T4b,N2b,M1b,,IVB,,,,Colorectal - Rectum
+C34,Tis,N0,M0,,0,,,,Lung
+C34,T1a,N0,M0,,IA,,,,Lung
+C34,T1b,N0,M0,,IA,,,,Lung
+C34,T2a,N0,M0,,IB,,,,Lung
+C34,T2b,N0,M0,,IIA,,,,Lung
+C34,T1a,N1,M0,,IIA,,,,Lung
+C34,T1b,N1,M0,,IIA,,,,Lung
+C34,T2a,N1,M0,,IIA,,,,Lung
+C34,T2b,N1,M0,,IIB,,,,Lung
+C34,T3,N0,M0,,IIB,,,,Lung
+C34,T1a,N2,M0,,IIIA,,,,Lung
+C34,T1b,N2,M0,,IIIA,,,,Lung
+C34,T2a,N2,M0,,IIIA,,,,Lung
+C34,T2b,N2,M0,,IIIA,,,,Lung
+C34,T3,N1,M0,,IIIA,,,,Lung
+C34,T3,N2,M0,,IIIA,,,,Lung
+C34,T4,N0,M0,,IIIA,,,,Lung
+C34,T4,N1,M0,,IIIA,,,,Lung
+C34,T1a,N3,M0,,IIIB,,,,Lung
+C34,T1b,N3,M0,,IIIB,,,,Lung
+C34,T2a,N3,M0,,IIIB,,,,Lung
+C34,T2b,N3,M0,,IIIB,,,,Lung
+C34,T3,N3,M0,,IIIB,,,,Lung
+C34,T4,N2,M0,,IIIB,,,,Lung
+C34,T4,N3,M0,,IIIB,,,,Lung
+C34,Tis,N0,M1a,,IV,,,,Lung
+C34,Tis,N1,M1a,,IV,,,,Lung
+C34,Tis,N1mi,M1a,,IV,,,,Lung
+C34,Tis,N2,M1a,,IV,,,,Lung
+C34,Tis,N3,M1a,,IV,,,,Lung
+C34,T1a,N0,M1a,,IV,,,,Lung
+C34,T1a,N1,M1a,,IV,,,,Lung
+C34,T1a,N1mi,M1a,,IV,,,,Lung
+C34,T1a,N2,M1a,,IV,,,,Lung
+C34,T1a,N3,M1a,,IV,,,,Lung
+C34,T1b,N0,M1a,,IV,,,,Lung
+C34,T1b,N1,M1a,,IV,,,,Lung
+C34,T1b,N1mi,M1a,,IV,,,,Lung
+C34,T1b,N2,M1a,,IV,,,,Lung
+C34,T1b,N3,M1a,,IV,,,,Lung
+C34,T2a,N0,M1a,,IV,,,,Lung
+C34,T2a,N1,M1a,,IV,,,,Lung
+C34,T2a,N1mi,M1a,,IV,,,,Lung
+C34,T2a,N2,M1a,,IV,,,,Lung
+C34,T2a,N3,M1a,,IV,,,,Lung
+C34,T2b,N0,M1a,,IV,,,,Lung
+C34,T2b,N1,M1a,,IV,,,,Lung
+C34,T2b,N1mi,M1a,,IV,,,,Lung
+C34,T2b,N2,M1a,,IV,,,,Lung
+C34,T2b,N3,M1a,,IV,,,,Lung
+C34,T3,N0,M1a,,IV,,,,Lung
+C34,T3,N1,M1a,,IV,,,,Lung
+C34,T3,N1mi,M1a,,IV,,,,Lung
+C34,T3,N2,M1a,,IV,,,,Lung
+C34,T3,N3,M1a,,IV,,,,Lung
+C34,T4,N0,M1a,,IV,,,,Lung
+C34,T4,N1,M1a,,IV,,,,Lung
+C34,T4,N1mi,M1a,,IV,,,,Lung
+C34,T4,N2,M1a,,IV,,,,Lung
+C34,T4,N3,M1a,,IV,,,,Lung
+C34,Tis,N0,M1b,,IV,,,,Lung
+C34,Tis,N1,M1b,,IV,,,,Lung
+C34,Tis,N1mi,M1b,,IV,,,,Lung
+C34,Tis,N2,M1b,,IV,,,,Lung
+C34,Tis,N3,M1b,,IV,,,,Lung
+C34,T1a,N0,M1b,,IV,,,,Lung
+C34,T1a,N1,M1b,,IV,,,,Lung
+C34,T1a,N1mi,M1b,,IV,,,,Lung
+C34,T1a,N2,M1b,,IV,,,,Lung
+C34,T1a,N3,M1b,,IV,,,,Lung
+C34,T1b,N0,M1b,,IV,,,,Lung
+C34,T1b,N1,M1b,,IV,,,,Lung
+C34,T1b,N1mi,M1b,,IV,,,,Lung
+C34,T1b,N2,M1b,,IV,,,,Lung
+C34,T1b,N3,M1b,,IV,,,,Lung
+C34,T2a,N0,M1b,,IV,,,,Lung
+C34,T2a,N1,M1b,,IV,,,,Lung
+C34,T2a,N1mi,M1b,,IV,,,,Lung
+C34,T2a,N2,M1b,,IV,,,,Lung
+C34,T2a,N3,M1b,,IV,,,,Lung
+C34,T2b,N0,M1b,,IV,,,,Lung
+C34,T2b,N1,M1b,,IV,,,,Lung
+C34,T2b,N1mi,M1b,,IV,,,,Lung
+C34,T2b,N2,M1b,,IV,,,,Lung
+C34,T2b,N3,M1b,,IV,,,,Lung
+C34,T3,N0,M1b,,IV,,,,Lung
+C34,T3,N1,M1b,,IV,,,,Lung
+C34,T3,N1mi,M1b,,IV,,,,Lung
+C34,T3,N2,M1b,,IV,,,,Lung
+C34,T3,N3,M1b,,IV,,,,Lung
+C34,T4,N0,M1b,,IV,,,,Lung
+C34,T4,N1,M1b,,IV,,,,Lung
+C34,T4,N1mi,M1b,,IV,,,,Lung
+C34,T4,N2,M1b,,IV,,,,Lung
+C34,T4,N3,M1b,,IV,,,,Lung
+C50,Tis,N0,M0,,0,,,,Breast
+C50,T1,N0,M0,,IA,,,,Breast
+C50,T0,N1mi,M0,,IB,,,,Breast
+C50,T1,N1mi,M0,,IB,,,,Breast
+C50,T0,N1,M0,,IIA,,,,Breast
+C50,T1,N1,M0,,IIA,,,,Breast
+C50,T2,N0,M0,,IIA,,,,Breast
+C50,T2,N1,M0,,IIB,,,,Breast
+C50,T3,N0,M0,,IIB,,,,Breast
+C50,T0,N2,M0,,IIIA,,,,Breast
+C50,T1,N2,M0,,IIIA,,,,Breast
+C50,T2,N2,M0,,IIIA,,,,Breast
+C50,T3,N1,M0,,IIIA,,,,Breast
+C50,T3,N2,M0,,IIIA,,,,Breast
+C50,T4,N0,M0,,IIIB,,,,Breast
+C50,T4,N1,M0,,IIIB,,,,Breast
+C50,T4,N2,M0,,IIIB,,,,Breast
+C50,Tis,N3,M0,,IIIC,,,,Breast
+C50,T0,N3,M0,,IIIC,,,,Breast
+C50,T1,N3,M0,,IIIC,,,,Breast
+C50,T2,N3,M0,,IIIC,,,,Breast
+C50,T3,N3,M0,,IIIC,,,,Breast
+C50,T4,N3,M0,,IIIC,,,,Breast
+C50,Tis,N0,M1,,IV,,,,Breast
+C50,T0,N0,M1,,IV,,,,Breast
+C50,T1,N0,M1,,IV,,,,Breast
+C50,T2,N0,M1,,IV,,,,Breast
+C50,T3,N0,M1,,IV,,,,Breast
+C50,T4,N0,M1,,IV,,,,Breast
+C50,Tis,N1mi,M1,,IV,,,,Breast
+C50,T0,N1mi,M1,,IV,,,,Breast
+C50,T1,N1mi,M1,,IV,,,,Breast
+C50,T2,N1mi,M1,,IV,,,,Breast
+C50,T3,N1mi,M1,,IV,,,,Breast
+C50,T4,N1mi,M1,,IV,,,,Breast
+C50,Tis,N1,M1,,IV,,,,Breast
+C50,T0,N1,M1,,IV,,,,Breast
+C50,T1,N1,M1,,IV,,,,Breast
+C50,T2,N1,M1,,IV,,,,Breast
+C50,T3,N1,M1,,IV,,,,Breast
+C50,T4,N1,M1,,IV,,,,Breast
+C50,Tis,N2,M1,,IV,,,,Breast
+C50,T0,N2,M1,,IV,,,,Breast
+C50,T1,N2,M1,,IV,,,,Breast
+C50,T2,N2,M1,,IV,,,,Breast
+C50,T3,N2,M1,,IV,,,,Breast
+C50,T4,N2,M1,,IV,,,,Breast
+C50,Tis,N3,M1,,IV,,,,Breast
+C50,T0,N3,M1,,IV,,,,Breast
+C50,T1,N3,M1,,IV,,,,Breast
+C50,T2,N3,M1,,IV,,,,Breast
+C50,T3,N3,M1,,IV,,,,Breast
+C50,T4,N3,M1,,IV,,,,Breast
+C53,Tis,N0,M0,,0,,,,Cervix Uteri
+C53,T1,N0,M0,,I,,,,Cervix Uteri
+C53,T1a,N0,M0,,IA,,,,Cervix Uteri
+C53,T1a1,N0,M0,,IA1,,,,Cervix Uteri
+C53,T1a2,N0,M0,,IA2,,,,Cervix Uteri
+C53,T1b,N0,M0,,IB,,,,Cervix Uteri
+C53,T1b1,N0,M0,,IB1,,,,Cervix Uteri
+C53,T1b2,N0,M0,,IB2,,,,Cervix Uteri
+C53,T2,N0,M0,,II,,,,Cervix Uteri
+C53,T2a,N0,M0,,IIA,,,,Cervix Uteri
+C53,T2a1,N0,M0,,IIA1,,,,Cervix Uteri
+C53,T2a2,N0,M0,,IIA2,,,,Cervix Uteri
+C53,T2b,N0,M0,,IIB,,,,Cervix Uteri
+C53,T3,N0,M0,,III,,,,Cervix Uteri
+C53,T3a,N0,M0,,IIIA,,,,Cervix Uteri
+C53,T3b,N0,M0,,IIIB,,,,Cervix Uteri
+C53,T3b,N1,M0,,IIIB,,,,Cervix Uteri
+C53,T1,N1,M0,,IIIB,,,,Cervix Uteri
+C53,T2,N1,M0,,IIIB,,,,Cervix Uteri
+C53,T3,N1,M0,,IIIB,,,,Cervix Uteri
+C53,T4,N0,M0,,IVA,,,,Cervix Uteri
+C53,T4,N1,M0,,IVA,,,,Cervix Uteri
+C53,Tis,N0,M1,,IVB,,,,Cervix Uteri
+C53,T1,N0,M1,,IVB,,,,Cervix Uteri
+C53,T1a,N0,M1,,IVB,,,,Cervix Uteri
+C53,T1a1,N0,M1,,IVB,,,,Cervix Uteri
+C53,T1a2,N0,M1,,IVB,,,,Cervix Uteri
+C53,T1b,N0,M1,,IVB,,,,Cervix Uteri
+C53,T1b1,N0,M1,,IVB,,,,Cervix Uteri
+C53,T1b2,N0,M1,,IVB,,,,Cervix Uteri
+C53,T2,N0,M1,,IVB,,,,Cervix Uteri
+C53,T2a,N0,M1,,IVB,,,,Cervix Uteri
+C53,T2a1,N0,M1,,IVB,,,,Cervix Uteri
+C53,T2a2,N0,M1,,IVB,,,,Cervix Uteri
+C53,T2b,N0,M1,,IVB,,,,Cervix Uteri
+C53,T3,N0,M1,,IVB,,,,Cervix Uteri
+C53,T3a,N0,M1,,IVB,,,,Cervix Uteri
+C53,T3b,N0,M1,,IVB,,,,Cervix Uteri
+C53,T4,N0,M1,,IVB,,,,Cervix Uteri
+C54,Tis,N0,M0,,0,,,C,Corpus Uteri Carcinomas
+C54,T1,N0,M0,,I,,,C,Corpus Uteri Carcinomas
+C54,T1a,N0,M0,,IA,,,C,Corpus Uteri Carcinomas
+C54,T1b,N0,M0,,IB,,,C,Corpus Uteri Carcinomas
+C54,T2,N0,M0,,II,,,C,Corpus Uteri Carcinomas
+C54,T3,N0,M0,,III,,,C,Corpus Uteri Carcinomas
+C54,T3a,N0,M0,,IIIA,,,C,Corpus Uteri Carcinomas
+C54,T3b,N0,M0,,IIIB,,,C,Corpus Uteri Carcinomas
+C54,T1,N1,M0,,IIIC1,,,C,Corpus Uteri Carcinomas
+C54,T2,N1,M0,,IIIC1,,,C,Corpus Uteri Carcinomas
+C54,T3,N1,M0,,IIIC1,,,C,Corpus Uteri Carcinomas
+C54,T1,N2,M0,,IIIC2,,,C,Corpus Uteri Carcinomas
+C54,T2,N2,M0,,IIIC2,,,C,Corpus Uteri Carcinomas
+C54,T3,N2,M0,,IIIC2,,,C,Corpus Uteri Carcinomas
+C54,T4,N0,M0,,IVA,,,C,Corpus Uteri Carcinomas
+C54,T4,N1,M0,,IVA,,,C,Corpus Uteri Carcinomas
+C54,T4,N2,M0,,IVA,,,C,Corpus Uteri Carcinomas
+C54,Tis,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1a,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1b,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T2,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3a,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3b,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T4,N0,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,Tis,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1a,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1b,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T2,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3a,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3b,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T4,N1,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,Tis,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1a,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1b,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T2,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3a,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T3b,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T4,N2,M1,,IVB,,,C,Corpus Uteri Carcinomas
+C54,T1,N0,M0,,I,,,S,Corpus Uteri Sarcomas
+C54,T1a,N0,M0,,IA,,,S,Corpus Uteri Sarcomas
+C54,T1b,N0,M0,,IB,,,S,Corpus Uteri Sarcomas
+C54,T1c,N0,M0,,IC,,,S,Corpus Uteri Sarcomas
+C54,T2,N0,M0,,II,,,S,Corpus Uteri Sarcomas
+C54,T3a,N0,M0,,IIIA,,,S,Corpus Uteri Sarcomas
+C54,T3b,N0,M0,,IIIB,,,S,Corpus Uteri Sarcomas
+C54,T1,N1,M0,,IIIC,,,S,Corpus Uteri Sarcomas
+C54,T2,N1,M0,,IIIC,,,S,Corpus Uteri Sarcomas
+C54,T3,N1,M0,,IIIC,,,S,Corpus Uteri Sarcomas
+C54,T4,N0,M0,,IVA,,,S,Corpus Uteri Sarcomas
+C54,T4,N1,M0,,IVA,,,S,Corpus Uteri Sarcomas
+C54,T4,N2,M0,,IVA,,,S,Corpus Uteri Sarcomas
+C54,T1,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1a,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1b,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1c,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T2,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3a,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3b,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T4,N0,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1a,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1b,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1c,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T2,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3a,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3b,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T4,N1,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1a,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1b,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T1c,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T2,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3a,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T3b,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C54,T4,N2,M1,,IVB,,,S,Corpus Uteri Sarcomas
+C61,T1a,N0,M0,,I,1,6,,Prostate
+C61,T1b,N0,M0,,I,1,6,,Prostate
+C61,T1c,N0,M0,,I,1,6,,Prostate
+C61,T2a,N0,M0,,I,1,6,,Prostate
+C61,T1,N0,M0,,I,X,X,,Prostate
+C61,T1a,N0,M0,,I,X,X,,Prostate
+C61,T1b,N0,M0,,I,X,X,,Prostate
+C61,T1c,N0,M0,,I,X,X,,Prostate
+C61,T2,N0,M0,,I,X,X,,Prostate
+C61,T2a,N0,M0,,I,X,X,,Prostate
+C61,T1a,N0,M0,,IIA,1,7,,Prostate
+C61,T1b,N0,M0,,IIA,1,7,,Prostate
+C61,T1c,N0,M0,,IIA,1,7,,Prostate
+C61,T1a,N0,M0,,IIA,15,7,,Prostate
+C61,T1b,N0,M0,,IIA,15,7,,Prostate
+C61,T1c,N0,M0,,IIA,15,7,,Prostate
+C61,T1a,N0,M0,,IIA,15,6,,Prostate
+C61,T1b,N0,M0,,IIA,15,6,,Prostate
+C61,T1c,N0,M0,,IIA,15,6,,Prostate
+C61,T2a,N0,M0,,IIA,15,6,,Prostate
+C61,T2a,N0,M0,,IIA,1,7,,Prostate
+C61,T2a,N0,M0,,IIA,15,7,,Prostate
+C61,T2b,N0,M0,,IIA,1,6,,Prostate
+C61,T2b,N0,M0,,IIA,15,6,,Prostate
+C61,T2b,N0,M0,,IIA,1,7,,Prostate
+C61,T2b,N0,M0,,IIA,15,7,,Prostate
+C61,T2b,N0,M0,,IIA,X,X,,Prostate
+C61,T2c,N0,M0,,IIB,1,6,,Prostate
+C61,T2c,N0,M0,,IIB,15,6,,Prostate
+C61,T2c,N0,M0,,IIB,25,6,,Prostate
+C61,T2c,N0,M0,,IIB,X,6,,Prostate
+C61,T2c,N0,M0,,IIB,,6,,Prostate
+C61,T2c,N0,M0,,IIB,1,7,,Prostate
+C61,T2c,N0,M0,,IIB,15,7,,Prostate
+C61,T2c,N0,M0,,IIB,25,7,,Prostate
+C61,T2c,N0,M0,,IIB,X,7,,Prostate
+C61,T2c,N0,M0,,IIB,,7,,Prostate
+C61,T2c,N0,M0,,IIB,1,8,,Prostate
+C61,T2c,N0,M0,,IIB,15,8,,Prostate
+C61,T2c,N0,M0,,IIB,25,8,,Prostate
+C61,T2c,N0,M0,,IIB,X,8,,Prostate
+C61,T2c,N0,M0,,IIB,,8,,Prostate
+C61,T2c,N0,M0,,IIB,1,X,,Prostate
+C61,T2c,N0,M0,,IIB,15,X,,Prostate
+C61,T2c,N0,M0,,IIB,25,X,,Prostate
+C61,T2c,N0,M0,,IIB,X,X,,Prostate
+C61,T2c,N0,M0,,IIB,,X,,Prostate
+C61,T2c,N0,M0,,IIB,1,,,Prostate
+C61,T2c,N0,M0,,IIB,15,,,Prostate
+C61,T2c,N0,M0,,IIB,25,,,Prostate
+C61,T2c,N0,M0,,IIB,X,,,Prostate
+C61,T2c,N0,M0,,IIB,,,,Prostate
+C61,T1,N0,M0,,IIB,25,6,,Prostate
+C61,T1a,N0,M0,,IIB,25,6,,Prostate
+C61,T1b,N0,M0,,IIB,25,6,,Prostate
+C61,T1c,N0,M0,,IIB,25,6,,Prostate
+C61,T2,N0,M0,,IIB,25,6,,Prostate
+C61,T1,N0,M0,,IIB,25,7,,Prostate
+C61,T1a,N0,M0,,IIB,25,7,,Prostate
+C61,T1b,N0,M0,,IIB,25,7,,Prostate
+C61,T1c,N0,M0,,IIB,25,7,,Prostate
+C61,T2,N0,M0,,IIB,25,7,,Prostate
+C61,T1,N0,M0,,IIB,25,8,,Prostate
+C61,T1a,N0,M0,,IIB,25,8,,Prostate
+C61,T1b,N0,M0,,IIB,25,8,,Prostate
+C61,T1c,N0,M0,,IIB,25,8,,Prostate
+C61,T2,N0,M0,,IIB,25,8,,Prostate
+C61,T1,N0,M0,,IIB,25,X,,Prostate
+C61,T1a,N0,M0,,IIB,25,X,,Prostate
+C61,T1b,N0,M0,,IIB,25,X,,Prostate
+C61,T1c,N0,M0,,IIB,25,X,,Prostate
+C61,T2,N0,M0,,IIB,25,X,,Prostate
+C61,T1,N0,M0,,IIB,25,,,Prostate
+C61,T1a,N0,M0,,IIB,25,,,Prostate
+C61,T1b,N0,M0,,IIB,25,,,Prostate
+C61,T1c,N0,M0,,IIB,25,,,Prostate
+C61,T2,N0,M0,,IIB,25,,,Prostate
+C61,T1,N0,M0,,IIB,1,8,,Prostate
+C61,T1,N0,M0,,IIB,15,8,,Prostate
+C61,T1,N0,M0,,IIB,25,8,,Prostate
+C61,T1,N0,M0,,IIB,X,8,,Prostate
+C61,T1,N0,M0,,IIB,,8,,Prostate
+C61,T1a,N0,M0,,IIB,1,8,,Prostate
+C61,T1a,N0,M0,,IIB,15,8,,Prostate
+C61,T1a,N0,M0,,IIB,25,8,,Prostate
+C61,T1a,N0,M0,,IIB,X,8,,Prostate
+C61,T1a,N0,M0,,IIB,,8,,Prostate
+C61,T1b,N0,M0,,IIB,1,8,,Prostate
+C61,T1b,N0,M0,,IIB,15,8,,Prostate
+C61,T1b,N0,M0,,IIB,25,8,,Prostate
+C61,T1b,N0,M0,,IIB,X,8,,Prostate
+C61,T1b,N0,M0,,IIB,,8,,Prostate
+C61,T1c,N0,M0,,IIB,1,8,,Prostate
+C61,T1c,N0,M0,,IIB,15,8,,Prostate
+C61,T1c,N0,M0,,IIB,25,8,,Prostate
+C61,T1c,N0,M0,,IIB,X,8,,Prostate
+C61,T1c,N0,M0,,IIB,,8,,Prostate
+C61,T2,N0,M0,,IIB,1,8,,Prostate
+C61,T2,N0,M0,,IIB,15,8,,Prostate
+C61,T2,N0,M0,,IIB,25,8,,Prostate
+C61,T2,N0,M0,,IIB,X,8,,Prostate
+C61,T2,N0,M0,,IIB,,8,,Prostate
+C61,T3a,N0,M0,,III,1,6,,Prostate
+C61,T3a,N0,M0,,III,15,6,,Prostate
+C61,T3a,N0,M0,,III,25,6,,Prostate
+C61,T3a,N0,M0,,III,X,6,,Prostate
+C61,T3a,N0,M0,,III,,6,,Prostate
+C61,T3b,N0,M0,,III,1,6,,Prostate
+C61,T3b,N0,M0,,III,15,6,,Prostate
+C61,T3b,N0,M0,,III,25,6,,Prostate
+C61,T3b,N0,M0,,III,X,6,,Prostate
+C61,T3b,N0,M0,,III,,6,,Prostate
+C61,T3a,N0,M0,,III,1,7,,Prostate
+C61,T3a,N0,M0,,III,15,7,,Prostate
+C61,T3a,N0,M0,,III,25,7,,Prostate
+C61,T3a,N0,M0,,III,X,7,,Prostate
+C61,T3a,N0,M0,,III,,7,,Prostate
+C61,T3b,N0,M0,,III,1,7,,Prostate
+C61,T3b,N0,M0,,III,15,7,,Prostate
+C61,T3b,N0,M0,,III,25,7,,Prostate
+C61,T3b,N0,M0,,III,X,7,,Prostate
+C61,T3b,N0,M0,,III,,7,,Prostate
+C61,T3a,N0,M0,,III,1,8,,Prostate
+C61,T3a,N0,M0,,III,15,8,,Prostate
+C61,T3a,N0,M0,,III,25,8,,Prostate
+C61,T3a,N0,M0,,III,X,8,,Prostate
+C61,T3a,N0,M0,,III,,8,,Prostate
+C61,T3b,N0,M0,,III,1,8,,Prostate
+C61,T3b,N0,M0,,III,15,8,,Prostate
+C61,T3b,N0,M0,,III,25,8,,Prostate
+C61,T3b,N0,M0,,III,X,8,,Prostate
+C61,T3b,N0,M0,,III,,8,,Prostate
+C61,T3a,N0,M0,,III,1,X,,Prostate
+C61,T3a,N0,M0,,III,15,X,,Prostate
+C61,T3a,N0,M0,,III,25,X,,Prostate
+C61,T3a,N0,M0,,III,X,X,,Prostate
+C61,T3a,N0,M0,,III,,X,,Prostate
+C61,T3b,N0,M0,,III,1,X,,Prostate
+C61,T3b,N0,M0,,III,15,X,,Prostate
+C61,T3b,N0,M0,,III,25,X,,Prostate
+C61,T3b,N0,M0,,III,X,X,,Prostate
+C61,T3b,N0,M0,,III,,X,,Prostate
+C61,T3a,N0,M0,,III,1,,,Prostate
+C61,T3a,N0,M0,,III,15,,,Prostate
+C61,T3a,N0,M0,,III,25,,,Prostate
+C61,T3a,N0,M0,,III,X,,,Prostate
+C61,T3a,N0,M0,,III,,,,Prostate
+C61,T3b,N0,M0,,III,1,,,Prostate
+C61,T3b,N0,M0,,III,15,,,Prostate
+C61,T3b,N0,M0,,III,25,,,Prostate
+C61,T3b,N0,M0,,III,X,,,Prostate
+C61,T3b,N0,M0,,III,,,,Prostate
+C61,T4,N0,M0,,IV,1,6,,Prostate
+C61,T4,N0,M0,,IV,15,6,,Prostate
+C61,T4,N0,M0,,IV,25,6,,Prostate
+C61,T4,N0,M0,,IV,X,6,,Prostate
+C61,T4,N0,M0,,IV,,6,,Prostate
+C61,T4,N0,M0,,IV,1,7,,Prostate
+C61,T4,N0,M0,,IV,15,7,,Prostate
+C61,T4,N0,M0,,IV,25,7,,Prostate
+C61,T4,N0,M0,,IV,X,7,,Prostate
+C61,T4,N0,M0,,IV,,7,,Prostate
+C61,T4,N0,M0,,IV,1,8,,Prostate
+C61,T4,N0,M0,,IV,15,8,,Prostate
+C61,T4,N0,M0,,IV,25,8,,Prostate
+C61,T4,N0,M0,,IV,X,8,,Prostate
+C61,T4,N0,M0,,IV,,8,,Prostate
+C61,T4,N0,M0,,IV,1,X,,Prostate
+C61,T4,N0,M0,,IV,15,X,,Prostate
+C61,T4,N0,M0,,IV,25,X,,Prostate
+C61,T4,N0,M0,,IV,X,X,,Prostate
+C61,T4,N0,M0,,IV,,X,,Prostate
+C61,T4,N0,M0,,IV,1,,,Prostate
+C61,T4,N0,M0,,IV,15,,,Prostate
+C61,T4,N0,M0,,IV,25,,,Prostate
+C61,T4,N0,M0,,IV,X,,,Prostate
+C61,T4,N0,M0,,IV,,,,Prostate
+C61,T1a,N1,M0,,IV,1,6,,Prostate
+C61,T1a,N1,M0,,IV,15,6,,Prostate
+C61,T1a,N1,M0,,IV,25,6,,Prostate
+C61,T1a,N1,M0,,IV,X,6,,Prostate
+C61,T1a,N1,M0,,IV,,6,,Prostate
+C61,T1a,N1,M0,,IV,1,7,,Prostate
+C61,T1a,N1,M0,,IV,15,7,,Prostate
+C61,T1a,N1,M0,,IV,25,7,,Prostate
+C61,T1a,N1,M0,,IV,X,7,,Prostate
+C61,T1a,N1,M0,,IV,,7,,Prostate
+C61,T1a,N1,M0,,IV,1,8,,Prostate
+C61,T1a,N1,M0,,IV,15,8,,Prostate
+C61,T1a,N1,M0,,IV,25,8,,Prostate
+C61,T1a,N1,M0,,IV,X,8,,Prostate
+C61,T1a,N1,M0,,IV,,8,,Prostate
+C61,T1a,N1,M0,,IV,1,X,,Prostate
+C61,T1a,N1,M0,,IV,15,X,,Prostate
+C61,T1a,N1,M0,,IV,25,X,,Prostate
+C61,T1a,N1,M0,,IV,X,X,,Prostate
+C61,T1a,N1,M0,,IV,,X,,Prostate
+C61,T1a,N1,M0,,IV,1,,,Prostate
+C61,T1a,N1,M0,,IV,15,,,Prostate
+C61,T1a,N1,M0,,IV,25,,,Prostate
+C61,T1a,N1,M0,,IV,X,,,Prostate
+C61,T1a,N1,M0,,IV,,,,Prostate
+C61,T1b,N1,M0,,IV,1,6,,Prostate
+C61,T1b,N1,M0,,IV,15,6,,Prostate
+C61,T1b,N1,M0,,IV,25,6,,Prostate
+C61,T1b,N1,M0,,IV,X,6,,Prostate
+C61,T1b,N1,M0,,IV,,6,,Prostate
+C61,T1b,N1,M0,,IV,1,7,,Prostate
+C61,T1b,N1,M0,,IV,15,7,,Prostate
+C61,T1b,N1,M0,,IV,25,7,,Prostate
+C61,T1b,N1,M0,,IV,X,7,,Prostate
+C61,T1b,N1,M0,,IV,,7,,Prostate
+C61,T1b,N1,M0,,IV,1,8,,Prostate
+C61,T1b,N1,M0,,IV,15,8,,Prostate
+C61,T1b,N1,M0,,IV,25,8,,Prostate
+C61,T1b,N1,M0,,IV,X,8,,Prostate
+C61,T1b,N1,M0,,IV,,8,,Prostate
+C61,T1b,N1,M0,,IV,1,X,,Prostate
+C61,T1b,N1,M0,,IV,15,X,,Prostate
+C61,T1b,N1,M0,,IV,25,X,,Prostate
+C61,T1b,N1,M0,,IV,X,X,,Prostate
+C61,T1b,N1,M0,,IV,,X,,Prostate
+C61,T1b,N1,M0,,IV,1,,,Prostate
+C61,T1b,N1,M0,,IV,15,,,Prostate
+C61,T1b,N1,M0,,IV,25,,,Prostate
+C61,T1b,N1,M0,,IV,X,,,Prostate
+C61,T1b,N1,M0,,IV,,,,Prostate
+C61,T1c,N1,M0,,IV,1,6,,Prostate
+C61,T1c,N1,M0,,IV,15,6,,Prostate
+C61,T1c,N1,M0,,IV,25,6,,Prostate
+C61,T1c,N1,M0,,IV,X,6,,Prostate
+C61,T1c,N1,M0,,IV,,6,,Prostate
+C61,T1c,N1,M0,,IV,1,7,,Prostate
+C61,T1c,N1,M0,,IV,15,7,,Prostate
+C61,T1c,N1,M0,,IV,25,7,,Prostate
+C61,T1c,N1,M0,,IV,X,7,,Prostate
+C61,T1c,N1,M0,,IV,,7,,Prostate
+C61,T1c,N1,M0,,IV,1,8,,Prostate
+C61,T1c,N1,M0,,IV,15,8,,Prostate
+C61,T1c,N1,M0,,IV,25,8,,Prostate
+C61,T1c,N1,M0,,IV,X,8,,Prostate
+C61,T1c,N1,M0,,IV,,8,,Prostate
+C61,T1c,N1,M0,,IV,1,X,,Prostate
+C61,T1c,N1,M0,,IV,15,X,,Prostate
+C61,T1c,N1,M0,,IV,25,X,,Prostate
+C61,T1c,N1,M0,,IV,X,X,,Prostate
+C61,T1c,N1,M0,,IV,,X,,Prostate
+C61,T1c,N1,M0,,IV,1,,,Prostate
+C61,T1c,N1,M0,,IV,15,,,Prostate
+C61,T1c,N1,M0,,IV,25,,,Prostate
+C61,T1c,N1,M0,,IV,X,,,Prostate
+C61,T1c,N1,M0,,IV,,,,Prostate
+C61,T2a,N1,M0,,IV,1,6,,Prostate
+C61,T2a,N1,M0,,IV,15,6,,Prostate
+C61,T2a,N1,M0,,IV,25,6,,Prostate
+C61,T2a,N1,M0,,IV,X,6,,Prostate
+C61,T2a,N1,M0,,IV,,6,,Prostate
+C61,T2a,N1,M0,,IV,1,7,,Prostate
+C61,T2a,N1,M0,,IV,15,7,,Prostate
+C61,T2a,N1,M0,,IV,25,7,,Prostate
+C61,T2a,N1,M0,,IV,X,7,,Prostate
+C61,T2a,N1,M0,,IV,,7,,Prostate
+C61,T2a,N1,M0,,IV,1,8,,Prostate
+C61,T2a,N1,M0,,IV,15,8,,Prostate
+C61,T2a,N1,M0,,IV,25,8,,Prostate
+C61,T2a,N1,M0,,IV,X,8,,Prostate
+C61,T2a,N1,M0,,IV,,8,,Prostate
+C61,T2a,N1,M0,,IV,1,X,,Prostate
+C61,T2a,N1,M0,,IV,15,X,,Prostate
+C61,T2a,N1,M0,,IV,25,X,,Prostate
+C61,T2a,N1,M0,,IV,X,X,,Prostate
+C61,T2a,N1,M0,,IV,,X,,Prostate
+C61,T2a,N1,M0,,IV,1,,,Prostate
+C61,T2a,N1,M0,,IV,15,,,Prostate
+C61,T2a,N1,M0,,IV,25,,,Prostate
+C61,T2a,N1,M0,,IV,X,,,Prostate
+C61,T2a,N1,M0,,IV,,,,Prostate
+C61,T2b,N1,M0,,IV,1,6,,Prostate
+C61,T2b,N1,M0,,IV,15,6,,Prostate
+C61,T2b,N1,M0,,IV,25,6,,Prostate
+C61,T2b,N1,M0,,IV,X,6,,Prostate
+C61,T2b,N1,M0,,IV,,6,,Prostate
+C61,T2b,N1,M0,,IV,1,7,,Prostate
+C61,T2b,N1,M0,,IV,15,7,,Prostate
+C61,T2b,N1,M0,,IV,25,7,,Prostate
+C61,T2b,N1,M0,,IV,X,7,,Prostate
+C61,T2b,N1,M0,,IV,,7,,Prostate
+C61,T2b,N1,M0,,IV,1,8,,Prostate
+C61,T2b,N1,M0,,IV,15,8,,Prostate
+C61,T2b,N1,M0,,IV,25,8,,Prostate
+C61,T2b,N1,M0,,IV,X,8,,Prostate
+C61,T2b,N1,M0,,IV,,8,,Prostate
+C61,T2b,N1,M0,,IV,1,X,,Prostate
+C61,T2b,N1,M0,,IV,15,X,,Prostate
+C61,T2b,N1,M0,,IV,25,X,,Prostate
+C61,T2b,N1,M0,,IV,X,X,,Prostate
+C61,T2b,N1,M0,,IV,,X,,Prostate
+C61,T2b,N1,M0,,IV,1,,,Prostate
+C61,T2b,N1,M0,,IV,15,,,Prostate
+C61,T2b,N1,M0,,IV,25,,,Prostate
+C61,T2b,N1,M0,,IV,X,,,Prostate
+C61,T2b,N1,M0,,IV,,,,Prostate
+C61,T2c,N1,M0,,IV,1,6,,Prostate
+C61,T2c,N1,M0,,IV,15,6,,Prostate
+C61,T2c,N1,M0,,IV,25,6,,Prostate
+C61,T2c,N1,M0,,IV,X,6,,Prostate
+C61,T2c,N1,M0,,IV,,6,,Prostate
+C61,T2c,N1,M0,,IV,1,7,,Prostate
+C61,T2c,N1,M0,,IV,15,7,,Prostate
+C61,T2c,N1,M0,,IV,25,7,,Prostate
+C61,T2c,N1,M0,,IV,X,7,,Prostate
+C61,T2c,N1,M0,,IV,,7,,Prostate
+C61,T2c,N1,M0,,IV,1,8,,Prostate
+C61,T2c,N1,M0,,IV,15,8,,Prostate
+C61,T2c,N1,M0,,IV,25,8,,Prostate
+C61,T2c,N1,M0,,IV,X,8,,Prostate
+C61,T2c,N1,M0,,IV,,8,,Prostate
+C61,T2c,N1,M0,,IV,1,X,,Prostate
+C61,T2c,N1,M0,,IV,15,X,,Prostate
+C61,T2c,N1,M0,,IV,25,X,,Prostate
+C61,T2c,N1,M0,,IV,X,X,,Prostate
+C61,T2c,N1,M0,,IV,,X,,Prostate
+C61,T2c,N1,M0,,IV,1,,,Prostate
+C61,T2c,N1,M0,,IV,15,,,Prostate
+C61,T2c,N1,M0,,IV,25,,,Prostate
+C61,T2c,N1,M0,,IV,X,,,Prostate
+C61,T2c,N1,M0,,IV,,,,Prostate
+C61,T1,N1,M0,,IV,1,6,,Prostate
+C61,T1,N1,M0,,IV,15,6,,Prostate
+C61,T1,N1,M0,,IV,25,6,,Prostate
+C61,T1,N1,M0,,IV,X,6,,Prostate
+C61,T1,N1,M0,,IV,,6,,Prostate
+C61,T1,N1,M0,,IV,1,7,,Prostate
+C61,T1,N1,M0,,IV,15,7,,Prostate
+C61,T1,N1,M0,,IV,25,7,,Prostate
+C61,T1,N1,M0,,IV,X,7,,Prostate
+C61,T1,N1,M0,,IV,,7,,Prostate
+C61,T1,N1,M0,,IV,1,8,,Prostate
+C61,T1,N1,M0,,IV,15,8,,Prostate
+C61,T1,N1,M0,,IV,25,8,,Prostate
+C61,T1,N1,M0,,IV,X,8,,Prostate
+C61,T1,N1,M0,,IV,,8,,Prostate
+C61,T1,N1,M0,,IV,1,X,,Prostate
+C61,T1,N1,M0,,IV,15,X,,Prostate
+C61,T1,N1,M0,,IV,25,X,,Prostate
+C61,T1,N1,M0,,IV,X,X,,Prostate
+C61,T1,N1,M0,,IV,,X,,Prostate
+C61,T1,N1,M0,,IV,1,,,Prostate
+C61,T1,N1,M0,,IV,15,,,Prostate
+C61,T1,N1,M0,,IV,25,,,Prostate
+C61,T1,N1,M0,,IV,X,,,Prostate
+C61,T1,N1,M0,,IV,,,,Prostate
+C61,T1a,N1,M0,,IV,1,6,,Prostate
+C61,T1a,N1,M0,,IV,15,6,,Prostate
+C61,T1a,N1,M0,,IV,25,6,,Prostate
+C61,T1a,N1,M0,,IV,X,6,,Prostate
+C61,T1a,N1,M0,,IV,,6,,Prostate
+C61,T1a,N1,M0,,IV,1,7,,Prostate
+C61,T1a,N1,M0,,IV,15,7,,Prostate
+C61,T1a,N1,M0,,IV,25,7,,Prostate
+C61,T1a,N1,M0,,IV,X,7,,Prostate
+C61,T1a,N1,M0,,IV,,7,,Prostate
+C61,T1a,N1,M0,,IV,1,8,,Prostate
+C61,T1a,N1,M0,,IV,15,8,,Prostate
+C61,T1a,N1,M0,,IV,25,8,,Prostate
+C61,T1a,N1,M0,,IV,X,8,,Prostate
+C61,T1a,N1,M0,,IV,,8,,Prostate
+C61,T1a,N1,M0,,IV,1,X,,Prostate
+C61,T1a,N1,M0,,IV,15,X,,Prostate
+C61,T1a,N1,M0,,IV,25,X,,Prostate
+C61,T1a,N1,M0,,IV,X,X,,Prostate
+C61,T1a,N1,M0,,IV,,X,,Prostate
+C61,T1a,N1,M0,,IV,1,,,Prostate
+C61,T1a,N1,M0,,IV,15,,,Prostate
+C61,T1a,N1,M0,,IV,25,,,Prostate
+C61,T1a,N1,M0,,IV,X,,,Prostate
+C61,T1a,N1,M0,,IV,,,,Prostate
+C61,T1b,N1,M0,,IV,1,6,,Prostate
+C61,T1b,N1,M0,,IV,15,6,,Prostate
+C61,T1b,N1,M0,,IV,25,6,,Prostate
+C61,T1b,N1,M0,,IV,X,6,,Prostate
+C61,T1b,N1,M0,,IV,,6,,Prostate
+C61,T1b,N1,M0,,IV,1,7,,Prostate
+C61,T1b,N1,M0,,IV,15,7,,Prostate
+C61,T1b,N1,M0,,IV,25,7,,Prostate
+C61,T1b,N1,M0,,IV,X,7,,Prostate
+C61,T1b,N1,M0,,IV,,7,,Prostate
+C61,T1b,N1,M0,,IV,1,8,,Prostate
+C61,T1b,N1,M0,,IV,15,8,,Prostate
+C61,T1b,N1,M0,,IV,25,8,,Prostate
+C61,T1b,N1,M0,,IV,X,8,,Prostate
+C61,T1b,N1,M0,,IV,,8,,Prostate
+C61,T1b,N1,M0,,IV,1,X,,Prostate
+C61,T1b,N1,M0,,IV,15,X,,Prostate
+C61,T1b,N1,M0,,IV,25,X,,Prostate
+C61,T1b,N1,M0,,IV,X,X,,Prostate
+C61,T1b,N1,M0,,IV,,X,,Prostate
+C61,T1b,N1,M0,,IV,1,,,Prostate
+C61,T1b,N1,M0,,IV,15,,,Prostate
+C61,T1b,N1,M0,,IV,25,,,Prostate
+C61,T1b,N1,M0,,IV,X,,,Prostate
+C61,T1b,N1,M0,,IV,,,,Prostate
+C61,T1c,N1,M0,,IV,1,6,,Prostate
+C61,T1c,N1,M0,,IV,15,6,,Prostate
+C61,T1c,N1,M0,,IV,25,6,,Prostate
+C61,T1c,N1,M0,,IV,X,6,,Prostate
+C61,T1c,N1,M0,,IV,,6,,Prostate
+C61,T1c,N1,M0,,IV,1,7,,Prostate
+C61,T1c,N1,M0,,IV,15,7,,Prostate
+C61,T1c,N1,M0,,IV,25,7,,Prostate
+C61,T1c,N1,M0,,IV,X,7,,Prostate
+C61,T1c,N1,M0,,IV,,7,,Prostate
+C61,T1c,N1,M0,,IV,1,8,,Prostate
+C61,T1c,N1,M0,,IV,15,8,,Prostate
+C61,T1c,N1,M0,,IV,25,8,,Prostate
+C61,T1c,N1,M0,,IV,X,8,,Prostate
+C61,T1c,N1,M0,,IV,,8,,Prostate
+C61,T1c,N1,M0,,IV,1,X,,Prostate
+C61,T1c,N1,M0,,IV,15,X,,Prostate
+C61,T1c,N1,M0,,IV,25,X,,Prostate
+C61,T1c,N1,M0,,IV,X,X,,Prostate
+C61,T1c,N1,M0,,IV,,X,,Prostate
+C61,T1c,N1,M0,,IV,1,,,Prostate
+C61,T1c,N1,M0,,IV,15,,,Prostate
+C61,T1c,N1,M0,,IV,25,,,Prostate
+C61,T1c,N1,M0,,IV,X,,,Prostate
+C61,T1c,N1,M0,,IV,,,,Prostate
+C61,T2,N1,M0,,IV,1,6,,Prostate
+C61,T2,N1,M0,,IV,15,6,,Prostate
+C61,T2,N1,M0,,IV,25,6,,Prostate
+C61,T2,N1,M0,,IV,X,6,,Prostate
+C61,T2,N1,M0,,IV,,6,,Prostate
+C61,T2,N1,M0,,IV,1,7,,Prostate
+C61,T2,N1,M0,,IV,15,7,,Prostate
+C61,T2,N1,M0,,IV,25,7,,Prostate
+C61,T2,N1,M0,,IV,X,7,,Prostate
+C61,T2,N1,M0,,IV,,7,,Prostate
+C61,T2,N1,M0,,IV,1,8,,Prostate
+C61,T2,N1,M0,,IV,15,8,,Prostate
+C61,T2,N1,M0,,IV,25,8,,Prostate
+C61,T2,N1,M0,,IV,X,8,,Prostate
+C61,T2,N1,M0,,IV,,8,,Prostate
+C61,T2,N1,M0,,IV,1,X,,Prostate
+C61,T2,N1,M0,,IV,15,X,,Prostate
+C61,T2,N1,M0,,IV,25,X,,Prostate
+C61,T2,N1,M0,,IV,X,X,,Prostate
+C61,T2,N1,M0,,IV,,X,,Prostate
+C61,T2,N1,M0,,IV,1,,,Prostate
+C61,T2,N1,M0,,IV,15,,,Prostate
+C61,T2,N1,M0,,IV,25,,,Prostate
+C61,T2,N1,M0,,IV,X,,,Prostate
+C61,T2,N1,M0,,IV,,,,Prostate
+C61,T2a,N1,M0,,IV,1,6,,Prostate
+C61,T2a,N1,M0,,IV,15,6,,Prostate
+C61,T2a,N1,M0,,IV,25,6,,Prostate
+C61,T2a,N1,M0,,IV,X,6,,Prostate
+C61,T2a,N1,M0,,IV,,6,,Prostate
+C61,T2a,N1,M0,,IV,1,7,,Prostate
+C61,T2a,N1,M0,,IV,15,7,,Prostate
+C61,T2a,N1,M0,,IV,25,7,,Prostate
+C61,T2a,N1,M0,,IV,X,7,,Prostate
+C61,T2a,N1,M0,,IV,,7,,Prostate
+C61,T2a,N1,M0,,IV,1,8,,Prostate
+C61,T2a,N1,M0,,IV,15,8,,Prostate
+C61,T2a,N1,M0,,IV,25,8,,Prostate
+C61,T2a,N1,M0,,IV,X,8,,Prostate
+C61,T2a,N1,M0,,IV,,8,,Prostate
+C61,T2a,N1,M0,,IV,1,X,,Prostate
+C61,T2a,N1,M0,,IV,15,X,,Prostate
+C61,T2a,N1,M0,,IV,25,X,,Prostate
+C61,T2a,N1,M0,,IV,X,X,,Prostate
+C61,T2a,N1,M0,,IV,,X,,Prostate
+C61,T2a,N1,M0,,IV,1,,,Prostate
+C61,T2a,N1,M0,,IV,15,,,Prostate
+C61,T2a,N1,M0,,IV,25,,,Prostate
+C61,T2a,N1,M0,,IV,X,,,Prostate
+C61,T2a,N1,M0,,IV,,,,Prostate
+C61,T1,N1,M0,,IV,1,6,,Prostate
+C61,T1,N1,M0,,IV,15,6,,Prostate
+C61,T1,N1,M0,,IV,25,6,,Prostate
+C61,T1,N1,M0,,IV,X,6,,Prostate
+C61,T1,N1,M0,,IV,,6,,Prostate
+C61,T1,N1,M0,,IV,1,7,,Prostate
+C61,T1,N1,M0,,IV,15,7,,Prostate
+C61,T1,N1,M0,,IV,25,7,,Prostate
+C61,T1,N1,M0,,IV,X,7,,Prostate
+C61,T1,N1,M0,,IV,,7,,Prostate
+C61,T1,N1,M0,,IV,1,8,,Prostate
+C61,T1,N1,M0,,IV,15,8,,Prostate
+C61,T1,N1,M0,,IV,25,8,,Prostate
+C61,T1,N1,M0,,IV,X,8,,Prostate
+C61,T1,N1,M0,,IV,,8,,Prostate
+C61,T1,N1,M0,,IV,1,X,,Prostate
+C61,T1,N1,M0,,IV,15,X,,Prostate
+C61,T1,N1,M0,,IV,25,X,,Prostate
+C61,T1,N1,M0,,IV,X,X,,Prostate
+C61,T1,N1,M0,,IV,,X,,Prostate
+C61,T1,N1,M0,,IV,1,,,Prostate
+C61,T1,N1,M0,,IV,15,,,Prostate
+C61,T1,N1,M0,,IV,25,,,Prostate
+C61,T1,N1,M0,,IV,X,,,Prostate
+C61,T1,N1,M0,,IV,,,,Prostate
+C61,T1a,N1,M0,,IV,1,6,,Prostate
+C61,T1a,N1,M0,,IV,15,6,,Prostate
+C61,T1a,N1,M0,,IV,25,6,,Prostate
+C61,T1a,N1,M0,,IV,X,6,,Prostate
+C61,T1a,N1,M0,,IV,,6,,Prostate
+C61,T1a,N1,M0,,IV,1,7,,Prostate
+C61,T1a,N1,M0,,IV,15,7,,Prostate
+C61,T1a,N1,M0,,IV,25,7,,Prostate
+C61,T1a,N1,M0,,IV,X,7,,Prostate
+C61,T1a,N1,M0,,IV,,7,,Prostate
+C61,T1a,N1,M0,,IV,1,8,,Prostate
+C61,T1a,N1,M0,,IV,15,8,,Prostate
+C61,T1a,N1,M0,,IV,25,8,,Prostate
+C61,T1a,N1,M0,,IV,X,8,,Prostate
+C61,T1a,N1,M0,,IV,,8,,Prostate
+C61,T1a,N1,M0,,IV,1,X,,Prostate
+C61,T1a,N1,M0,,IV,15,X,,Prostate
+C61,T1a,N1,M0,,IV,25,X,,Prostate
+C61,T1a,N1,M0,,IV,X,X,,Prostate
+C61,T1a,N1,M0,,IV,,X,,Prostate
+C61,T1a,N1,M0,,IV,1,,,Prostate
+C61,T1a,N1,M0,,IV,15,,,Prostate
+C61,T1a,N1,M0,,IV,25,,,Prostate
+C61,T1a,N1,M0,,IV,X,,,Prostate
+C61,T1a,N1,M0,,IV,,,,Prostate
+C61,T1b,N1,M0,,IV,1,6,,Prostate
+C61,T1b,N1,M0,,IV,15,6,,Prostate
+C61,T1b,N1,M0,,IV,25,6,,Prostate
+C61,T1b,N1,M0,,IV,X,6,,Prostate
+C61,T1b,N1,M0,,IV,,6,,Prostate
+C61,T1b,N1,M0,,IV,1,7,,Prostate
+C61,T1b,N1,M0,,IV,15,7,,Prostate
+C61,T1b,N1,M0,,IV,25,7,,Prostate
+C61,T1b,N1,M0,,IV,X,7,,Prostate
+C61,T1b,N1,M0,,IV,,7,,Prostate
+C61,T1b,N1,M0,,IV,1,8,,Prostate
+C61,T1b,N1,M0,,IV,15,8,,Prostate
+C61,T1b,N1,M0,,IV,25,8,,Prostate
+C61,T1b,N1,M0,,IV,X,8,,Prostate
+C61,T1b,N1,M0,,IV,,8,,Prostate
+C61,T1b,N1,M0,,IV,1,X,,Prostate
+C61,T1b,N1,M0,,IV,15,X,,Prostate
+C61,T1b,N1,M0,,IV,25,X,,Prostate
+C61,T1b,N1,M0,,IV,X,X,,Prostate
+C61,T1b,N1,M0,,IV,,X,,Prostate
+C61,T1b,N1,M0,,IV,1,,,Prostate
+C61,T1b,N1,M0,,IV,15,,,Prostate
+C61,T1b,N1,M0,,IV,25,,,Prostate
+C61,T1b,N1,M0,,IV,X,,,Prostate
+C61,T1b,N1,M0,,IV,,,,Prostate
+C61,T1c,N1,M0,,IV,1,6,,Prostate
+C61,T1c,N1,M0,,IV,15,6,,Prostate
+C61,T1c,N1,M0,,IV,25,6,,Prostate
+C61,T1c,N1,M0,,IV,X,6,,Prostate
+C61,T1c,N1,M0,,IV,,6,,Prostate
+C61,T1c,N1,M0,,IV,1,7,,Prostate
+C61,T1c,N1,M0,,IV,15,7,,Prostate
+C61,T1c,N1,M0,,IV,25,7,,Prostate
+C61,T1c,N1,M0,,IV,X,7,,Prostate
+C61,T1c,N1,M0,,IV,,7,,Prostate
+C61,T1c,N1,M0,,IV,1,8,,Prostate
+C61,T1c,N1,M0,,IV,15,8,,Prostate
+C61,T1c,N1,M0,,IV,25,8,,Prostate
+C61,T1c,N1,M0,,IV,X,8,,Prostate
+C61,T1c,N1,M0,,IV,,8,,Prostate
+C61,T1c,N1,M0,,IV,1,X,,Prostate
+C61,T1c,N1,M0,,IV,15,X,,Prostate
+C61,T1c,N1,M0,,IV,25,X,,Prostate
+C61,T1c,N1,M0,,IV,X,X,,Prostate
+C61,T1c,N1,M0,,IV,,X,,Prostate
+C61,T1c,N1,M0,,IV,1,,,Prostate
+C61,T1c,N1,M0,,IV,15,,,Prostate
+C61,T1c,N1,M0,,IV,25,,,Prostate
+C61,T1c,N1,M0,,IV,X,,,Prostate
+C61,T1c,N1,M0,,IV,,,,Prostate
+C61,T2,N1,M0,,IV,1,6,,Prostate
+C61,T2,N1,M0,,IV,15,6,,Prostate
+C61,T2,N1,M0,,IV,25,6,,Prostate
+C61,T2,N1,M0,,IV,X,6,,Prostate
+C61,T2,N1,M0,,IV,,6,,Prostate
+C61,T2,N1,M0,,IV,1,7,,Prostate
+C61,T2,N1,M0,,IV,15,7,,Prostate
+C61,T2,N1,M0,,IV,25,7,,Prostate
+C61,T2,N1,M0,,IV,X,7,,Prostate
+C61,T2,N1,M0,,IV,,7,,Prostate
+C61,T2,N1,M0,,IV,1,8,,Prostate
+C61,T2,N1,M0,,IV,15,8,,Prostate
+C61,T2,N1,M0,,IV,25,8,,Prostate
+C61,T2,N1,M0,,IV,X,8,,Prostate
+C61,T2,N1,M0,,IV,,8,,Prostate
+C61,T2,N1,M0,,IV,1,X,,Prostate
+C61,T2,N1,M0,,IV,15,X,,Prostate
+C61,T2,N1,M0,,IV,25,X,,Prostate
+C61,T2,N1,M0,,IV,X,X,,Prostate
+C61,T2,N1,M0,,IV,,X,,Prostate
+C61,T2,N1,M0,,IV,1,,,Prostate
+C61,T2,N1,M0,,IV,15,,,Prostate
+C61,T2,N1,M0,,IV,25,,,Prostate
+C61,T2,N1,M0,,IV,X,,,Prostate
+C61,T2,N1,M0,,IV,,,,Prostate
+C61,T3a,N1,M0,,IV,1,6,,Prostate
+C61,T3a,N1,M0,,IV,15,6,,Prostate
+C61,T3a,N1,M0,,IV,25,6,,Prostate
+C61,T3a,N1,M0,,IV,X,6,,Prostate
+C61,T3a,N1,M0,,IV,,6,,Prostate
+C61,T3a,N1,M0,,IV,1,7,,Prostate
+C61,T3a,N1,M0,,IV,15,7,,Prostate
+C61,T3a,N1,M0,,IV,25,7,,Prostate
+C61,T3a,N1,M0,,IV,X,7,,Prostate
+C61,T3a,N1,M0,,IV,,7,,Prostate
+C61,T3a,N1,M0,,IV,1,8,,Prostate
+C61,T3a,N1,M0,,IV,15,8,,Prostate
+C61,T3a,N1,M0,,IV,25,8,,Prostate
+C61,T3a,N1,M0,,IV,X,8,,Prostate
+C61,T3a,N1,M0,,IV,,8,,Prostate
+C61,T3a,N1,M0,,IV,1,X,,Prostate
+C61,T3a,N1,M0,,IV,15,X,,Prostate
+C61,T3a,N1,M0,,IV,25,X,,Prostate
+C61,T3a,N1,M0,,IV,X,X,,Prostate
+C61,T3a,N1,M0,,IV,,X,,Prostate
+C61,T3a,N1,M0,,IV,1,,,Prostate
+C61,T3a,N1,M0,,IV,15,,,Prostate
+C61,T3a,N1,M0,,IV,25,,,Prostate
+C61,T3a,N1,M0,,IV,X,,,Prostate
+C61,T3a,N1,M0,,IV,,,,Prostate
+C61,T3b,N1,M0,,IV,1,6,,Prostate
+C61,T3b,N1,M0,,IV,15,6,,Prostate
+C61,T3b,N1,M0,,IV,25,6,,Prostate
+C61,T3b,N1,M0,,IV,X,6,,Prostate
+C61,T3b,N1,M0,,IV,,6,,Prostate
+C61,T3b,N1,M0,,IV,1,7,,Prostate
+C61,T3b,N1,M0,,IV,15,7,,Prostate
+C61,T3b,N1,M0,,IV,25,7,,Prostate
+C61,T3b,N1,M0,,IV,X,7,,Prostate
+C61,T3b,N1,M0,,IV,,7,,Prostate
+C61,T3b,N1,M0,,IV,1,8,,Prostate
+C61,T3b,N1,M0,,IV,15,8,,Prostate
+C61,T3b,N1,M0,,IV,25,8,,Prostate
+C61,T3b,N1,M0,,IV,X,8,,Prostate
+C61,T3b,N1,M0,,IV,,8,,Prostate
+C61,T3b,N1,M0,,IV,1,X,,Prostate
+C61,T3b,N1,M0,,IV,15,X,,Prostate
+C61,T3b,N1,M0,,IV,25,X,,Prostate
+C61,T3b,N1,M0,,IV,X,X,,Prostate
+C61,T3b,N1,M0,,IV,,X,,Prostate
+C61,T3b,N1,M0,,IV,1,,,Prostate
+C61,T3b,N1,M0,,IV,15,,,Prostate
+C61,T3b,N1,M0,,IV,25,,,Prostate
+C61,T3b,N1,M0,,IV,X,,,Prostate
+C61,T3b,N1,M0,,IV,,,,Prostate
+C61,T4,N1,M0,,IV,1,6,,Prostate
+C61,T4,N1,M0,,IV,15,6,,Prostate
+C61,T4,N1,M0,,IV,25,6,,Prostate
+C61,T4,N1,M0,,IV,X,6,,Prostate
+C61,T4,N1,M0,,IV,,6,,Prostate
+C61,T4,N1,M0,,IV,1,7,,Prostate
+C61,T4,N1,M0,,IV,15,7,,Prostate
+C61,T4,N1,M0,,IV,25,7,,Prostate
+C61,T4,N1,M0,,IV,X,7,,Prostate
+C61,T4,N1,M0,,IV,,7,,Prostate
+C61,T4,N1,M0,,IV,1,8,,Prostate
+C61,T4,N1,M0,,IV,15,8,,Prostate
+C61,T4,N1,M0,,IV,25,8,,Prostate
+C61,T4,N1,M0,,IV,X,8,,Prostate
+C61,T4,N1,M0,,IV,,8,,Prostate
+C61,T4,N1,M0,,IV,1,X,,Prostate
+C61,T4,N1,M0,,IV,15,X,,Prostate
+C61,T4,N1,M0,,IV,25,X,,Prostate
+C61,T4,N1,M0,,IV,X,X,,Prostate
+C61,T4,N1,M0,,IV,,X,,Prostate
+C61,T4,N1,M0,,IV,1,,,Prostate
+C61,T4,N1,M0,,IV,15,,,Prostate
+C61,T4,N1,M0,,IV,25,,,Prostate
+C61,T4,N1,M0,,IV,X,,,Prostate
+C61,T4,N1,M0,,IV,,,,Prostate
+C61,T1a,N0,M1,,IV,1,6,,Prostate
+C61,T1a,N0,M1,,IV,15,6,,Prostate
+C61,T1a,N0,M1,,IV,25,6,,Prostate
+C61,T1a,N0,M1,,IV,X,6,,Prostate
+C61,T1a,N0,M1,,IV,,6,,Prostate
+C61,T1a,N0,M1,,IV,1,7,,Prostate
+C61,T1a,N0,M1,,IV,15,7,,Prostate
+C61,T1a,N0,M1,,IV,25,7,,Prostate
+C61,T1a,N0,M1,,IV,X,7,,Prostate
+C61,T1a,N0,M1,,IV,,7,,Prostate
+C61,T1a,N0,M1,,IV,1,8,,Prostate
+C61,T1a,N0,M1,,IV,15,8,,Prostate
+C61,T1a,N0,M1,,IV,25,8,,Prostate
+C61,T1a,N0,M1,,IV,X,8,,Prostate
+C61,T1a,N0,M1,,IV,,8,,Prostate
+C61,T1a,N0,M1,,IV,1,X,,Prostate
+C61,T1a,N0,M1,,IV,15,X,,Prostate
+C61,T1a,N0,M1,,IV,25,X,,Prostate
+C61,T1a,N0,M1,,IV,X,X,,Prostate
+C61,T1a,N0,M1,,IV,,X,,Prostate
+C61,T1a,N0,M1,,IV,1,,,Prostate
+C61,T1a,N0,M1,,IV,15,,,Prostate
+C61,T1a,N0,M1,,IV,25,,,Prostate
+C61,T1a,N0,M1,,IV,X,,,Prostate
+C61,T1a,N0,M1,,IV,,,,Prostate
+C61,T1b,N0,M1,,IV,1,6,,Prostate
+C61,T1b,N0,M1,,IV,15,6,,Prostate
+C61,T1b,N0,M1,,IV,25,6,,Prostate
+C61,T1b,N0,M1,,IV,X,6,,Prostate
+C61,T1b,N0,M1,,IV,,6,,Prostate
+C61,T1b,N0,M1,,IV,1,7,,Prostate
+C61,T1b,N0,M1,,IV,15,7,,Prostate
+C61,T1b,N0,M1,,IV,25,7,,Prostate
+C61,T1b,N0,M1,,IV,X,7,,Prostate
+C61,T1b,N0,M1,,IV,,7,,Prostate
+C61,T1b,N0,M1,,IV,1,8,,Prostate
+C61,T1b,N0,M1,,IV,15,8,,Prostate
+C61,T1b,N0,M1,,IV,25,8,,Prostate
+C61,T1b,N0,M1,,IV,X,8,,Prostate
+C61,T1b,N0,M1,,IV,,8,,Prostate
+C61,T1b,N0,M1,,IV,1,X,,Prostate
+C61,T1b,N0,M1,,IV,15,X,,Prostate
+C61,T1b,N0,M1,,IV,25,X,,Prostate
+C61,T1b,N0,M1,,IV,X,X,,Prostate
+C61,T1b,N0,M1,,IV,,X,,Prostate
+C61,T1b,N0,M1,,IV,1,,,Prostate
+C61,T1b,N0,M1,,IV,15,,,Prostate
+C61,T1b,N0,M1,,IV,25,,,Prostate
+C61,T1b,N0,M1,,IV,X,,,Prostate
+C61,T1b,N0,M1,,IV,,,,Prostate
+C61,T1c,N0,M1,,IV,1,6,,Prostate
+C61,T1c,N0,M1,,IV,15,6,,Prostate
+C61,T1c,N0,M1,,IV,25,6,,Prostate
+C61,T1c,N0,M1,,IV,X,6,,Prostate
+C61,T1c,N0,M1,,IV,,6,,Prostate
+C61,T1c,N0,M1,,IV,1,7,,Prostate
+C61,T1c,N0,M1,,IV,15,7,,Prostate
+C61,T1c,N0,M1,,IV,25,7,,Prostate
+C61,T1c,N0,M1,,IV,X,7,,Prostate
+C61,T1c,N0,M1,,IV,,7,,Prostate
+C61,T1c,N0,M1,,IV,1,8,,Prostate
+C61,T1c,N0,M1,,IV,15,8,,Prostate
+C61,T1c,N0,M1,,IV,25,8,,Prostate
+C61,T1c,N0,M1,,IV,X,8,,Prostate
+C61,T1c,N0,M1,,IV,,8,,Prostate
+C61,T1c,N0,M1,,IV,1,X,,Prostate
+C61,T1c,N0,M1,,IV,15,X,,Prostate
+C61,T1c,N0,M1,,IV,25,X,,Prostate
+C61,T1c,N0,M1,,IV,X,X,,Prostate
+C61,T1c,N0,M1,,IV,,X,,Prostate
+C61,T1c,N0,M1,,IV,1,,,Prostate
+C61,T1c,N0,M1,,IV,15,,,Prostate
+C61,T1c,N0,M1,,IV,25,,,Prostate
+C61,T1c,N0,M1,,IV,X,,,Prostate
+C61,T1c,N0,M1,,IV,,,,Prostate
+C61,T2a,N0,M1,,IV,1,6,,Prostate
+C61,T2a,N0,M1,,IV,15,6,,Prostate
+C61,T2a,N0,M1,,IV,25,6,,Prostate
+C61,T2a,N0,M1,,IV,X,6,,Prostate
+C61,T2a,N0,M1,,IV,,6,,Prostate
+C61,T2a,N0,M1,,IV,1,7,,Prostate
+C61,T2a,N0,M1,,IV,15,7,,Prostate
+C61,T2a,N0,M1,,IV,25,7,,Prostate
+C61,T2a,N0,M1,,IV,X,7,,Prostate
+C61,T2a,N0,M1,,IV,,7,,Prostate
+C61,T2a,N0,M1,,IV,1,8,,Prostate
+C61,T2a,N0,M1,,IV,15,8,,Prostate
+C61,T2a,N0,M1,,IV,25,8,,Prostate
+C61,T2a,N0,M1,,IV,X,8,,Prostate
+C61,T2a,N0,M1,,IV,,8,,Prostate
+C61,T2a,N0,M1,,IV,1,X,,Prostate
+C61,T2a,N0,M1,,IV,15,X,,Prostate
+C61,T2a,N0,M1,,IV,25,X,,Prostate
+C61,T2a,N0,M1,,IV,X,X,,Prostate
+C61,T2a,N0,M1,,IV,,X,,Prostate
+C61,T2a,N0,M1,,IV,1,,,Prostate
+C61,T2a,N0,M1,,IV,15,,,Prostate
+C61,T2a,N0,M1,,IV,25,,,Prostate
+C61,T2a,N0,M1,,IV,X,,,Prostate
+C61,T2a,N0,M1,,IV,,,,Prostate
+C61,T2b,N0,M1,,IV,1,6,,Prostate
+C61,T2b,N0,M1,,IV,15,6,,Prostate
+C61,T2b,N0,M1,,IV,25,6,,Prostate
+C61,T2b,N0,M1,,IV,X,6,,Prostate
+C61,T2b,N0,M1,,IV,,6,,Prostate
+C61,T2b,N0,M1,,IV,1,7,,Prostate
+C61,T2b,N0,M1,,IV,15,7,,Prostate
+C61,T2b,N0,M1,,IV,25,7,,Prostate
+C61,T2b,N0,M1,,IV,X,7,,Prostate
+C61,T2b,N0,M1,,IV,,7,,Prostate
+C61,T2b,N0,M1,,IV,1,8,,Prostate
+C61,T2b,N0,M1,,IV,15,8,,Prostate
+C61,T2b,N0,M1,,IV,25,8,,Prostate
+C61,T2b,N0,M1,,IV,X,8,,Prostate
+C61,T2b,N0,M1,,IV,,8,,Prostate
+C61,T2b,N0,M1,,IV,1,X,,Prostate
+C61,T2b,N0,M1,,IV,15,X,,Prostate
+C61,T2b,N0,M1,,IV,25,X,,Prostate
+C61,T2b,N0,M1,,IV,X,X,,Prostate
+C61,T2b,N0,M1,,IV,,X,,Prostate
+C61,T2b,N0,M1,,IV,1,,,Prostate
+C61,T2b,N0,M1,,IV,15,,,Prostate
+C61,T2b,N0,M1,,IV,25,,,Prostate
+C61,T2b,N0,M1,,IV,X,,,Prostate
+C61,T2b,N0,M1,,IV,,,,Prostate
+C61,T2c,N0,M1,,IV,1,6,,Prostate
+C61,T2c,N0,M1,,IV,15,6,,Prostate
+C61,T2c,N0,M1,,IV,25,6,,Prostate
+C61,T2c,N0,M1,,IV,X,6,,Prostate
+C61,T2c,N0,M1,,IV,,6,,Prostate
+C61,T2c,N0,M1,,IV,1,7,,Prostate
+C61,T2c,N0,M1,,IV,15,7,,Prostate
+C61,T2c,N0,M1,,IV,25,7,,Prostate
+C61,T2c,N0,M1,,IV,X,7,,Prostate
+C61,T2c,N0,M1,,IV,,7,,Prostate
+C61,T2c,N0,M1,,IV,1,8,,Prostate
+C61,T2c,N0,M1,,IV,15,8,,Prostate
+C61,T2c,N0,M1,,IV,25,8,,Prostate
+C61,T2c,N0,M1,,IV,X,8,,Prostate
+C61,T2c,N0,M1,,IV,,8,,Prostate
+C61,T2c,N0,M1,,IV,1,X,,Prostate
+C61,T2c,N0,M1,,IV,15,X,,Prostate
+C61,T2c,N0,M1,,IV,25,X,,Prostate
+C61,T2c,N0,M1,,IV,X,X,,Prostate
+C61,T2c,N0,M1,,IV,,X,,Prostate
+C61,T2c,N0,M1,,IV,1,,,Prostate
+C61,T2c,N0,M1,,IV,15,,,Prostate
+C61,T2c,N0,M1,,IV,25,,,Prostate
+C61,T2c,N0,M1,,IV,X,,,Prostate
+C61,T2c,N0,M1,,IV,,,,Prostate
+C61,T1,N0,M1,,IV,1,6,,Prostate
+C61,T1,N0,M1,,IV,15,6,,Prostate
+C61,T1,N0,M1,,IV,25,6,,Prostate
+C61,T1,N0,M1,,IV,X,6,,Prostate
+C61,T1,N0,M1,,IV,,6,,Prostate
+C61,T1,N0,M1,,IV,1,7,,Prostate
+C61,T1,N0,M1,,IV,15,7,,Prostate
+C61,T1,N0,M1,,IV,25,7,,Prostate
+C61,T1,N0,M1,,IV,X,7,,Prostate
+C61,T1,N0,M1,,IV,,7,,Prostate
+C61,T1,N0,M1,,IV,1,8,,Prostate
+C61,T1,N0,M1,,IV,15,8,,Prostate
+C61,T1,N0,M1,,IV,25,8,,Prostate
+C61,T1,N0,M1,,IV,X,8,,Prostate
+C61,T1,N0,M1,,IV,,8,,Prostate
+C61,T1,N0,M1,,IV,1,X,,Prostate
+C61,T1,N0,M1,,IV,15,X,,Prostate
+C61,T1,N0,M1,,IV,25,X,,Prostate
+C61,T1,N0,M1,,IV,X,X,,Prostate
+C61,T1,N0,M1,,IV,,X,,Prostate
+C61,T1,N0,M1,,IV,1,,,Prostate
+C61,T1,N0,M1,,IV,15,,,Prostate
+C61,T1,N0,M1,,IV,25,,,Prostate
+C61,T1,N0,M1,,IV,X,,,Prostate
+C61,T1,N0,M1,,IV,,,,Prostate
+C61,T1a,N0,M1,,IV,1,6,,Prostate
+C61,T1a,N0,M1,,IV,15,6,,Prostate
+C61,T1a,N0,M1,,IV,25,6,,Prostate
+C61,T1a,N0,M1,,IV,X,6,,Prostate
+C61,T1a,N0,M1,,IV,,6,,Prostate
+C61,T1a,N0,M1,,IV,1,7,,Prostate
+C61,T1a,N0,M1,,IV,15,7,,Prostate
+C61,T1a,N0,M1,,IV,25,7,,Prostate
+C61,T1a,N0,M1,,IV,X,7,,Prostate
+C61,T1a,N0,M1,,IV,,7,,Prostate
+C61,T1a,N0,M1,,IV,1,8,,Prostate
+C61,T1a,N0,M1,,IV,15,8,,Prostate
+C61,T1a,N0,M1,,IV,25,8,,Prostate
+C61,T1a,N0,M1,,IV,X,8,,Prostate
+C61,T1a,N0,M1,,IV,,8,,Prostate
+C61,T1a,N0,M1,,IV,1,X,,Prostate
+C61,T1a,N0,M1,,IV,15,X,,Prostate
+C61,T1a,N0,M1,,IV,25,X,,Prostate
+C61,T1a,N0,M1,,IV,X,X,,Prostate
+C61,T1a,N0,M1,,IV,,X,,Prostate
+C61,T1a,N0,M1,,IV,1,,,Prostate
+C61,T1a,N0,M1,,IV,15,,,Prostate
+C61,T1a,N0,M1,,IV,25,,,Prostate
+C61,T1a,N0,M1,,IV,X,,,Prostate
+C61,T1a,N0,M1,,IV,,,,Prostate
+C61,T1b,N0,M1,,IV,1,6,,Prostate
+C61,T1b,N0,M1,,IV,15,6,,Prostate
+C61,T1b,N0,M1,,IV,25,6,,Prostate
+C61,T1b,N0,M1,,IV,X,6,,Prostate
+C61,T1b,N0,M1,,IV,,6,,Prostate
+C61,T1b,N0,M1,,IV,1,7,,Prostate
+C61,T1b,N0,M1,,IV,15,7,,Prostate
+C61,T1b,N0,M1,,IV,25,7,,Prostate
+C61,T1b,N0,M1,,IV,X,7,,Prostate
+C61,T1b,N0,M1,,IV,,7,,Prostate
+C61,T1b,N0,M1,,IV,1,8,,Prostate
+C61,T1b,N0,M1,,IV,15,8,,Prostate
+C61,T1b,N0,M1,,IV,25,8,,Prostate
+C61,T1b,N0,M1,,IV,X,8,,Prostate
+C61,T1b,N0,M1,,IV,,8,,Prostate
+C61,T1b,N0,M1,,IV,1,X,,Prostate
+C61,T1b,N0,M1,,IV,15,X,,Prostate
+C61,T1b,N0,M1,,IV,25,X,,Prostate
+C61,T1b,N0,M1,,IV,X,X,,Prostate
+C61,T1b,N0,M1,,IV,,X,,Prostate
+C61,T1b,N0,M1,,IV,1,,,Prostate
+C61,T1b,N0,M1,,IV,15,,,Prostate
+C61,T1b,N0,M1,,IV,25,,,Prostate
+C61,T1b,N0,M1,,IV,X,,,Prostate
+C61,T1b,N0,M1,,IV,,,,Prostate
+C61,T1c,N0,M1,,IV,1,6,,Prostate
+C61,T1c,N0,M1,,IV,15,6,,Prostate
+C61,T1c,N0,M1,,IV,25,6,,Prostate
+C61,T1c,N0,M1,,IV,X,6,,Prostate
+C61,T1c,N0,M1,,IV,,6,,Prostate
+C61,T1c,N0,M1,,IV,1,7,,Prostate
+C61,T1c,N0,M1,,IV,15,7,,Prostate
+C61,T1c,N0,M1,,IV,25,7,,Prostate
+C61,T1c,N0,M1,,IV,X,7,,Prostate
+C61,T1c,N0,M1,,IV,,7,,Prostate
+C61,T1c,N0,M1,,IV,1,8,,Prostate
+C61,T1c,N0,M1,,IV,15,8,,Prostate
+C61,T1c,N0,M1,,IV,25,8,,Prostate
+C61,T1c,N0,M1,,IV,X,8,,Prostate
+C61,T1c,N0,M1,,IV,,8,,Prostate
+C61,T1c,N0,M1,,IV,1,X,,Prostate
+C61,T1c,N0,M1,,IV,15,X,,Prostate
+C61,T1c,N0,M1,,IV,25,X,,Prostate
+C61,T1c,N0,M1,,IV,X,X,,Prostate
+C61,T1c,N0,M1,,IV,,X,,Prostate
+C61,T1c,N0,M1,,IV,1,,,Prostate
+C61,T1c,N0,M1,,IV,15,,,Prostate
+C61,T1c,N0,M1,,IV,25,,,Prostate
+C61,T1c,N0,M1,,IV,X,,,Prostate
+C61,T1c,N0,M1,,IV,,,,Prostate
+C61,T2,N0,M1,,IV,1,6,,Prostate
+C61,T2,N0,M1,,IV,15,6,,Prostate
+C61,T2,N0,M1,,IV,25,6,,Prostate
+C61,T2,N0,M1,,IV,X,6,,Prostate
+C61,T2,N0,M1,,IV,,6,,Prostate
+C61,T2,N0,M1,,IV,1,7,,Prostate
+C61,T2,N0,M1,,IV,15,7,,Prostate
+C61,T2,N0,M1,,IV,25,7,,Prostate
+C61,T2,N0,M1,,IV,X,7,,Prostate
+C61,T2,N0,M1,,IV,,7,,Prostate
+C61,T2,N0,M1,,IV,1,8,,Prostate
+C61,T2,N0,M1,,IV,15,8,,Prostate
+C61,T2,N0,M1,,IV,25,8,,Prostate
+C61,T2,N0,M1,,IV,X,8,,Prostate
+C61,T2,N0,M1,,IV,,8,,Prostate
+C61,T2,N0,M1,,IV,1,X,,Prostate
+C61,T2,N0,M1,,IV,15,X,,Prostate
+C61,T2,N0,M1,,IV,25,X,,Prostate
+C61,T2,N0,M1,,IV,X,X,,Prostate
+C61,T2,N0,M1,,IV,,X,,Prostate
+C61,T2,N0,M1,,IV,1,,,Prostate
+C61,T2,N0,M1,,IV,15,,,Prostate
+C61,T2,N0,M1,,IV,25,,,Prostate
+C61,T2,N0,M1,,IV,X,,,Prostate
+C61,T2,N0,M1,,IV,,,,Prostate
+C61,T2a,N0,M1,,IV,1,6,,Prostate
+C61,T2a,N0,M1,,IV,15,6,,Prostate
+C61,T2a,N0,M1,,IV,25,6,,Prostate
+C61,T2a,N0,M1,,IV,X,6,,Prostate
+C61,T2a,N0,M1,,IV,,6,,Prostate
+C61,T2a,N0,M1,,IV,1,7,,Prostate
+C61,T2a,N0,M1,,IV,15,7,,Prostate
+C61,T2a,N0,M1,,IV,25,7,,Prostate
+C61,T2a,N0,M1,,IV,X,7,,Prostate
+C61,T2a,N0,M1,,IV,,7,,Prostate
+C61,T2a,N0,M1,,IV,1,8,,Prostate
+C61,T2a,N0,M1,,IV,15,8,,Prostate
+C61,T2a,N0,M1,,IV,25,8,,Prostate
+C61,T2a,N0,M1,,IV,X,8,,Prostate
+C61,T2a,N0,M1,,IV,,8,,Prostate
+C61,T2a,N0,M1,,IV,1,X,,Prostate
+C61,T2a,N0,M1,,IV,15,X,,Prostate
+C61,T2a,N0,M1,,IV,25,X,,Prostate
+C61,T2a,N0,M1,,IV,X,X,,Prostate
+C61,T2a,N0,M1,,IV,,X,,Prostate
+C61,T2a,N0,M1,,IV,1,,,Prostate
+C61,T2a,N0,M1,,IV,15,,,Prostate
+C61,T2a,N0,M1,,IV,25,,,Prostate
+C61,T2a,N0,M1,,IV,X,,,Prostate
+C61,T2a,N0,M1,,IV,,,,Prostate
+C61,T1,N0,M1,,IV,1,6,,Prostate
+C61,T1,N0,M1,,IV,15,6,,Prostate
+C61,T1,N0,M1,,IV,25,6,,Prostate
+C61,T1,N0,M1,,IV,X,6,,Prostate
+C61,T1,N0,M1,,IV,,6,,Prostate
+C61,T1,N0,M1,,IV,1,7,,Prostate
+C61,T1,N0,M1,,IV,15,7,,Prostate
+C61,T1,N0,M1,,IV,25,7,,Prostate
+C61,T1,N0,M1,,IV,X,7,,Prostate
+C61,T1,N0,M1,,IV,,7,,Prostate
+C61,T1,N0,M1,,IV,1,8,,Prostate
+C61,T1,N0,M1,,IV,15,8,,Prostate
+C61,T1,N0,M1,,IV,25,8,,Prostate
+C61,T1,N0,M1,,IV,X,8,,Prostate
+C61,T1,N0,M1,,IV,,8,,Prostate
+C61,T1,N0,M1,,IV,1,X,,Prostate
+C61,T1,N0,M1,,IV,15,X,,Prostate
+C61,T1,N0,M1,,IV,25,X,,Prostate
+C61,T1,N0,M1,,IV,X,X,,Prostate
+C61,T1,N0,M1,,IV,,X,,Prostate
+C61,T1,N0,M1,,IV,1,,,Prostate
+C61,T1,N0,M1,,IV,15,,,Prostate
+C61,T1,N0,M1,,IV,25,,,Prostate
+C61,T1,N0,M1,,IV,X,,,Prostate
+C61,T1,N0,M1,,IV,,,,Prostate
+C61,T1a,N0,M1,,IV,1,6,,Prostate
+C61,T1a,N0,M1,,IV,15,6,,Prostate
+C61,T1a,N0,M1,,IV,25,6,,Prostate
+C61,T1a,N0,M1,,IV,X,6,,Prostate
+C61,T1a,N0,M1,,IV,,6,,Prostate
+C61,T1a,N0,M1,,IV,1,7,,Prostate
+C61,T1a,N0,M1,,IV,15,7,,Prostate
+C61,T1a,N0,M1,,IV,25,7,,Prostate
+C61,T1a,N0,M1,,IV,X,7,,Prostate
+C61,T1a,N0,M1,,IV,,7,,Prostate
+C61,T1a,N0,M1,,IV,1,8,,Prostate
+C61,T1a,N0,M1,,IV,15,8,,Prostate
+C61,T1a,N0,M1,,IV,25,8,,Prostate
+C61,T1a,N0,M1,,IV,X,8,,Prostate
+C61,T1a,N0,M1,,IV,,8,,Prostate
+C61,T1a,N0,M1,,IV,1,X,,Prostate
+C61,T1a,N0,M1,,IV,15,X,,Prostate
+C61,T1a,N0,M1,,IV,25,X,,Prostate
+C61,T1a,N0,M1,,IV,X,X,,Prostate
+C61,T1a,N0,M1,,IV,,X,,Prostate
+C61,T1a,N0,M1,,IV,1,,,Prostate
+C61,T1a,N0,M1,,IV,15,,,Prostate
+C61,T1a,N0,M1,,IV,25,,,Prostate
+C61,T1a,N0,M1,,IV,X,,,Prostate
+C61,T1a,N0,M1,,IV,,,,Prostate
+C61,T1b,N0,M1,,IV,1,6,,Prostate
+C61,T1b,N0,M1,,IV,15,6,,Prostate
+C61,T1b,N0,M1,,IV,25,6,,Prostate
+C61,T1b,N0,M1,,IV,X,6,,Prostate
+C61,T1b,N0,M1,,IV,,6,,Prostate
+C61,T1b,N0,M1,,IV,1,7,,Prostate
+C61,T1b,N0,M1,,IV,15,7,,Prostate
+C61,T1b,N0,M1,,IV,25,7,,Prostate
+C61,T1b,N0,M1,,IV,X,7,,Prostate
+C61,T1b,N0,M1,,IV,,7,,Prostate
+C61,T1b,N0,M1,,IV,1,8,,Prostate
+C61,T1b,N0,M1,,IV,15,8,,Prostate
+C61,T1b,N0,M1,,IV,25,8,,Prostate
+C61,T1b,N0,M1,,IV,X,8,,Prostate
+C61,T1b,N0,M1,,IV,,8,,Prostate
+C61,T1b,N0,M1,,IV,1,X,,Prostate
+C61,T1b,N0,M1,,IV,15,X,,Prostate
+C61,T1b,N0,M1,,IV,25,X,,Prostate
+C61,T1b,N0,M1,,IV,X,X,,Prostate
+C61,T1b,N0,M1,,IV,,X,,Prostate
+C61,T1b,N0,M1,,IV,1,,,Prostate
+C61,T1b,N0,M1,,IV,15,,,Prostate
+C61,T1b,N0,M1,,IV,25,,,Prostate
+C61,T1b,N0,M1,,IV,X,,,Prostate
+C61,T1b,N0,M1,,IV,,,,Prostate
+C61,T1c,N0,M1,,IV,1,6,,Prostate
+C61,T1c,N0,M1,,IV,15,6,,Prostate
+C61,T1c,N0,M1,,IV,25,6,,Prostate
+C61,T1c,N0,M1,,IV,X,6,,Prostate
+C61,T1c,N0,M1,,IV,,6,,Prostate
+C61,T1c,N0,M1,,IV,1,7,,Prostate
+C61,T1c,N0,M1,,IV,15,7,,Prostate
+C61,T1c,N0,M1,,IV,25,7,,Prostate
+C61,T1c,N0,M1,,IV,X,7,,Prostate
+C61,T1c,N0,M1,,IV,,7,,Prostate
+C61,T1c,N0,M1,,IV,1,8,,Prostate
+C61,T1c,N0,M1,,IV,15,8,,Prostate
+C61,T1c,N0,M1,,IV,25,8,,Prostate
+C61,T1c,N0,M1,,IV,X,8,,Prostate
+C61,T1c,N0,M1,,IV,,8,,Prostate
+C61,T1c,N0,M1,,IV,1,X,,Prostate
+C61,T1c,N0,M1,,IV,15,X,,Prostate
+C61,T1c,N0,M1,,IV,25,X,,Prostate
+C61,T1c,N0,M1,,IV,X,X,,Prostate
+C61,T1c,N0,M1,,IV,,X,,Prostate
+C61,T1c,N0,M1,,IV,1,,,Prostate
+C61,T1c,N0,M1,,IV,15,,,Prostate
+C61,T1c,N0,M1,,IV,25,,,Prostate
+C61,T1c,N0,M1,,IV,X,,,Prostate
+C61,T1c,N0,M1,,IV,,,,Prostate
+C61,T2,N0,M1,,IV,1,6,,Prostate
+C61,T2,N0,M1,,IV,15,6,,Prostate
+C61,T2,N0,M1,,IV,25,6,,Prostate
+C61,T2,N0,M1,,IV,X,6,,Prostate
+C61,T2,N0,M1,,IV,,6,,Prostate
+C61,T2,N0,M1,,IV,1,7,,Prostate
+C61,T2,N0,M1,,IV,15,7,,Prostate
+C61,T2,N0,M1,,IV,25,7,,Prostate
+C61,T2,N0,M1,,IV,X,7,,Prostate
+C61,T2,N0,M1,,IV,,7,,Prostate
+C61,T2,N0,M1,,IV,1,8,,Prostate
+C61,T2,N0,M1,,IV,15,8,,Prostate
+C61,T2,N0,M1,,IV,25,8,,Prostate
+C61,T2,N0,M1,,IV,X,8,,Prostate
+C61,T2,N0,M1,,IV,,8,,Prostate
+C61,T2,N0,M1,,IV,1,X,,Prostate
+C61,T2,N0,M1,,IV,15,X,,Prostate
+C61,T2,N0,M1,,IV,25,X,,Prostate
+C61,T2,N0,M1,,IV,X,X,,Prostate
+C61,T2,N0,M1,,IV,,X,,Prostate
+C61,T2,N0,M1,,IV,1,,,Prostate
+C61,T1,N0,M1,,IV,15,,,Prostate
+C61,T1,N0,M1,,IV,25,,,Prostate
+C61,T1,N0,M1,,IV,X,,,Prostate
+C61,T1,N0,M1,,IV,,,,Prostate
+C61,T3a,N0,M1,,IV,1,6,,Prostate
+C61,T3a,N0,M1,,IV,15,6,,Prostate
+C61,T3a,N0,M1,,IV,25,6,,Prostate
+C61,T3a,N0,M1,,IV,X,6,,Prostate
+C61,T3a,N0,M1,,IV,,6,,Prostate
+C61,T3a,N0,M1,,IV,1,7,,Prostate
+C61,T3a,N0,M1,,IV,15,7,,Prostate
+C61,T3a,N0,M1,,IV,25,7,,Prostate
+C61,T3a,N0,M1,,IV,X,7,,Prostate
+C61,T3a,N0,M1,,IV,,7,,Prostate
+C61,T3a,N0,M1,,IV,1,8,,Prostate
+C61,T3a,N0,M1,,IV,15,8,,Prostate
+C61,T3a,N0,M1,,IV,25,8,,Prostate
+C61,T3a,N0,M1,,IV,X,8,,Prostate
+C61,T3a,N0,M1,,IV,,8,,Prostate
+C61,T3a,N0,M1,,IV,1,X,,Prostate
+C61,T3a,N0,M1,,IV,15,X,,Prostate
+C61,T3a,N0,M1,,IV,25,X,,Prostate
+C61,T3a,N0,M1,,IV,X,X,,Prostate
+C61,T3a,N0,M1,,IV,,X,,Prostate
+C61,T3a,N0,M1,,IV,1,,,Prostate
+C61,T3a,N0,M1,,IV,15,,,Prostate
+C61,T3a,N0,M1,,IV,25,,,Prostate
+C61,T3a,N0,M1,,IV,X,,,Prostate
+C61,T3a,N0,M1,,IV,,,,Prostate
+C61,T3b,N0,M1,,IV,1,6,,Prostate
+C61,T3b,N0,M1,,IV,15,6,,Prostate
+C61,T3b,N0,M1,,IV,25,6,,Prostate
+C61,T3b,N0,M1,,IV,X,6,,Prostate
+C61,T3b,N0,M1,,IV,,6,,Prostate
+C61,T3b,N0,M1,,IV,1,7,,Prostate
+C61,T3b,N0,M1,,IV,15,7,,Prostate
+C61,T3b,N0,M1,,IV,25,7,,Prostate
+C61,T3b,N0,M1,,IV,X,7,,Prostate
+C61,T3b,N0,M1,,IV,,7,,Prostate
+C61,T3b,N0,M1,,IV,1,8,,Prostate
+C61,T3b,N0,M1,,IV,15,8,,Prostate
+C61,T3b,N0,M1,,IV,25,8,,Prostate
+C61,T3b,N0,M1,,IV,X,8,,Prostate
+C61,T3b,N0,M1,,IV,,8,,Prostate
+C61,T3b,N0,M1,,IV,1,X,,Prostate
+C61,T3b,N0,M1,,IV,15,X,,Prostate
+C61,T3b,N0,M1,,IV,25,X,,Prostate
+C61,T3b,N0,M1,,IV,X,X,,Prostate
+C61,T3b,N0,M1,,IV,,X,,Prostate
+C61,T3b,N0,M1,,IV,1,,,Prostate
+C61,T3b,N0,M1,,IV,15,,,Prostate
+C61,T3b,N0,M1,,IV,25,,,Prostate
+C61,T3b,N0,M1,,IV,X,,,Prostate
+C61,T3b,N0,M1,,IV,,,,Prostate
+C61,T4,N0,M1,,IV,1,6,,Prostate
+C61,T4,N0,M1,,IV,15,6,,Prostate
+C61,T4,N0,M1,,IV,25,6,,Prostate
+C61,T4,N0,M1,,IV,X,6,,Prostate
+C61,T4,N0,M1,,IV,,6,,Prostate
+C61,T4,N0,M1,,IV,1,7,,Prostate
+C61,T4,N0,M1,,IV,15,7,,Prostate
+C61,T4,N0,M1,,IV,25,7,,Prostate
+C61,T4,N0,M1,,IV,X,7,,Prostate
+C61,T4,N0,M1,,IV,,7,,Prostate
+C61,T4,N0,M1,,IV,1,8,,Prostate
+C61,T4,N0,M1,,IV,15,8,,Prostate
+C61,T4,N0,M1,,IV,25,8,,Prostate
+C61,T4,N0,M1,,IV,X,8,,Prostate
+C61,T4,N0,M1,,IV,,8,,Prostate
+C61,T4,N0,M1,,IV,1,X,,Prostate
+C61,T4,N0,M1,,IV,15,X,,Prostate
+C61,T4,N0,M1,,IV,25,X,,Prostate
+C61,T4,N0,M1,,IV,X,X,,Prostate
+C61,T4,N0,M1,,IV,,X,,Prostate
+C61,T4,N0,M1,,IV,1,,,Prostate
+C61,T4,N0,M1,,IV,15,,,Prostate
+C61,T4,N0,M1,,IV,25,,,Prostate
+C61,T4,N0,M1,,IV,X,,,Prostate
+C61,T4,N0,M1,,IV,,,,Prostate

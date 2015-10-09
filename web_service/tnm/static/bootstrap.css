@@ -15,7 +15,7 @@ body {
 }
 
 #geral {
-  /*width:98%;*/
+  width:67.71%;
   /*height: auto;*/
   margin: 0 auto;
   text-align:left;
@@ -37,6 +37,16 @@ body {
   /*background-color: #31b0d5;*/
   /*border: dashed;*/
   display: block;
+}
+
+#div_col1 {
+  float: left;
+  width: 40%;
+  margin: 10px auto 15px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-outside: 40px;
+  background-color: #9d9d9d;
 }
 
 article,
