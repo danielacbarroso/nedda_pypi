@@ -9,6 +9,8 @@
     <!--<script src="meu_javascript.js"></script>-->
     <link href="{% static "bootstrap.css" %}"
               rel="stylesheet" type="text/css" media="screen" >
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js"></script>
     <script src="{% static "bootstrap.js" %}"></script>
@@ -86,9 +88,9 @@
             opções são distintas, e a chance de cura bem mais remota.
         </p>
     </div>
-    <div>
+    <div style="background-color: white">
     <main>
-        <div class="row">
+        <div class="row" >
             <div class="col-xs-3"></div>
             <div class="col-xs-6">
             <h1 style="text-align: center; color: #67AE3E">TNM Cancer Staging</h1></div>
@@ -122,7 +124,7 @@
 
     <div>
         <h3 style="color: #1978BA; text-align: center"> Saiba mais</h3>
-        <div style="float: left; width: 45%; margin-right: 3%; margin-top: ">
+        <div id="div_col1">
             <h4 style="color: #1978BA">Como Nedda pode ajudá-lo?</h4>
             <p style="text-align: justify">
                 Nedda é uma biblioteca Python que calcula, dado um código CID e valores de T, N e M,
@@ -131,7 +133,8 @@
                 um sistema de administração de saúde aberto e livre.
             </p>
         </div>
-        <div style="float: left; width: 45%; margin-left: 3%">
+
+        <div style="float: left; width: 40%; margin-left: 10px; margin-right: 5px;padding-left: 10px">
             <h4 style="color: #1978BA">Como usar Nedda?</h4>
             <p style="text-align: justify">
                 Nedda ainda possui uma interface muito simples.  A ideia é passar para a biblioteca
