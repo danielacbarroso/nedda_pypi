@@ -1,0 +1,120 @@
+#geral {
+  width:67.71%;
+  /*height: auto;*/
+  margin: 0 auto;
+  text-align:left;
+  padding: 5px 10px 5px 10px;
+  background-color: #F1F2F2;
+/*borda provisória para facilitar a visualização */
+}
+
+#app {
+  /*width: auto;*/
+  display: block;
+  /*margin-left: 10%;*/
+  /*margin-right: 10%;*/
+  /*background-color: #999999;*/
+}
+
+#tnm_div {
+  /*width: auto;*/
+  /*background-color: #31b0d5;*/
+  /*border: dashed;*/
+  display: block;
+}
+#div_nedda_ajuda {
+  text-align: justify;
+  float: left;
+  width: 47%;
+  /*background-color: #ce8483;*/
+  background-color: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 15px 0 0px;
+  margin-outside: 40px;
+}
+
+#div_nedda_usa {
+  float: left;
+  width: 48%;
+  margin: 0 0px 0 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-outside: 40px;
+  /*background-color: #9d9d9d;*/
+  background-color: transparent;
+}
+
+#div_nedda_who {
+  text-align: justify;
+  clear: both;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#div_header {
+
+}
+#div_01 {
+  text-align: justify;
+
+}
+
+#div_cancer{
+    padding: 0 0 auto auto;
+}
+
+#div_cancer1 {
+  float: left;
+  width: 45%;
+  margin: 0 15px 0 0px;
+  padding-left: 0px;
+  padding-right: 10px;
+  /*margin-outside: 40px;*/
+  /*background-color: #9d9d9d;*/
+}
+
+#div_cancer2 {
+  float: left;
+  width: 51%;
+  margin: 0 0 0 15px;
+  padding-left: 10px;
+  padding-right: 0px;
+  /*margin-outside: 40px;*/
+  /*background-color: #9d9d9d;*/
+}
+
+#div_icd{
+  /*background-color:#ce8483;*/
+  width: 90%;
+  margin: auto 0 auto 0;
+  /*float: left;*/
+  text-align: right;
+  /*vertical-align: middle;*/
+}
+
+#div_select{
+  background-color: #c1e2b3;
+  width: 80%;
+  float: left;
+}
+
+#div_tnm{
+  width: 67%;
+  margin: 0 0;
+  /*background-color: #985f0d;*/
+  display: block;
+  float: left;
+}
+
+#div_stage{
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: xx-large;
+  float: left;
+  margin-left: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  -moz-box-align: center;
+  /*background-color: #c7254e;*/
+}

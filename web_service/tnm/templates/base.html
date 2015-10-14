@@ -7,9 +7,12 @@
     {% block cabecalho %}
     <title>TNM Cancer Staging</title>
     <!--<script src="meu_javascript.js"></script>-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed"
+          rel="stylesheet" type="text/css">
     <link href="{% static "bootstrap.css" %}"
               rel="stylesheet" type="text/css" media="screen" >
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href="{% static "nedda.css" %}"
+              rel="stylesheet" type="text/css" media="screen" >
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js"></script>
@@ -18,53 +21,65 @@
 
     {% endblock %}
 </head>
+
 <body>
+<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed"
+          rel="stylesheet" type="text/css">
 <div id="geral">
-    <header>
+    <div id="div_header">
+        <header>
 {#        <h1 style="margin-left: 10px">TNM Cancer Staging</h1>#}
-        <h1 style="text-align: center; color: #67AE3E">TNM - Estadiamento do Câncer</h1>
-    </header>
+            <h1 style="text-align: center; color: #67AE3E">
+{#                <img src="opt/nedda/web_service/tnm/static/Logo_silex_sistemas_NOVA.png" width="117.85" height="46.9"/>#}
+                TNM - Estadiamento do Câncer
+            </h1>
+        </header>
+    </div>
 
-    <p style="text-align: justify">
-        A Sílex Sistemas criou um pequeno aplicativo que permite ao usuário realizar o estadiamento de câncer
-        através do uso da biblioteca Nedda também desenvolvida pela Sílex Sistemas.
-    </p>
-
-    <div style="float: left; width: 41%;margin-right: 4%">
-        <h4 style="color:#1978BA">O que é câncer?</h4>
+    <div id="div_01">
         <p style="text-align: justify">
-            Em termos leigos, a verdade é que a palavra câncer atualmente refere-se a um grande número de diferentes doenças.
-            Elas têm em comum o fato de se tratar de uma reprodução anormal de células com a capacidade de se espalhar para
-            outros órgãos e partes do corpo. O Instituto Nacional do Câncer dos Estados Unidos usa a expressão interessante
-            “uma coleção de doenças relacionadas” para descrever  câncer[1].
+            A <a href="http://silexsistemas.com.br">Sílex Sistemas</a> criou um pequeno aplicativo que permite ao usuário realizar o estadiamento de câncer
+            através do uso da biblioteca Nedda também desenvolvida pela Sílex Sistemas.
         </p>
     </div>
 
-    <div style="float: left; width: 50%;margin-left: 3%">
-        <h4 style="color: #1978BA;">Tipos de câncer</h4>
-        <p style="text-align: justify">
-            Apesar de existirem vários tipos de câncer, o aplicativo inicialmente realiza o
-            estadiamento  apenas de dez tipos, são eles:
-            <div style="float: left">
+    <div id="div_cancer">
+        <div id="div_cancer1">
+            <h4 style="color:#1978BA">O que é câncer?</h4>
+            <p style="text-align: justify">
+                Em termos leigos, a verdade é que a palavra câncer atualmente refere-se a um grande número de diferentes doenças.
+                Elas têm em comum o fato de se tratar de uma reprodução anormal de células com a capacidade de se espalhar para
+                outros órgãos e partes do corpo. O Instituto Nacional do Câncer dos Estados Unidos usa a expressão interessante
+                “uma coleção de doenças relacionadas” para descrever  câncer[1].
+            </p>
+        </div>
+
+{#    <div style="float: left; width: 50%;margin-left: 3%">#}
+        <div id="div_cancer2">
+            <h4 style="color: #1978BA;">Tipos de câncer</h4>
+            <p style="text-align: justify">
+                Apesar de existirem vários tipos de câncer, o aplicativo inicialmente realiza o
+                estadiamento  apenas de dez tipos:
+{#            <div style="float: left">#}
                 <ul>
                     <li>C16 - Estômago</li>
                     <li>C18 - Cólon</li>
                     <li>C19 - Junção retossigmóide</li>
                     <li>C20 - Reto</li>
                     <li>C34 - Pulmão</li>
-                </ul>
-            </div>
-            <div style="float: left">
-                <ul>
+{#          </ul>#}
+{#            </div>#}
+{#            <div style="float: left">#}
+{#                <ul>#}
                     <li>C50 - Mama</li>
                     <li>C53 - Colo do útero</li>
                     <li>C54 - Corpo do útero(sarcomas)</li>
                     <li>C54 - Corpo do útero(carcinomas)</li>
                     <li>C61 - Próstata</li>
                 </ul>
-            </div>
-
-        </p>
+{#            </div>#}
+            </p>
+        </div>
     </div>
 
     <div style="clear: both">
@@ -89,42 +104,46 @@
         </p>
     </div>
     <div style="background-color: white">
-    <main>
-        <div class="row" >
-            <div class="col-xs-3"></div>
-            <div class="col-xs-6">
-            <h1 style="text-align: center; color: #67AE3E">TNM Cancer Staging</h1></div>
-            <div class="col-xs-3"></div>
+        <main>
+            <div class="row" >
+                <div class="col-xs-3"></div>
+                <div class="col-xs-6">
+                <h1 style="text-align: center; color: #67AE3E">TNM Cancer Staging</h1></div>
+                <div class="col-xs-3"></div>
+            </div>
+            {% block main %}
+            {% endblock main %}
+        </main>
+
+        <div id="app">
+        {% block corpo %}
+            <!-- body  aplicativo aqui-->
+        {% endblock %}
         </div>
-        {% block main %}
-        {% endblock main %}
-    </main>
 
-    <div id="app">
-    {% block corpo %}
-        <!-- body  aplicativo aqui-->
-    {% endblock %}
     </div>
-    </div>
-    <div>
-    <h4 style="color: #1978BA;">Como o câncer é estadiado?</h4>
-    <p style="text-align: justify">
-        Há um sistema chamado TNM para classificar cada tipo de câncer. Ele é mantido pela
-        comunidade médica internacional, através de uma organização chamada UICC. Para cada
-        tipo de câncer há uma tabela que mapeia alguns valores para um estádio específico.
-        Aqueles valores são conhecidos como T – o tamanho do tumor, N – nós regionais afetados,
-        e M – a presença de doença metástica. Alguns tipos de câncer podem considerar ainda
-        outros valores, por exemplo, para computar o estádio para câncer de próstata, é também
-        necessário usar os valores de PSA e Gleason. Para Cólon, um valor conhecido como dukes.
-        <br>
-        O médico deve conhecer esses valores e verificar manualmente na tabela específica para
-        classificar corretamente o câncer. Tais tabelas são providas com manuais médicos, e
-        são atualizadas periodicamente.
-    </p></div>
 
     <div>
+        <h4 style="color: #1978BA;">Como o câncer é estadiado?</h4>
+        <p style="text-align: justify">
+            Há um sistema chamado TNM para classificar cada tipo de câncer. Ele é mantido pela
+            comunidade médica internacional, através de uma organização chamada UICC. Para cada
+            tipo de câncer há uma tabela que mapeia alguns valores para um estádio específico.
+            Aqueles valores são conhecidos como T – o tamanho do tumor, N – nós regionais afetados,
+            e M – a presença de doença metástica. Alguns tipos de câncer podem considerar ainda
+            outros valores, por exemplo, para computar o estádio para câncer de próstata, é também
+            necessário usar os valores de PSA e Gleason. Para Cólon, um valor conhecido como dukes.
+            <br>
+            O médico deve conhecer esses valores e verificar manualmente na tabela específica para
+            classificar corretamente o câncer. Tais tabelas são providas com manuais médicos, e
+            são atualizadas periodicamente.
+        </p>
+    </div>
+
+    <div id="div_nedda">
         <h3 style="color: #1978BA; text-align: center"> Saiba mais</h3>
-        <div id="div_col1">
+{#        <div id="div_col1">#}
+        <div id="div_nedda_ajuda">
             <h4 style="color: #1978BA">Como Nedda pode ajudá-lo?</h4>
             <p style="text-align: justify">
                 Nedda é uma biblioteca Python que calcula, dado um código CID e valores de T, N e M,
@@ -134,7 +153,7 @@
             </p>
         </div>
 
-        <div style="float: left; width: 40%; margin-left: 10px; margin-right: 5px;padding-left: 10px">
+        <div id="div_nedda_usa">
             <h4 style="color: #1978BA">Como usar Nedda?</h4>
             <p style="text-align: justify">
                 Nedda ainda possui uma interface muito simples.  A ideia é passar para a biblioteca
@@ -144,19 +163,18 @@
                 cólon e reto, pulmão, próstata e estômago.
             </p>
         </div>
-
-        <div style="clear: both">
-            <h4 style="color: #1978BA">Quem é Nedda?</h4>
-            <p>
-                Nedda Novaes é uma Oncologista em Belo Horizonte, MG, Brasil. Ela atualmente trabalha em um grande
-                hospital chamado Santa Casa de Misericórdia de Minas Gerais, e lida principalmente com a saúde
-                pública e pacientes pobres. Ela transcende o simples(ainda é extremamente complexo e requer
-                dedicação intensa) tratamento científico e médico de pessoas. Ela realmente cuida dos aspectos
-                sociais, psicológicos e humanos de uma doença tão terrível, especialmente quando associado à pobreza
-                e às condições sociais abaixo do ideal. Ela foi a inspiração para criar este projeto e trabalhar
-                sobre um assunto tão árido e hermético.
-            </p>
-        </div>
+    </div>
+    <div id="div_nedda_who">
+        <h4 style="color: #1978BA">Quem é Nedda?</h4>
+        <p>
+            Nedda Novaes é uma Oncologista em Belo Horizonte, MG, Brasil. Ela atualmente trabalha em um grande
+            hospital chamado Santa Casa de Misericórdia de Minas Gerais, e lida principalmente com a saúde
+            pública e pacientes pobres. Ela transcende o simples(ainda é extremamente complexo e requer
+            dedicação intensa) tratamento científico e médico de pessoas. Ela realmente cuida dos aspectos
+            sociais, psicológicos e humanos de uma doença tão terrível, especialmente quando associado à pobreza
+            e às condições sociais abaixo do ideal. Ela foi a inspiração para criar este projeto e trabalhar
+            sobre um assunto tão árido e hermético.
+        </p>
     </div>
 
 </div>
