@@ -4,161 +4,110 @@
 
 <form action="" method="post" xmlns="http://www.w3.org/1999/html">
 <div class="container-fluid">
+<div id="div_tnm">
 
-    <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8">
-{#            <button type="button" class="btn btn-primary"#}
-{#                    id="b_icd"#}
-{#                    data-toggle="button">ICD</button>#}
-            <label for = 'icd_selector'>Choose the ICD to the tumor type to be staged</label>
-            <div>
-            <select id='icd_selector'
-                    class="dropdown-toggle"
-                    rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"
-                    data-bind="options: available_icds,
-                               optionsCaption: 'Select...',
-                               value: current_icd,
-                               event: { change: icdChanged }"
-                    class="form-control">
-            </select></div>
-        </div>
-        <div class="col-xs-2"></div>
+    <div id="div_icd">
+        <label style="width: 40px;text-align: center" for = 'icd_selector'>ICD</label>
+        <select id='icd_selector' style="width: 80%"
+                class="dropdown-toggle"
+                rel="tooltip" data-placement="right" title="Choose the ICD to the tumor type to be staged"
+                data-bind="options: available_icds,
+                           optionsCaption: 'Select...',
+                           value: current_icd,
+                           event: { change: icdChanged }"
+                class="form-control">
+        </select>
     </div>
 
-    <div class="row" id="tnm_div">
-        <div class="row">
-        <div class="col-xs-2"></div>
-
-            <div class="col-xs-8">
-{#                <button type="button" class="btn btn-primary"#}
-{#                        id="b_t"> T </button>#}
-            <label for="t_selector" > Choose the T to the tumor type to be staged</label>
-                <select id='t_selector'
-                        class="dropdown-toggle"
-                        rel="tooltip" data-placement="right" title="Choose the T to the tumor type to be staged"
-                        data-bind="options: available_ts,
-                                optionsCaption: 'Select...',
-                                value: current_t,
-                                event: { change: tnmChanged }"
-                        class="form-control">
-                </select>
-            </div>
-
-        <div class="col-xs-2"></div>
-        </div>
-
-        <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8">
-{#                <button type="button" class="btn btn-primary"#}
-{#                        id="b_n"> N </button>#}
-            <label for="n_selector"> Choose the N to the tumor type to be staged</label>
-                <select id='n_selector'
-                        class="dropdown-toggle"
-                        rel="tooltip" data-placement="right" title="Choose the N to the tumor type to be staged"
-                        data-bind="options: available_ns,
-                               optionsCaption: 'Select...',
-                               value: current_n,
-                               event: { change: tnmChanged }"
-                        class="form-control">
-                </select>
-            </div>
-        <div class="col-xs-2"></div>
-        </div>
-
-        <div class="row">
-        <div class="col-xs-2"></div>
-            <div class="col-xs-8">
-{#                <button type="button" class="btn btn-primary"#}
-{#                        id="b_m"> M </button>#}
-            <label for="m_selector"> Choose the M to the tumor type to be staged</label>
-                <select id='m_selector'
-                        class="dropdown-toggle"
-                        rel="tooltip" data-placement="right" title="Choose the M to the tumor type to be staged"
-                        data-bind="options: available_ms,
-                                optionsCaption: 'Select...',
-                                value: current_m,
-                                event: { change: tnmChanged }"
-                        class="form-control">
-                </select>
-            </div>
-        <div class="col-xs-2"></div>
-
+    <div id="div_icd">
+        <label style="width: 40px;text-align: center" for="t_selector" > T </label>
+        <select id='t_selector' style="width: 80%"
+                class="dropdown-toggle"
+                rel="tooltip" data-placement="right" title="Choose the T to the tumor type to be staged"
+                data-bind="options: available_ts,
+                           optionsCaption: 'Select...',
+                           value: current_t,
+                           event: { change: tnmChanged }"
+                class="form-control">
+        </select>
     </div>
 
-
-     <div class="row">
-         <div class="col-xs-2"></div>
-         <div class="col-xs-8">
-            <label for="dukes_selector" id="l_dukes"> Dukes </label>
-            <select id='dukes_selector'
-                    class="dropdown-toggle"
-                    rel="tooltip" data-placement="right" title="Choose the Dukes to the tumor type to be staged"
-                    data-bind="options: available_dukes,
-                               optionsCaption: 'Select...',
-                               value: current_dukes,
-                               event: { change: tnmChanged }"
-                    class="form-control">
-            </select>
-         </div>
-         <div class="col-xs-2"></div>
-     </div>
-
-    <div class="row">
-        <div class="col-xs-2"></div>
-
-        <div class="col-xs-8">
-            <label for="psa_selector" id="l_psa">Choose the PSA value</label>
-            <select id='psa_selector'
-                    class="dropdown-toggle"
-                    rel="tooltip" data-placement="right" title="Choose the PSA to the tumor type to be staged"
-                    data-bind="options: available_psa,
-                               optionsCaption: 'Select...',
-                               value: current_psa,
-                               event: { change: tnmChanged }"
-                    class="form-control">
-            </select>
-        </div>
-
-        <div class="col-xs-2"></div>
+    <div id="div_icd">
+        <label style="width: 40px;text-align: center" for="n_selector"> N </label>
+        <select id='n_selector' style="width: 80%"
+                class="dropdown-toggle"
+                rel="tooltip" data-placement="right" title="Choose the N to the tumor type to be staged"
+                data-bind="options: available_ns,
+                           optionsCaption: 'Select...',
+                           value: current_n,
+                           event: { change: tnmChanged }"
+                class="form-control">
+        </select>
     </div>
 
-        <div class="row">
-            <div class="col-xs-2"></div>
-
-            <div class="col-xs-8">
-                <label for="gleason_selector" id="l_gleason">Choose the Gleason value</label>
-
-                <select id='gleason_selector'
-                    class="dropdown-toggle"
-                    rel="tooltip" data-placement="right" title="Choose the Gleason to the tumor type to be staged"
-                    data-bind="options: available_gleason,
-                               optionsCaption: 'Select...',
-                               value: current_gleason,
-                               event: { change: tnmChanged }"
-                    class="form-control">
-                </select>
-            </div>
-
-            <div class="col-xs-2"></div>
-        </div>
-
-     </div>
-
-    <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8" style="text-align: center; margin-right: auto">
-
-        <label id="b_stage"
-               class=""
-            data-bind="text: calculated_stage">
-        </label></div>
-
-        <div class="col-xs-2"></div>
-
+    <div id="div_icd">
+        <label style="width: 40px;text-align: center" for="m_selector"> M </label>
+        <select id='m_selector' style="width: 80%"
+                class="dropdown-toggle"
+                rel="tooltip" data-placement="right" title="Choose the M to the tumor type to be staged"
+                data-bind="options: available_ms,
+                           optionsCaption: 'Select...',
+                           value: current_m,
+                           event: { change: tnmChanged }"
+                class="form-control">
+        </select>
     </div>
 
+    <div id="div_icd">
+        <label style="width: 40px;text-align: center" for="dukes_selector" id="l_dukes"> Dukes </label>
+        <select id='dukes_selector' style="width: 80%"
+                class="dropdown-toggle"
+                rel="tooltip" data-placement="right" title="Choose the Dukes to the tumor type to be staged"
+                data-bind="options: available_dukes,
+                           optionsCaption: 'Select...',
+                           value: current_dukes,
+                           event: { change: tnmChanged }"
+                class="form-control">
+        </select>
+    </div>
+
+    <div id="div_icd">
+        <label style="width: 40px;text-align: center" for="psa_selector" id="l_psa">PSA</label>
+        <select id='psa_selector' style="width: 80%"
+                class="dropdown-toggle"
+                rel="tooltip" data-placement="right" title="Choose the PSA to the tumor type to be staged"
+                data-bind="options: available_psa,
+                           optionsCaption: 'Select...',
+                           value: current_psa,
+                           event: { change: tnmChanged }"
+                class="form-control">
+        </select>
+    </div>
+
+    <div id="div_icd">
+        <label style="width: 55px;text-align: center" for="gleason_selector" id="l_gleason">Gleason</label>
+        <select id='gleason_selector' style="width: 80%"
+                class="dropdown-toggle"
+                rel="tooltip" data-placement="right" title="Choose the Gleason to the tumor type to be staged"
+                data-bind="options: available_gleason,
+                           optionsCaption: 'Select...',
+                           value: current_gleason,
+                           event: { change: tnmChanged }"
+                class="form-control">
+        </select>
+    </div>
+
+    <!--TNM-->
+
+
+</div><!--fim div tnm-->
+
+<div id="div_stage">
+    <label id="b_stage"
+           class=""
+           data-bind="text: calculated_stage">
+    </label>
+</div><!--fim div stage-->
 
 </div>
 </form>

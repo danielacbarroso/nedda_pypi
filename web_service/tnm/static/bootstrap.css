@@ -14,41 +14,6 @@ body {
   background-color: #adadad;
 }
 
-#geral {
-  width:67.71%;
-  /*height: auto;*/
-  margin: 0 auto;
-  text-align:left;
-  /*border:2px solid #000;*/
-  background-color: #F1F2F2;
-/*borda provisória para facilitar a visualização */
-}
-
-#app {
-  /*width: auto;*/
-  display: block;
-  /*margin-left: 10%;*/
-  /*margin-right: 10%;*/
-  /*background-color: #999999;*/
-}
-
-#tnm_div {
-  /*width: auto;*/
-  /*background-color: #31b0d5;*/
-  /*border: dashed;*/
-  display: block;
-}
-
-#div_col1 {
-  float: left;
-  width: 40%;
-  margin: 10px auto 15px auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-outside: 40px;
-  background-color: #9d9d9d;
-}
-
 article,
 aside,
 details,
