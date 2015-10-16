@@ -701,7 +701,7 @@ C19,T1,N2a,M1b,C,IVB,,,,Colorectal - Rectosigmoid
 C19,T2,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid
 C19,T2,N2a,M1b,A,IVB,,,,Colorectal - Rectosigmoid
 C19,T2,N2a,M1b,B,IVB,,,,Colorectal - Rectosigmoid
-C19,T2,N2a,M1b,C,IVB,,,,Colorectal -Rectosigmoid
+C19,T2,N2a,M1b,C,IVB,,,,Colorectal - Rectosigmoid
 C19,T3,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid
 C19,T3,N2a,M1b,A,IVB,,,,Colorectal - Rectosigmoid
 C19,T3,N2a,M1b,B,IVB,,,,Colorectal - Rectosigmoid
@@ -714,7 +714,6 @@ C19,T4b,N2a,M1b,,IVB,,,,Colorectal - Rectosigmoid
 C19,T4b,N2a,M1b,A,IVB,,,,Colorectal - Rectosigmoid
 C19,T4b,N2a,M1b,B,IVB,,,,Colorectal - Rectosigmoid
 C19,T4b,N2a,M1b,C,IVB,,,,Colorectal - Rectosigmoid
------
 C20,Tis,N0,M0,,0,,,,Colorectal - Rectum
 C20,T1,N0,M0,A,I,,,,Colorectal - Rectum
 C20,T2,N0,M0,A,I,,,,Colorectal - Rectum
@@ -1037,7 +1036,7 @@ C20,T1,N2a,M1b,C,IVB,,,,Colorectal - Rectum
 C20,T2,N2a,M1b,,IVB,,,,Colorectal - Rectum
 C20,T2,N2a,M1b,A,IVB,,,,Colorectal - Rectum
 C20,T2,N2a,M1b,B,IVB,,,,Colorectal - Rectum
-C20,T2,N2a,M1b,C,IVB,,,,Colorectal -Rectum
+C20,T2,N2a,M1b,C,IVB,,,,Colorectal - Rectum
 C20,T3,N2a,M1b,,IVB,,,,Colorectal - Rectum
 C20,T3,N2a,M1b,A,IVB,,,,Colorectal - Rectum
 C20,T3,N2a,M1b,B,IVB,,,,Colorectal - Rectum

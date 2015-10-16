@@ -47,7 +47,9 @@ $(function() {
             StagingViewModel.calculated_stage('');
 
 
-            if(StagingViewModel.current_icd() === 'C18 - Colorectal - Colon'){
+            if(StagingViewModel.current_icd() === 'C18 - Colorectal - Colon' ||
+                StagingViewModel.current_icd() === 'C19 - Colorectal - Rectosigmoid' ||
+                StagingViewModel.current_icd() === 'C20 - Colorectal - Rectum'){
                 $('#l_dukes').show()
                 $('#dukes_selector').show();
             }
@@ -83,7 +85,9 @@ $(function() {
             },
 
         tnmChanged:function() {
-            if (StagingViewModel.current_icd() === 'C18 - Colorectal - Colon') {
+            if (StagingViewModel.current_icd() === 'C18 - Colorectal - Colon' ||
+                StagingViewModel.current_icd() === 'C19 - Colorectal - Rectosigmoid' ||
+                StagingViewModel.current_icd() === 'C20 - Colorectal - Rectum') {
                 if (StagingViewModel.current_t() !== undefined &&
                 StagingViewModel.current_n() !== undefined &&
                 StagingViewModel.current_m() !== undefined &&
