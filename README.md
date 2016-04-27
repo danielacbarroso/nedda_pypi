@@ -181,6 +181,8 @@ She was the inspiration to create this project and to work on such an arid and h
 She also happens to be my mother!
 
 
+
+
 [1] [What is Cancer](http://www.cancer.gov/about-cancer/what-is-cancer)
 [2] American Cancer Society: Cancer Facts and Figures 2015. Atlanta, Ga: American Cancer Society, 2015. 
 [3] Cancer Staging Handbook. From the AJCC Cancer Staging Manual. p. vii
@@ -188,5 +190,6 @@ She also happens to be my mother!
 
 Copyright 2015 [Sílex Sistemas Ltda.] (http://www.silexsistemas.com.br)
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+Desenvolvedores: Sandra Daniela e Roberto Novaes.
 
 
